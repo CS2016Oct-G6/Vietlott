@@ -1,0 +1,404 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CF008EF17926B510E8255CF7 /* Pods_Vietlott.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0865DEDC8AD5B52D584B3324 /* Pods_Vietlott.framework */; };
+		F43D85651DD568A6005648DA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F43D85641DD568A6005648DA /* AppDelegate.swift */; };
+		F43D85671DD568A6005648DA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F43D85661DD568A6005648DA /* ViewController.swift */; };
+		F43D856A1DD568A6005648DA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F43D85681DD568A6005648DA /* Main.storyboard */; };
+		F43D856D1DD568A6005648DA /* Vietlott.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F43D856B1DD568A6005648DA /* Vietlott.xcdatamodeld */; };
+		F43D856F1DD568A6005648DA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F43D856E1DD568A6005648DA /* Assets.xcassets */; };
+		F43D85721DD568A6005648DA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F43D85701DD568A6005648DA /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0865DEDC8AD5B52D584B3324 /* Pods_Vietlott.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Vietlott.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		37C3EBE8ABE3BFE1B713C09C /* Pods-Vietlott.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Vietlott.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Vietlott/Pods-Vietlott.debug.xcconfig"; sourceTree = "<group>"; };
+		F43D85611DD568A6005648DA /* Vietlott.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Vietlott.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F43D85641DD568A6005648DA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F43D85661DD568A6005648DA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F43D85691DD568A6005648DA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F43D856C1DD568A6005648DA /* Vietlott.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Vietlott.xcdatamodel; sourceTree = "<group>"; };
+		F43D856E1DD568A6005648DA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F43D85711DD568A6005648DA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F43D85731DD568A6005648DA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F4527B7D10EDAA1CAFC55300 /* Pods-Vietlott.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Vietlott.release.xcconfig"; path = "Pods/Target Support Files/Pods-Vietlott/Pods-Vietlott.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F43D855E1DD568A6005648DA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF008EF17926B510E8255CF7 /* Pods_Vietlott.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		313AF6BB29AFFBD8A24ED3E7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0865DEDC8AD5B52D584B3324 /* Pods_Vietlott.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		32BBCB47A3E3E9456F66C0FE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				37C3EBE8ABE3BFE1B713C09C /* Pods-Vietlott.debug.xcconfig */,
+				F4527B7D10EDAA1CAFC55300 /* Pods-Vietlott.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		F43D85581DD568A6005648DA = {
+			isa = PBXGroup;
+			children = (
+				F43D85631DD568A6005648DA /* Vietlott */,
+				F43D85621DD568A6005648DA /* Products */,
+				32BBCB47A3E3E9456F66C0FE /* Pods */,
+				313AF6BB29AFFBD8A24ED3E7 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		F43D85621DD568A6005648DA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F43D85611DD568A6005648DA /* Vietlott.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F43D85631DD568A6005648DA /* Vietlott */ = {
+			isa = PBXGroup;
+			children = (
+				F43D85641DD568A6005648DA /* AppDelegate.swift */,
+				F43D85661DD568A6005648DA /* ViewController.swift */,
+				F43D85681DD568A6005648DA /* Main.storyboard */,
+				F43D856E1DD568A6005648DA /* Assets.xcassets */,
+				F43D85701DD568A6005648DA /* LaunchScreen.storyboard */,
+				F43D85731DD568A6005648DA /* Info.plist */,
+				F43D856B1DD568A6005648DA /* Vietlott.xcdatamodeld */,
+			);
+			path = Vietlott;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F43D85601DD568A6005648DA /* Vietlott */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F43D85761DD568A6005648DA /* Build configuration list for PBXNativeTarget "Vietlott" */;
+			buildPhases = (
+				E31170B5DE3E09C52A23E39E /* [CP] Check Pods Manifest.lock */,
+				F43D855D1DD568A6005648DA /* Sources */,
+				F43D855E1DD568A6005648DA /* Frameworks */,
+				F43D855F1DD568A6005648DA /* Resources */,
+				54F27936879C90B8453CF699 /* [CP] Embed Pods Frameworks */,
+				98B42FF090D9AF115ED77BC7 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Vietlott;
+			productName = Vietlott;
+			productReference = F43D85611DD568A6005648DA /* Vietlott.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F43D85591DD568A6005648DA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0810;
+				LastUpgradeCheck = 0810;
+				ORGANIZATIONNAME = congtruong;
+				TargetAttributes = {
+					F43D85601DD568A6005648DA = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = 5TJXL29536;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = F43D855C1DD568A6005648DA /* Build configuration list for PBXProject "Vietlott" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F43D85581DD568A6005648DA;
+			productRefGroup = F43D85621DD568A6005648DA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F43D85601DD568A6005648DA /* Vietlott */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F43D855F1DD568A6005648DA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F43D85721DD568A6005648DA /* LaunchScreen.storyboard in Resources */,
+				F43D856F1DD568A6005648DA /* Assets.xcassets in Resources */,
+				F43D856A1DD568A6005648DA /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		54F27936879C90B8453CF699 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Vietlott/Pods-Vietlott-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		98B42FF090D9AF115ED77BC7 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Vietlott/Pods-Vietlott-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E31170B5DE3E09C52A23E39E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F43D855D1DD568A6005648DA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F43D85671DD568A6005648DA /* ViewController.swift in Sources */,
+				F43D856D1DD568A6005648DA /* Vietlott.xcdatamodeld in Sources */,
+				F43D85651DD568A6005648DA /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		F43D85681DD568A6005648DA /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F43D85691DD568A6005648DA /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F43D85701DD568A6005648DA /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F43D85711DD568A6005648DA /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F43D85741DD568A6005648DA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F43D85751DD568A6005648DA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F43D85771DD568A6005648DA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 37C3EBE8ABE3BFE1B713C09C /* Pods-Vietlott.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 5TJXL29536;
+				INFOPLIST_FILE = Vietlott/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = congtruong.Vietlott;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		F43D85781DD568A6005648DA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F4527B7D10EDAA1CAFC55300 /* Pods-Vietlott.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 5TJXL29536;
+				INFOPLIST_FILE = Vietlott/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = congtruong.Vietlott;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F43D855C1DD568A6005648DA /* Build configuration list for PBXProject "Vietlott" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F43D85741DD568A6005648DA /* Debug */,
+				F43D85751DD568A6005648DA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F43D85761DD568A6005648DA /* Build configuration list for PBXNativeTarget "Vietlott" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F43D85771DD568A6005648DA /* Debug */,
+				F43D85781DD568A6005648DA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		F43D856B1DD568A6005648DA /* Vietlott.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				F43D856C1DD568A6005648DA /* Vietlott.xcdatamodel */,
+			);
+			currentVersion = F43D856C1DD568A6005648DA /* Vietlott.xcdatamodel */;
+			path = Vietlott.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = F43D85591DD568A6005648DA /* Project object */;
+}
