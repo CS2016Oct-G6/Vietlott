@@ -6,5 +6,6 @@ target 'Vietlott' do
   use_frameworks!
 
   # Pods for Vietlott
+  pod 'SwiftyJSON', '~> 3.1'
 
 end

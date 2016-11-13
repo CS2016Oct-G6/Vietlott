@@ -9,11 +9,17 @@
 /* Begin PBXBuildFile section */
 		CF008EF17926B510E8255CF7 /* Pods_Vietlott.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0865DEDC8AD5B52D584B3324 /* Pods_Vietlott.framework */; };
 		F43D85651DD568A6005648DA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F43D85641DD568A6005648DA /* AppDelegate.swift */; };
-		F43D85671DD568A6005648DA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F43D85661DD568A6005648DA /* ViewController.swift */; };
 		F43D856A1DD568A6005648DA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F43D85681DD568A6005648DA /* Main.storyboard */; };
 		F43D856D1DD568A6005648DA /* Vietlott.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F43D856B1DD568A6005648DA /* Vietlott.xcdatamodeld */; };
 		F43D856F1DD568A6005648DA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F43D856E1DD568A6005648DA /* Assets.xcassets */; };
 		F43D85721DD568A6005648DA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F43D85701DD568A6005648DA /* LaunchScreen.storyboard */; };
+		F49EDAC11DD8AF1C00767F72 /* GoogleVision.swift in Sources */ = {isa = PBXBuildFile; fileRef = F49EDAC01DD8AF1C00767F72 /* GoogleVision.swift */; };
+		F49EDAC41DD8AF2900767F72 /* EditLotteryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F49EDAC21DD8AF2900767F72 /* EditLotteryViewController.swift */; };
+		F49EDAC51DD8AF2900767F72 /* InputViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F49EDAC31DD8AF2900767F72 /* InputViewController.swift */; };
+		F49EDAC81DD8AF3400767F72 /* DateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F49EDAC61DD8AF3400767F72 /* DateExtension.swift */; };
+		F49EDAC91DD8AF3400767F72 /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F49EDAC71DD8AF3400767F72 /* StringExtension.swift */; };
+		F49EDACB1DD8AF4000767F72 /* EditLotteryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F49EDACA1DD8AF4000767F72 /* EditLotteryCell.swift */; };
+		F49EDACD1DD8AF5800767F72 /* Constance.swift in Sources */ = {isa = PBXBuildFile; fileRef = F49EDACC1DD8AF5800767F72 /* Constance.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,13 +27,19 @@
 		37C3EBE8ABE3BFE1B713C09C /* Pods-Vietlott.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Vietlott.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Vietlott/Pods-Vietlott.debug.xcconfig"; sourceTree = "<group>"; };
 		F43D85611DD568A6005648DA /* Vietlott.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Vietlott.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F43D85641DD568A6005648DA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		F43D85661DD568A6005648DA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		F43D85691DD568A6005648DA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F43D856C1DD568A6005648DA /* Vietlott.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Vietlott.xcdatamodel; sourceTree = "<group>"; };
 		F43D856E1DD568A6005648DA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F43D85711DD568A6005648DA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F43D85731DD568A6005648DA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F4527B7D10EDAA1CAFC55300 /* Pods-Vietlott.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Vietlott.release.xcconfig"; path = "Pods/Target Support Files/Pods-Vietlott/Pods-Vietlott.release.xcconfig"; sourceTree = "<group>"; };
+		F49EDAC01DD8AF1C00767F72 /* GoogleVision.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GoogleVision.swift; sourceTree = "<group>"; };
+		F49EDAC21DD8AF2900767F72 /* EditLotteryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditLotteryViewController.swift; sourceTree = "<group>"; };
+		F49EDAC31DD8AF2900767F72 /* InputViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InputViewController.swift; sourceTree = "<group>"; };
+		F49EDAC61DD8AF3400767F72 /* DateExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateExtension.swift; sourceTree = "<group>"; };
+		F49EDAC71DD8AF3400767F72 /* StringExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
+		F49EDACA1DD8AF4000767F72 /* EditLotteryCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditLotteryCell.swift; sourceTree = "<group>"; };
+		F49EDACC1DD8AF5800767F72 /* Constance.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constance.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +109,8 @@
 		F49EDABA1DD8AB7000767F72 /* Extension */ = {
 			isa = PBXGroup;
 			children = (
+				F49EDAC61DD8AF3400767F72 /* DateExtension.swift */,
+				F49EDAC71DD8AF3400767F72 /* StringExtension.swift */,
 			);
 			name = Extension;
 			sourceTree = "<group>";
@@ -104,7 +118,8 @@
 		F49EDABB1DD8AB7A00767F72 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
-				F43D85661DD568A6005648DA /* ViewController.swift */,
+				F49EDAC21DD8AF2900767F72 /* EditLotteryViewController.swift */,
+				F49EDAC31DD8AF2900767F72 /* InputViewController.swift */,
 			);
 			name = ViewController;
 			sourceTree = "<group>";
@@ -112,6 +127,7 @@
 		F49EDABC1DD8AB8800767F72 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				F49EDACA1DD8AF4000767F72 /* EditLotteryCell.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -119,6 +135,7 @@
 		F49EDABD1DD8AB9900767F72 /* ClientAPI */ = {
 			isa = PBXGroup;
 			children = (
+				F49EDAC01DD8AF1C00767F72 /* GoogleVision.swift */,
 			);
 			name = ClientAPI;
 			sourceTree = "<group>";
@@ -133,6 +150,7 @@
 		F49EDABF1DD8ABDD00767F72 /* Support */ = {
 			isa = PBXGroup;
 			children = (
+				F49EDACC1DD8AF5800767F72 /* Constance.swift */,
 				F43D85731DD568A6005648DA /* Info.plist */,
 				F43D85701DD568A6005648DA /* LaunchScreen.storyboard */,
 			);
@@ -263,9 +281,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F43D85671DD568A6005648DA /* ViewController.swift in Sources */,
+				F49EDAC51DD8AF2900767F72 /* InputViewController.swift in Sources */,
+				F49EDACB1DD8AF4000767F72 /* EditLotteryCell.swift in Sources */,
+				F49EDAC91DD8AF3400767F72 /* StringExtension.swift in Sources */,
+				F49EDAC81DD8AF3400767F72 /* DateExtension.swift in Sources */,
 				F43D856D1DD568A6005648DA /* Vietlott.xcdatamodeld in Sources */,
+				F49EDACD1DD8AF5800767F72 /* Constance.swift in Sources */,
 				F43D85651DD568A6005648DA /* AppDelegate.swift in Sources */,
+				F49EDAC41DD8AF2900767F72 /* EditLotteryViewController.swift in Sources */,
+				F49EDAC11DD8AF1C00767F72 /* GoogleVision.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -309,6 +333,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -331,7 +356,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -359,6 +384,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -375,7 +401,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -388,6 +414,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 37C3EBE8ABE3BFE1B713C09C /* Pods-Vietlott.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 5TJXL29536;
 				INFOPLIST_FILE = Vietlott/Info.plist;
@@ -402,6 +429,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = F4527B7D10EDAA1CAFC55300 /* Pods-Vietlott.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 5TJXL29536;
 				INFOPLIST_FILE = Vietlott/Info.plist;

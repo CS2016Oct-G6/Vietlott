@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "939746F0189966C707ED03265D53D252"
-               BuildableName = "Pods_Vietlott.framework"
-               BlueprintName = "Pods-Vietlott"
+               BlueprintIdentifier = "AEC6670059EDB27F8DC348B116AB4C15"
+               BuildableName = "SwiftyJSON.framework"
+               BlueprintName = "SwiftyJSON"
                ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -45,9 +45,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "939746F0189966C707ED03265D53D252"
-            BuildableName = "Pods_Vietlott.framework"
-            BlueprintName = "Pods-Vietlott"
+            BlueprintIdentifier = "AEC6670059EDB27F8DC348B116AB4C15"
+            BuildableName = "SwiftyJSON.framework"
+            BlueprintName = "SwiftyJSON"
             ReferencedContainer = "container:Pods.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
