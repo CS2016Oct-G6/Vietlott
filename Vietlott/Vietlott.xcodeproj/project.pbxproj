@@ -80,15 +80,63 @@
 		F43D85631DD568A6005648DA /* Vietlott */ = {
 			isa = PBXGroup;
 			children = (
+				F49EDABF1DD8ABDD00767F72 /* Support */,
+				F49EDABE1DD8ABC600767F72 /* Model */,
+				F49EDABD1DD8AB9900767F72 /* ClientAPI */,
+				F49EDABC1DD8AB8800767F72 /* View */,
+				F49EDABB1DD8AB7A00767F72 /* ViewController */,
+				F49EDABA1DD8AB7000767F72 /* Extension */,
 				F43D85641DD568A6005648DA /* AppDelegate.swift */,
-				F43D85661DD568A6005648DA /* ViewController.swift */,
 				F43D85681DD568A6005648DA /* Main.storyboard */,
 				F43D856E1DD568A6005648DA /* Assets.xcassets */,
-				F43D85701DD568A6005648DA /* LaunchScreen.storyboard */,
-				F43D85731DD568A6005648DA /* Info.plist */,
 				F43D856B1DD568A6005648DA /* Vietlott.xcdatamodeld */,
 			);
 			path = Vietlott;
+			sourceTree = "<group>";
+		};
+		F49EDABA1DD8AB7000767F72 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Extension;
+			sourceTree = "<group>";
+		};
+		F49EDABB1DD8AB7A00767F72 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				F43D85661DD568A6005648DA /* ViewController.swift */,
+			);
+			name = ViewController;
+			sourceTree = "<group>";
+		};
+		F49EDABC1DD8AB8800767F72 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		F49EDABD1DD8AB9900767F72 /* ClientAPI */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = ClientAPI;
+			sourceTree = "<group>";
+		};
+		F49EDABE1DD8ABC600767F72 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		F49EDABF1DD8ABDD00767F72 /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				F43D85731DD568A6005648DA /* Info.plist */,
+				F43D85701DD568A6005648DA /* LaunchScreen.storyboard */,
+			);
+			name = Support;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
