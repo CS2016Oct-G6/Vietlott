@@ -8,6 +8,7 @@
 
 import UIKit
 import AVFoundation
+import ARSLineProgress
 
 class ViewController: UIViewController, AVCapturePhotoCaptureDelegate {
     
@@ -83,11 +84,17 @@ class ViewController: UIViewController, AVCapturePhotoCaptureDelegate {
             let image = UIImage(data: dataImage)!
             print("image: \(image.size)")
             
+            // show progress
+            ARSLineProgress.show()
+            
             //UIImageWriteToSavedPhotosAlbum(UIImage(data: dataImage)!, nil, nil, nil)
             // Base64 encode the image and create the request
             let googleVision = GoogleVision()
             let binaryImageData = googleVision.base64EncodeImage(image)
             googleVision.createRequest(with: binaryImageData, handleSuccess: { (lotteryArray: [String]) in
+                // hide progress
+                ARSLineProgress.hide()
+                
                 // present edit view
                 let storyboart = UIStoryboard(name: "Main", bundle: nil)
                 let editVC = storyboart.instantiateViewController(withIdentifier: "editlotteryViewController") as! EditLotteryViewController

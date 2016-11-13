@@ -7,5 +7,6 @@ target 'Vietlott' do
 
   # Pods for Vietlott
   pod 'SwiftyJSON', '~> 3.1'
+  pod 'ARSLineProgress', '~> 2.0'
 
 end

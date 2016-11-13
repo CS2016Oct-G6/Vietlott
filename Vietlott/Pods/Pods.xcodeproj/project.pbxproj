@@ -7,74 +7,102 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0C9124D1F2F889E9C918085612B0217E /* Pods-Vietlott-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 829D2F9994F03242A58A20391EE6B4C5 /* Pods-Vietlott-dummy.m */; };
-		0E005AA6BCEB92F217C533FC6D24DE2C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
-		155F1390079467C4AD9FA4916F5D736C /* SwiftyJSON-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 05CA09B061E193906653AC21FD3A94F1 /* SwiftyJSON-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		343577C183BDFBE8455D898AC91803DD /* Pods-Vietlott-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 120F3E043F4B73ECA79F8FCB3CEB168C /* Pods-Vietlott-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		4227B863B17D9647E39CF6F2A1BFFDA8 /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDE506ECE97701EBA44FDBFF401C1A04 /* SwiftyJSON.swift */; };
-		42E76D170CB389815B72562F06BC6DC8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
-		504C3E87D8FDAE7CF6FD7C77CBFB3F62 /* SwiftyJSON-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 32B9BBA8F5B33E56C38F5546432F66B7 /* SwiftyJSON-dummy.m */; };
+		11420064F689BDE6D33DA6409272E486 /* SwiftyJSON-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 47AE561829E3E4824EDADAB0683FF4F5 /* SwiftyJSON-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		33128D23650246A70299FA7DB6FFC6C0 /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26FAEC29FEE444BA89A4863A10600D10 /* SwiftyJSON.swift */; };
+		611955471FA43CFE024285F61E9CDDB7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
+		6245AE713E8DB46306C782EE1F9B7A4D /* SwiftyJSON-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F6EEB31F864DE0BDD577C889128A0F6 /* SwiftyJSON-dummy.m */; };
+		7271137060A8D27D195D4B8AAF0FC379 /* Pods-Vietlott-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 829D2F9994F03242A58A20391EE6B4C5 /* Pods-Vietlott-dummy.m */; };
+		753E0CE79BA76124A6167A4B3E4B15B6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
+		78F5637D530CF28E706FF251A596F928 /* Pods-Vietlott-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 120F3E043F4B73ECA79F8FCB3CEB168C /* Pods-Vietlott-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9033596B48B68B24B4267831EED580B8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
+		AA0005A3E9A3A514ADFB34F9E534B043 /* ARSLineProgress.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62707D35592F672530E7B33B59F9CD6F /* ARSLineProgress.swift */; };
+		DDD5D3D05708B975ADC9A330585CC346 /* ARSLineProgress-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C76240726EAE39BFB345D3596FCBFFFB /* ARSLineProgress-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E91726B4A50D4E1E45B21BE7DFF7F049 /* ARSLineProgress-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7091B37350C50D82D4B6E6CF40AE52E7 /* ARSLineProgress-dummy.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		64E50B294030EBCBABBD2886CD3808CA /* PBXContainerItemProxy */ = {
+		A4365507042A6110BA5EB018A20B3544 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = AEC6670059EDB27F8DC348B116AB4C15;
+			remoteGlobalIDString = BF7493D8461B38FAFB0814FC48AABCB8;
+			remoteInfo = ARSLineProgress;
+		};
+		C9073E0C2C91E0DD0FBEE6F5C29FB540 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 75859A7DB0012347B4F3B86A4F64195A;
 			remoteInfo = SwiftyJSON;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		05CA09B061E193906653AC21FD3A94F1 /* SwiftyJSON-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftyJSON-umbrella.h"; sourceTree = "<group>"; };
 		067BA0B665EEF03799E3D59D841E21D0 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		120F3E043F4B73ECA79F8FCB3CEB168C /* Pods-Vietlott-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Vietlott-umbrella.h"; sourceTree = "<group>"; };
-		283AD4CEA2E609531018F9F63B3AC7CC /* SwiftyJSON.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftyJSON.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		2E7F7C62EE34D2D271E6E1234A2002B2 /* SwiftyJSON.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftyJSON.xcconfig; sourceTree = "<group>"; };
-		32B9BBA8F5B33E56C38F5546432F66B7 /* SwiftyJSON-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwiftyJSON-dummy.m"; sourceTree = "<group>"; };
+		1DDC7D61FBECDA7AECB930EB8876CAC6 /* SwiftyJSON.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = SwiftyJSON.modulemap; sourceTree = "<group>"; };
+		1F6EEB31F864DE0BDD577C889128A0F6 /* SwiftyJSON-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwiftyJSON-dummy.m"; sourceTree = "<group>"; };
+		26FAEC29FEE444BA89A4863A10600D10 /* SwiftyJSON.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwiftyJSON.swift; path = Source/SwiftyJSON.swift; sourceTree = "<group>"; };
+		3855A20FB6A2A51720B08E6FCDE1E570 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		47AE561829E3E4824EDADAB0683FF4F5 /* SwiftyJSON-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftyJSON-umbrella.h"; sourceTree = "<group>"; };
+		62707D35592F672530E7B33B59F9CD6F /* ARSLineProgress.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ARSLineProgress.swift; path = Source/ARSLineProgress.swift; sourceTree = "<group>"; };
+		7091B37350C50D82D4B6E6CF40AE52E7 /* ARSLineProgress-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ARSLineProgress-dummy.m"; sourceTree = "<group>"; };
 		754FC717F33D5D044475641B8244A609 /* Pods-Vietlott-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Vietlott-acknowledgements.markdown"; sourceTree = "<group>"; };
 		829D2F9994F03242A58A20391EE6B4C5 /* Pods-Vietlott-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Vietlott-dummy.m"; sourceTree = "<group>"; };
+		88D9330CE20F86D2CDF0EAC34EC8FE98 /* Pods_Vietlott.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Vietlott.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8AD5221BEB3B3DEC8959251F47F53BCF /* Pods-Vietlott-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Vietlott-acknowledgements.plist"; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		BBF610E40BDF6E542FA21FF7E5491205 /* SwiftyJSON-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftyJSON-prefix.pch"; sourceTree = "<group>"; };
+		A0104DAE560441D1CF168C39FE4DB8AA /* SwiftyJSON.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftyJSON.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AFB8EA926B33FF426461AD26D9272E07 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BD574127446C0920E116DFBB39D6A453 /* Pods-Vietlott.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-Vietlott.modulemap"; sourceTree = "<group>"; };
-		BDE506ECE97701EBA44FDBFF401C1A04 /* SwiftyJSON.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwiftyJSON.swift; path = Source/SwiftyJSON.swift; sourceTree = "<group>"; };
 		C00EE09754ECAAE58DC07484A71216A7 /* Pods-Vietlott.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Vietlott.debug.xcconfig"; sourceTree = "<group>"; };
-		C450DC7051D98686131C09867B59F9C1 /* Pods_Vietlott.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Vietlott.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		C4A9A658C966F6BB111BEDBDEA1F874A /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C627878210700F2C8A906FAD02910104 /* SwiftyJSON-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftyJSON-prefix.pch"; sourceTree = "<group>"; };
+		C76240726EAE39BFB345D3596FCBFFFB /* ARSLineProgress-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ARSLineProgress-umbrella.h"; sourceTree = "<group>"; };
+		CD0907F429C069930F32C2008216CDEB /* SwiftyJSON.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftyJSON.xcconfig; sourceTree = "<group>"; };
+		CD09E7CB164FA06274B921715D525829 /* ARSLineProgress.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = ARSLineProgress.modulemap; sourceTree = "<group>"; };
 		CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		D032A29E584B77AE187E586922267CF5 /* SwiftyJSON.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = SwiftyJSON.modulemap; sourceTree = "<group>"; };
+		D623BAFEC448899E0C6D085158014689 /* ARSLineProgress.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ARSLineProgress.xcconfig; sourceTree = "<group>"; };
 		DA3682E51CD81FE85B8F8762E25CF3D2 /* Pods-Vietlott.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Vietlott.release.xcconfig"; sourceTree = "<group>"; };
 		DE46DCF4FDDB171713F57A37DD971AF1 /* Pods-Vietlott-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Vietlott-resources.sh"; sourceTree = "<group>"; };
+		E96E6F4CFD35E8B6CFCA095926340E7C /* ARSLineProgress.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ARSLineProgress.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E9C12292B518A8858EB0D9E0EAC09C71 /* ARSLineProgress-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ARSLineProgress-prefix.pch"; sourceTree = "<group>"; };
 		F2F2D67C82827E15283D295384D93984 /* Pods-Vietlott-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Vietlott-frameworks.sh"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		3F4C45F15AE5F3653A49379062DBDF7A /* Frameworks */ = {
+		0C047F0745D37EABB6BCFA797CCDC8D5 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				42E76D170CB389815B72562F06BC6DC8 /* Foundation.framework in Frameworks */,
+				611955471FA43CFE024285F61E9CDDB7 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		99B2A58D2A1D3FCC693FA036C64EEC04 /* Frameworks */ = {
+		54B4404879B912F912921635C191302C /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0E005AA6BCEB92F217C533FC6D24DE2C /* Foundation.framework in Frameworks */,
+				753E0CE79BA76124A6167A4B3E4B15B6 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D6E0C3CEE11467A1E430AA98A1CAD27A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9033596B48B68B24B4267831EED580B8 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		1C45A3E85104E89A00CFB7E5A12842CB /* Products */ = {
+		38A3B5E45F4EC5F7C42BF88641D48E68 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				C450DC7051D98686131C09867B59F9C1 /* Pods_Vietlott.framework */,
-				283AD4CEA2E609531018F9F63B3AC7CC /* SwiftyJSON.framework */,
+				E96E6F4CFD35E8B6CFCA095926340E7C /* ARSLineProgress.framework */,
+				88D9330CE20F86D2CDF0EAC34EC8FE98 /* Pods_Vietlott.framework */,
+				A0104DAE560441D1CF168C39FE4DB8AA /* SwiftyJSON.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -95,38 +123,15 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		70A8E4D3C62B6C203D238581DA091C21 /* SwiftyJSON */ = {
-			isa = PBXGroup;
-			children = (
-				BDE506ECE97701EBA44FDBFF401C1A04 /* SwiftyJSON.swift */,
-				8EC39E1DC11846207722B71AAFE40F98 /* Support Files */,
-			);
-			path = SwiftyJSON;
-			sourceTree = "<group>";
-		};
 		7DB346D0F39D3F0E887471402A8071AB = {
 			isa = PBXGroup;
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
 				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
-				BD1E3C710F12F4B4C092FC8E2AD22110 /* Pods */,
-				1C45A3E85104E89A00CFB7E5A12842CB /* Products */,
+				EB0CB454A0E294631C5C9B2541275F11 /* Pods */,
+				38A3B5E45F4EC5F7C42BF88641D48E68 /* Products */,
 				6389280BED0E6D71A1BC5F6A2BE2C81F /* Targets Support Files */,
 			);
-			sourceTree = "<group>";
-		};
-		8EC39E1DC11846207722B71AAFE40F98 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				C4A9A658C966F6BB111BEDBDEA1F874A /* Info.plist */,
-				D032A29E584B77AE187E586922267CF5 /* SwiftyJSON.modulemap */,
-				2E7F7C62EE34D2D271E6E1234A2002B2 /* SwiftyJSON.xcconfig */,
-				32B9BBA8F5B33E56C38F5546432F66B7 /* SwiftyJSON-dummy.m */,
-				BBF610E40BDF6E542FA21FF7E5491205 /* SwiftyJSON-prefix.pch */,
-				05CA09B061E193906653AC21FD3A94F1 /* SwiftyJSON-umbrella.h */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/SwiftyJSON";
 			sourceTree = "<group>";
 		};
 		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
@@ -137,12 +142,59 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		BD1E3C710F12F4B4C092FC8E2AD22110 /* Pods */ = {
+		D32AABF6ACB0ECC216A2F958535EBE1A /* ARSLineProgress */ = {
 			isa = PBXGroup;
 			children = (
-				70A8E4D3C62B6C203D238581DA091C21 /* SwiftyJSON */,
+				62707D35592F672530E7B33B59F9CD6F /* ARSLineProgress.swift */,
+				D6E9FB62AB05AC0A2EE4E6BFA2BAD178 /* Support Files */,
+			);
+			path = ARSLineProgress;
+			sourceTree = "<group>";
+		};
+		D6E9FB62AB05AC0A2EE4E6BFA2BAD178 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				CD09E7CB164FA06274B921715D525829 /* ARSLineProgress.modulemap */,
+				D623BAFEC448899E0C6D085158014689 /* ARSLineProgress.xcconfig */,
+				7091B37350C50D82D4B6E6CF40AE52E7 /* ARSLineProgress-dummy.m */,
+				E9C12292B518A8858EB0D9E0EAC09C71 /* ARSLineProgress-prefix.pch */,
+				C76240726EAE39BFB345D3596FCBFFFB /* ARSLineProgress-umbrella.h */,
+				3855A20FB6A2A51720B08E6FCDE1E570 /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/ARSLineProgress";
+			sourceTree = "<group>";
+		};
+		DB68DC6E62B6C5C1E0CFC75AEC2507F9 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				AFB8EA926B33FF426461AD26D9272E07 /* Info.plist */,
+				1DDC7D61FBECDA7AECB930EB8876CAC6 /* SwiftyJSON.modulemap */,
+				CD0907F429C069930F32C2008216CDEB /* SwiftyJSON.xcconfig */,
+				1F6EEB31F864DE0BDD577C889128A0F6 /* SwiftyJSON-dummy.m */,
+				C627878210700F2C8A906FAD02910104 /* SwiftyJSON-prefix.pch */,
+				47AE561829E3E4824EDADAB0683FF4F5 /* SwiftyJSON-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/SwiftyJSON";
+			sourceTree = "<group>";
+		};
+		EB0CB454A0E294631C5C9B2541275F11 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D32AABF6ACB0ECC216A2F958535EBE1A /* ARSLineProgress */,
+				FA408670AC8170B404FA24474717A987 /* SwiftyJSON */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		FA408670AC8170B404FA24474717A987 /* SwiftyJSON */ = {
+			isa = PBXGroup;
+			children = (
+				26FAEC29FEE444BA89A4863A10600D10 /* SwiftyJSON.swift */,
+				DB68DC6E62B6C5C1E0CFC75AEC2507F9 /* Support Files */,
+			);
+			path = SwiftyJSON;
 			sourceTree = "<group>";
 		};
 		FA701E60A86B8FFEB932B1CA4D50CA04 /* Pods-Vietlott */ = {
@@ -166,50 +218,59 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		5A6B8AFD037D20501FCAF00055C38557 /* Headers */ = {
+		5EE8B9493C8215B525B07D1ABE51AAF3 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				155F1390079467C4AD9FA4916F5D736C /* SwiftyJSON-umbrella.h in Headers */,
+				78F5637D530CF28E706FF251A596F928 /* Pods-Vietlott-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		64534B774A8F7955746ABB33D9CB12D0 /* Headers */ = {
+		E7A6202B11B09B1B049D3FBA2ADB516A /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				343577C183BDFBE8455D898AC91803DD /* Pods-Vietlott-umbrella.h in Headers */,
+				DDD5D3D05708B975ADC9A330585CC346 /* ARSLineProgress-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FE6C306F1ABEF6725149EE8870EE1A2D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				11420064F689BDE6D33DA6409272E486 /* SwiftyJSON-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		939746F0189966C707ED03265D53D252 /* Pods-Vietlott */ = {
+		135843A7546810BA93C92EED86C1BF81 /* Pods-Vietlott */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = C713C820F0509A92CA2281172026D7FC /* Build configuration list for PBXNativeTarget "Pods-Vietlott" */;
+			buildConfigurationList = FD29AC8B5406EFEF9E7142891C8335B0 /* Build configuration list for PBXNativeTarget "Pods-Vietlott" */;
 			buildPhases = (
-				9B1CD9758978A0E263A13082D5F36837 /* Sources */,
-				99B2A58D2A1D3FCC693FA036C64EEC04 /* Frameworks */,
-				64534B774A8F7955746ABB33D9CB12D0 /* Headers */,
+				A0742E37ACF9A577D08BBF84A27EFC56 /* Sources */,
+				D6E0C3CEE11467A1E430AA98A1CAD27A /* Frameworks */,
+				5EE8B9493C8215B525B07D1ABE51AAF3 /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				7467759FD0BABC3FE8CFD1080D13DF19 /* PBXTargetDependency */,
+				31C3308D57A8B95408D5133A7044716C /* PBXTargetDependency */,
+				0126047C6367CCB9D545F2120B9A7B89 /* PBXTargetDependency */,
 			);
 			name = "Pods-Vietlott";
 			productName = "Pods-Vietlott";
-			productReference = C450DC7051D98686131C09867B59F9C1 /* Pods_Vietlott.framework */;
+			productReference = 88D9330CE20F86D2CDF0EAC34EC8FE98 /* Pods_Vietlott.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		AEC6670059EDB27F8DC348B116AB4C15 /* SwiftyJSON */ = {
+		75859A7DB0012347B4F3B86A4F64195A /* SwiftyJSON */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 42DAD78046E10B59D614EEE621D99F5C /* Build configuration list for PBXNativeTarget "SwiftyJSON" */;
+			buildConfigurationList = 6F1ED756CA43E25597071B302C521938 /* Build configuration list for PBXNativeTarget "SwiftyJSON" */;
 			buildPhases = (
-				D4468C83A1CF42FD8C517CB09FE7436C /* Sources */,
-				3F4C45F15AE5F3653A49379062DBDF7A /* Frameworks */,
-				5A6B8AFD037D20501FCAF00055C38557 /* Headers */,
+				403CB4CEB5B95C0D984A06413958E698 /* Sources */,
+				54B4404879B912F912921635C191302C /* Frameworks */,
+				FE6C306F1ABEF6725149EE8870EE1A2D /* Headers */,
 			);
 			buildRules = (
 			);
@@ -217,7 +278,24 @@
 			);
 			name = SwiftyJSON;
 			productName = SwiftyJSON;
-			productReference = 283AD4CEA2E609531018F9F63B3AC7CC /* SwiftyJSON.framework */;
+			productReference = A0104DAE560441D1CF168C39FE4DB8AA /* SwiftyJSON.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		BF7493D8461B38FAFB0814FC48AABCB8 /* ARSLineProgress */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AA8BD5C692F6C5FCC984005B9B48E659 /* Build configuration list for PBXNativeTarget "ARSLineProgress" */;
+			buildPhases = (
+				EB00E6B3C326322037C3B6E23A258031 /* Sources */,
+				0C047F0745D37EABB6BCFA797CCDC8D5 /* Frameworks */,
+				E7A6202B11B09B1B049D3FBA2ADB516A /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ARSLineProgress;
+			productName = ARSLineProgress;
+			productReference = E96E6F4CFD35E8B6CFCA095926340E7C /* ARSLineProgress.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -237,147 +315,63 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = 1C45A3E85104E89A00CFB7E5A12842CB /* Products */;
+			productRefGroup = 38A3B5E45F4EC5F7C42BF88641D48E68 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				939746F0189966C707ED03265D53D252 /* Pods-Vietlott */,
-				AEC6670059EDB27F8DC348B116AB4C15 /* SwiftyJSON */,
+				BF7493D8461B38FAFB0814FC48AABCB8 /* ARSLineProgress */,
+				135843A7546810BA93C92EED86C1BF81 /* Pods-Vietlott */,
+				75859A7DB0012347B4F3B86A4F64195A /* SwiftyJSON */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		9B1CD9758978A0E263A13082D5F36837 /* Sources */ = {
+		403CB4CEB5B95C0D984A06413958E698 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0C9124D1F2F889E9C918085612B0217E /* Pods-Vietlott-dummy.m in Sources */,
+				6245AE713E8DB46306C782EE1F9B7A4D /* SwiftyJSON-dummy.m in Sources */,
+				33128D23650246A70299FA7DB6FFC6C0 /* SwiftyJSON.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D4468C83A1CF42FD8C517CB09FE7436C /* Sources */ = {
+		A0742E37ACF9A577D08BBF84A27EFC56 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				504C3E87D8FDAE7CF6FD7C77CBFB3F62 /* SwiftyJSON-dummy.m in Sources */,
-				4227B863B17D9647E39CF6F2A1BFFDA8 /* SwiftyJSON.swift in Sources */,
+				7271137060A8D27D195D4B8AAF0FC379 /* Pods-Vietlott-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EB00E6B3C326322037C3B6E23A258031 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E91726B4A50D4E1E45B21BE7DFF7F049 /* ARSLineProgress-dummy.m in Sources */,
+				AA0005A3E9A3A514ADFB34F9E534B043 /* ARSLineProgress.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		7467759FD0BABC3FE8CFD1080D13DF19 /* PBXTargetDependency */ = {
+		0126047C6367CCB9D545F2120B9A7B89 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = SwiftyJSON;
-			target = AEC6670059EDB27F8DC348B116AB4C15 /* SwiftyJSON */;
-			targetProxy = 64E50B294030EBCBABBD2886CD3808CA /* PBXContainerItemProxy */;
+			target = 75859A7DB0012347B4F3B86A4F64195A /* SwiftyJSON */;
+			targetProxy = C9073E0C2C91E0DD0FBEE6F5C29FB540 /* PBXContainerItemProxy */;
+		};
+		31C3308D57A8B95408D5133A7044716C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = ARSLineProgress;
+			target = BF7493D8461B38FAFB0814FC48AABCB8 /* ARSLineProgress */;
+			targetProxy = A4365507042A6110BA5EB018A20B3544 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		62AD31E3D424CC35195969A4AC0DCC8E /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = DA3682E51CD81FE85B8F8762E25CF3D2 /* Pods-Vietlott.release.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-Vietlott/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-Vietlott/Pods-Vietlott.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_Vietlott;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		6AC1B893249F49AE7AB34C4AD9617627 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2E7F7C62EE34D2D271E6E1234A2002B2 /* SwiftyJSON.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/SwiftyJSON/SwiftyJSON-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/SwiftyJSON/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/SwiftyJSON/SwiftyJSON.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = SwiftyJSON;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 3.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		A2568EB6AE77A9CED492D034E9529AAC /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2E7F7C62EE34D2D271E6E1234A2002B2 /* SwiftyJSON.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/SwiftyJSON/SwiftyJSON-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/SwiftyJSON/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/SwiftyJSON/SwiftyJSON.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = SwiftyJSON;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 3.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		CACE7C8415F53E79F07C6BBE57F0F61D /* Debug */ = {
+		12914D756594D15C6F2CA12FE5F89F1B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -413,7 +407,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				ONLY_ACTIVE_ARCH = YES;
 				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
 				STRIP_INSTALLED_PRODUCT = NO;
@@ -421,9 +415,76 @@
 			};
 			name = Debug;
 		};
-		D96524F48D349221B8C70237319E0B39 /* Debug */ = {
+		4515D9B52D6747C794EA12B93199924B /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C00EE09754ECAAE58DC07484A71216A7 /* Pods-Vietlott.debug.xcconfig */;
+			baseConfigurationReference = DA3682E51CD81FE85B8F8762E25CF3D2 /* Pods-Vietlott.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-Vietlott/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Vietlott/Pods-Vietlott.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_Vietlott;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		840FC5CB7B92138252E2D67FE6ACABC9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D623BAFEC448899E0C6D085158014689 /* ARSLineProgress.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/ARSLineProgress/ARSLineProgress-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ARSLineProgress/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/ARSLineProgress/ARSLineProgress.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = ARSLineProgress;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		AEEE8BEEF2AD1D97AB0E51706B493D3B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CD0907F429C069930F32C2008216CDEB /* SwiftyJSON.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -436,28 +497,90 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-Vietlott/Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/SwiftyJSON/SwiftyJSON-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwiftyJSON/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-Vietlott/Pods-Vietlott.modulemap";
+				MODULEMAP_FILE = "Target Support Files/SwiftyJSON/SwiftyJSON.modulemap";
 				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_Vietlott;
+				PRODUCT_NAME = SwiftyJSON;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
 		};
-		ED4FC68AB2A4E06C718CFF338F6F156B /* Release */ = {
+		C74AAB05360CDE2125B2C0159E2C4B59 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CD0907F429C069930F32C2008216CDEB /* SwiftyJSON.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/SwiftyJSON/SwiftyJSON-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwiftyJSON/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SwiftyJSON/SwiftyJSON.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = SwiftyJSON;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		DAA85B561B6C7F0FFA21F0F2EED0F16E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D623BAFEC448899E0C6D085158014689 /* ARSLineProgress.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/ARSLineProgress/ARSLineProgress-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ARSLineProgress/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/ARSLineProgress/ARSLineProgress.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = ARSLineProgress;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		E72E7977875C2D251FC62736BBDDC389 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -489,7 +612,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
 				STRIP_INSTALLED_PRODUCT = NO;
 				SYMROOT = "${SRCROOT}/../build";
@@ -497,32 +620,77 @@
 			};
 			name = Release;
 		};
+		F50C163FCD61D04E0118D4A493E0D89F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C00EE09754ECAAE58DC07484A71216A7 /* Pods-Vietlott.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-Vietlott/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Vietlott/Pods-Vietlott.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_Vietlott;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
 		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				CACE7C8415F53E79F07C6BBE57F0F61D /* Debug */,
-				ED4FC68AB2A4E06C718CFF338F6F156B /* Release */,
+				12914D756594D15C6F2CA12FE5F89F1B /* Debug */,
+				E72E7977875C2D251FC62736BBDDC389 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		42DAD78046E10B59D614EEE621D99F5C /* Build configuration list for PBXNativeTarget "SwiftyJSON" */ = {
+		6F1ED756CA43E25597071B302C521938 /* Build configuration list for PBXNativeTarget "SwiftyJSON" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				A2568EB6AE77A9CED492D034E9529AAC /* Debug */,
-				6AC1B893249F49AE7AB34C4AD9617627 /* Release */,
+				AEEE8BEEF2AD1D97AB0E51706B493D3B /* Debug */,
+				C74AAB05360CDE2125B2C0159E2C4B59 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		C713C820F0509A92CA2281172026D7FC /* Build configuration list for PBXNativeTarget "Pods-Vietlott" */ = {
+		AA8BD5C692F6C5FCC984005B9B48E659 /* Build configuration list for PBXNativeTarget "ARSLineProgress" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				D96524F48D349221B8C70237319E0B39 /* Debug */,
-				62AD31E3D424CC35195969A4AC0DCC8E /* Release */,
+				DAA85B561B6C7F0FFA21F0F2EED0F16E /* Debug */,
+				840FC5CB7B92138252E2D67FE6ACABC9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FD29AC8B5406EFEF9E7142891C8335B0 /* Build configuration list for PBXNativeTarget "Pods-Vietlott" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F50C163FCD61D04E0118D4A493E0D89F /* Debug */,
+				4515D9B52D6747C794EA12B93199924B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

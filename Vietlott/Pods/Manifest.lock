@@ -1,12 +1,15 @@
 PODS:
+  - ARSLineProgress (2.0.0)
   - SwiftyJSON (3.1.0)
 
 DEPENDENCIES:
+  - ARSLineProgress (~> 2.0)
   - SwiftyJSON (~> 3.1)
 
 SPEC CHECKSUMS:
+  ARSLineProgress: a20f4093d44802184cbc135bcd56259d6f12d002
   SwiftyJSON: 29b9f2a64f118c07e691667c2ba1efe536acfe0b
 
-PODFILE CHECKSUM: 98bc523aa7dce3cf6a243cba9b24b98fb645de5e
+PODFILE CHECKSUM: ba3defbec9c9703adfb17b72eb13f81537906971
 
 COCOAPODS: 1.1.0.rc.2
