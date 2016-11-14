@@ -65,22 +65,22 @@
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="90"/>
                                         <subviews>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="auto_mode" translatesAutoresizingMaskIntoConstraints="NO" id="yu8-Le-8Rd">
-                                                <rect key="frame" x="36" y="67" width="15" height="15"/>
+                                                <rect key="frame" x="39.5" y="62" width="20" height="20"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="width" constant="15" id="MOX-jz-gQr"/>
+                                                    <constraint firstAttribute="width" constant="20" id="MOX-jz-gQr"/>
                                                     <constraint firstAttribute="width" secondItem="yu8-Le-8Rd" secondAttribute="height" multiplier="1:1" id="bAK-ET-aD6"/>
                                                 </constraints>
                                             </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Auto" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uKZ-Up-gLP">
-                                                <rect key="frame" x="8" y="66" width="28" height="16"/>
-                                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="13"/>
+                                                <rect key="frame" x="8" y="64" width="31.5" height="18"/>
+                                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="15"/>
                                                 <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="battery" translatesAutoresizingMaskIntoConstraints="NO" id="5ga-nT-Zyj">
-                                                <rect key="frame" x="342" y="68" width="25" height="14"/>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="camera_len" translatesAutoresizingMaskIntoConstraints="NO" id="5ga-nT-Zyj">
+                                                <rect key="frame" x="332" y="62.5" width="35" height="19.5"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="width" constant="25" id="g0e-Ag-SxU"/>
+                                                    <constraint firstAttribute="width" constant="35" id="g0e-Ag-SxU"/>
                                                     <constraint firstAttribute="width" secondItem="5ga-nT-Zyj" secondAttribute="height" multiplier="16:9" id="plZ-wW-eEA"/>
                                                 </constraints>
                                             </imageView>
@@ -497,7 +497,7 @@
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="1576.8" y="123.68815592203899"/>
+            <point key="canvasLocation" x="1535" y="124"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="XgV-UP-AtQ">
@@ -520,7 +520,7 @@
     </scenes>
     <resources>
         <image name="auto_mode" width="50" height="50"/>
-        <image name="battery" width="100" height="57"/>
+        <image name="camera_len" width="64" height="64"/>
         <image name="circle_blue" width="190" height="190"/>
         <image name="circle_gray" width="190" height="190"/>
         <image name="close" width="415" height="415"/>
