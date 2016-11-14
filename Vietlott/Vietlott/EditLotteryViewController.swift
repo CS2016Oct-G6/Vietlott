@@ -20,6 +20,7 @@ class EditLotteryViewController: UIViewController {
     @IBOutlet weak var rightPlusViewContraint: NSLayoutConstraint!
     @IBOutlet weak var bottomPlusViewConstraint: NSLayoutConstraint!
     
+    var isEdit = false
     
     var lotteryArray = [String]()
     
@@ -76,7 +77,9 @@ class EditLotteryViewController: UIViewController {
     }
     
     @IBAction func hideKeyboardOnTap(_ sender: UITapGestureRecognizer) {
-        hideInput()
+        if isEdit {
+            hideInput()
+        }
     }
     
     @IBAction func dismissView(_ sender: Any) {
@@ -92,6 +95,8 @@ class EditLotteryViewController: UIViewController {
     // MARK: animation show/hide input
     
     func showInput() {
+        isEdit = true
+        
         UIView.animate(withDuration: 1, animations: {() -> Void in
             self.plusView.alpha = 0
             self.leftPlusViewConstraint.constant -= Constance.moveEditCellValue
@@ -104,6 +109,8 @@ class EditLotteryViewController: UIViewController {
     }
     
     func hideInput() {
+        isEdit = false
+        
         lotteryTextField.text = ""
         UIView.animate(withDuration: 1, animations: {
             self.plusView.alpha = 1
