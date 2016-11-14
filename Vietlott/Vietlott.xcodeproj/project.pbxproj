@@ -192,7 +192,6 @@
 				TargetAttributes = {
 					F43D85601DD568A6005648DA = {
 						CreatedOnToolsVersion = 8.1;
-						DevelopmentTeam = 5TJXL29536;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -416,7 +415,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 5TJXL29536;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = Vietlott/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = congtruong.Vietlott;
@@ -431,7 +430,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 5TJXL29536;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = Vietlott/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = congtruong.Vietlott;
