@@ -14,5 +14,5 @@ class Constance {
     static let blueColor = UIColor(colorLiteralRed: 19.0, green: 119.0, blue: 223.0, alpha: 1)
     static let borderWidth = CGFloat(1)
     
-    static var lotteryArrayHistory = [String]()
+    static var lotteryArrayHistory = [Lottery]()
 }

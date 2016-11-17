@@ -41,6 +41,8 @@ extension ProfileViewController: UITableViewDelegate, UITableViewDataSource {
         cell.hourLabel.text = "11:20 pm"
         cell.dateLabel.text = "20/11/2011"
         
+        cell.selectionStyle = .none
+        
         return cell
     }
 }

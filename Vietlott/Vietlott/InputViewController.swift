@@ -91,13 +91,20 @@ class ViewController: UIViewController, AVCapturePhotoCaptureDelegate {
             // Base64 encode the image and create the request
             let googleVision = GoogleVision()
             let binaryImageData = googleVision.base64EncodeImage(image)
-            googleVision.createRequest(with: binaryImageData, handleSuccess: { (lotteryArray: [String]) in
+            googleVision.createRequest(with: binaryImageData, handleSuccess: { (lotteryStringArray: [String]) in
                 // hide progress
                 ARSLineProgress.hide()
                 
                 // present edit view
                 let storyboart = UIStoryboard(name: "Main", bundle: nil)
                 let editVC = storyboart.instantiateViewController(withIdentifier: "editlotteryViewController") as! EditLotteryViewController
+                
+                // create array lottery
+                var lotteryArray = [Lottery]()
+                let timeCreate = Date().toString()
+                for item in lotteryStringArray {
+                    lotteryArray.append(Lottery(lottery: item, time: timeCreate))
+                }
 
                 // set data for view
                 editVC.lotteryArray = lotteryArray

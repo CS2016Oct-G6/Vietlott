@@ -12,17 +12,13 @@ class EditLotteryViewController: UIViewController {
     
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var addView: UIView!
-    @IBOutlet weak var plusView: UIView!
     @IBOutlet weak var lotteryTextField: UITextField!
     
     @IBOutlet weak var bottomMainView: NSLayoutConstraint!
-    @IBOutlet weak var leftPlusViewConstraint: NSLayoutConstraint!
-    @IBOutlet weak var rightPlusViewContraint: NSLayoutConstraint!
-    @IBOutlet weak var bottomPlusViewConstraint: NSLayoutConstraint!
     
     var isEdit = false
     
-    var lotteryArray = [String]()
+    var lotteryArray = [Lottery]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -65,7 +61,7 @@ class EditLotteryViewController: UIViewController {
                 return
             }
             
-            lotteryArray.insert(text, at: 0)
+            lotteryArray.insert(Lottery(lottery: text, time: Date().toString()), at: 0)
             tableView.reloadData()
             
             hideInput()
@@ -96,12 +92,10 @@ class EditLotteryViewController: UIViewController {
     
     func showInput() {
         isEdit = true
+        addView.isHidden = false
         
-        UIView.animate(withDuration: 1, animations: {() -> Void in
-            self.plusView.alpha = 0
-            self.leftPlusViewConstraint.constant -= Constance.moveEditCellValue
-            self.rightPlusViewContraint.constant -= Constance.moveEditCellValue
-            self.bottomPlusViewConstraint.constant += Constance.moveEditCellValue
+        UIView.animate(withDuration: 0.5, animations: {() -> Void in
+            self.addView.alpha = 1.0
         }, completion: {(e: Bool) -> Void in
             // show keyboard
             self.lotteryTextField.becomeFirstResponder()
@@ -112,11 +106,10 @@ class EditLotteryViewController: UIViewController {
         isEdit = false
         
         lotteryTextField.text = ""
-        UIView.animate(withDuration: 1, animations: {
-            self.plusView.alpha = 1
-            self.leftPlusViewConstraint.constant += Constance.moveEditCellValue
-            self.rightPlusViewContraint.constant += Constance.moveEditCellValue
-            self.bottomPlusViewConstraint.constant -= Constance.moveEditCellValue
+        UIView.animate(withDuration: 0.5, animations: {() -> Void in
+            self.addView.alpha = 0.0
+        }, completion: {(Bool) -> Void in
+            self.addView.isHidden = true
         })
         
         // hide keyboard
@@ -152,11 +145,11 @@ extension EditLotteryViewController: UITableViewDelegate, UITableViewDataSource 
     }
     
     func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
-        return 1
+        return 5
     }
     
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
-        let headerView = UIView(frame: CGRect(x: 0, y: 0, width: tableView.bounds.size.width, height: 1))
+        let headerView = UIView(frame: CGRect(x: 0, y: 0, width: tableView.bounds.size.width, height: 5))
         headerView.backgroundColor = UIColor.clear
         
         return headerView

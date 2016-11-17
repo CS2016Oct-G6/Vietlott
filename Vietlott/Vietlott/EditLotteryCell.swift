@@ -15,6 +15,7 @@ import UIKit
 class EditLotteryCell: UITableViewCell {
 
     @IBOutlet weak var lotteryNumberLabel: UILabel!
+    @IBOutlet weak var timeLabel: UILabel!
     @IBOutlet weak var dateLabel: UILabel!
     
     @IBOutlet weak var editButtonView: UIView!
@@ -22,12 +23,12 @@ class EditLotteryCell: UITableViewCell {
     
     weak var delegate: EditLotteryCellDelegate?
     
-    var lottery: String! {
+    var lottery: Lottery! {
         didSet {
-            lotteryNumberLabel.text = lottery.toLotteryString()
-            // get system time
-            let date = Date()
-            dateLabel.text = date.toString()
+            lotteryNumberLabel.text = lottery.lotteryNumber!.toLotteryString()
+            var myStringArr = lottery.timeCreate!.components(separatedBy: " ")
+            dateLabel.text = myStringArr[1]
+            timeLabel.text = myStringArr[0]
         }
     }
     
