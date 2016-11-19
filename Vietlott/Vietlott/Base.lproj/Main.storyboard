@@ -632,6 +632,7 @@
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                     </subviews>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     <constraints>
                                                         <constraint firstItem="o9s-Qp-Dgs" firstAttribute="leading" secondItem="dmm-WU-TyJ" secondAttribute="leading" id="0hk-Eh-GwR"/>
                                                         <constraint firstAttribute="bottom" secondItem="JGd-g9-yoD" secondAttribute="bottom" id="1T1-eX-xeQ"/>
@@ -1088,6 +1089,10 @@
         <scene sceneID="95l-iH-FJp">
             <objects>
                 <viewController id="4PU-4W-fNr" customClass="ChartViewController" customModule="Vietlott" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="o7B-O4-4VG"/>
+                        <viewControllerLayoutGuide type="bottom" id="0U4-cd-5l2"/>
+                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="rl4-sJ-Niv">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="265.5"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

@@ -83,7 +83,21 @@ class ProfileViewController: UIViewController {
             // change image button to list
             sender.setImage(UIImage(named: "List"), for: .normal)
             
+            containerChartView.alpha = 0.0
             containerChartView.isHidden = false
+            
+            UIView.animate(withDuration: 1, animations: { 
+                self.tableView.center.x += 50
+            }, completion: { (animation) in
+                self.tableView.center.x -= 50
+            })
+            
+            UIView.animate(withDuration: 1, animations: { 
+                self.containerChartView.alpha = 1
+            }, completion: { (animation) in
+                
+            })
+            
             
             // change state
             isTableView = false
@@ -91,7 +105,18 @@ class ProfileViewController: UIViewController {
             // change image button to chart
             sender.setImage(UIImage(named: "Combo Chart"), for: .normal)
             
-            containerChartView.isHidden = true
+            UIView.animate(withDuration: 1, animations: {
+                self.containerChartView.center.x += 50
+            }, completion: { (animation) in
+                self.containerChartView.center.x -= 50
+            })
+            
+            UIView.animate(withDuration: 1, animations: {
+                self.containerChartView.alpha = 0
+            }, completion: { (animation) in
+                self.containerChartView.isHidden = true
+            })
+            
             
             // change state
             isTableView = true
