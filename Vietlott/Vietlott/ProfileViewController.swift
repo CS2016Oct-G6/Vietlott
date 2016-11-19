@@ -12,11 +12,23 @@ class ProfileViewController: UIViewController {
     
     @IBOutlet weak var tableView: UITableView!
     
+    @IBOutlet weak var coverImageView: UIImageView!
+    @IBOutlet weak var avatarImageView: UIImageView!
+    @IBOutlet weak var nameLabel: UILabel!
+    @IBOutlet weak var emailLabel: UILabel!
+    
     var lotteryArray = [Lottery]()
+    var isTableView = true
     
     override func viewWillAppear(_ animated: Bool) {
-        for _ in 1...10 {
-            lotteryArray.append(Lottery(lottery: "12 34 56 78 90 19", time: "20/11/2016 11:20"))
+        if let name = Constance.userInfo.name {
+            nameLabel.text = name
+        }
+        if let email = Constance.userInfo.email {
+            emailLabel.text = email
+        }
+        if let avatar = Constance.userInfo.avatar {
+            
         }
     }
 
@@ -26,6 +38,34 @@ class ProfileViewController: UIViewController {
         // Do any additional setup after loading the view.
         tableView.delegate = self
         tableView.dataSource = self
+        
+        lotteryArray = Constance.lotteryArrayHistory
+    }
+    
+    @IBAction func showInputView(_ sender: Any) {
+        let storyboart = UIStoryboard(name: "Main", bundle: nil)
+        let editVC = storyboart.instantiateViewController(withIdentifier: "editlotteryViewController") as! EditLotteryViewController
+        
+        // open view
+        editVC.modalPresentationStyle = .overFullScreen;
+        editVC.view.backgroundColor = UIColor.clear
+        self.present(editVC, animated: true, completion: nil)
+    }
+    
+    @IBAction func changeViewHistoryLottery(_ sender: UIButton) {
+        if isTableView {
+            // change image button to list
+            sender.setImage(UIImage(named: "List"), for: .normal)
+            
+            // change state
+            isTableView = false
+        } else {
+            // change image button to chart
+            sender.setImage(UIImage(named: "Combo Chart"), for: .normal)
+            
+            // change state
+            isTableView = true
+        }
     }
 }
 
@@ -38,9 +78,6 @@ extension ProfileViewController: UITableViewDelegate, UITableViewDataSource {
         let cell = tableView.dequeueReusableCell(withIdentifier: "historyCell", for: indexPath) as! HistoryCell
         
         cell.lottery = lotteryArray[indexPath.row]
-        cell.hourLabel.text = "11:20 pm"
-        cell.dateLabel.text = "20/11/2011"
-        
         cell.selectionStyle = .none
         
         return cell

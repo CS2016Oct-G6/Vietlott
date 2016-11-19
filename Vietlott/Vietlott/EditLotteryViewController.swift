@@ -64,7 +64,7 @@ class EditLotteryViewController: UIViewController {
             lotteryArray.insert(Lottery(lottery: text, time: Date().toString()), at: 0)
             tableView.reloadData()
             
-            hideInput()
+            lotteryTextField.text = ""
         }
     }
     

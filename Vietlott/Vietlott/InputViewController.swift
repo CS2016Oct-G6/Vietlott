@@ -52,16 +52,22 @@ class ViewController: UIViewController, AVCapturePhotoCaptureDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        var lotteryArray = [Lottery]()
+        for _ in 1...10 {
+            lotteryArray.append(Lottery(lottery: "123456789019", time: "11:20 20/11/2016"))
+        }
+        
+        Constance.lotteryArrayHistory = lotteryArray
     }
 
     @IBAction func manualInput(_ sender: UIButton) {
         let storyboart = UIStoryboard(name: "Main", bundle: nil)
-        let replyVC = storyboart.instantiateViewController(withIdentifier: "editlotteryViewController") as! EditLotteryViewController
+        let editVC = storyboart.instantiateViewController(withIdentifier: "editlotteryViewController") as! EditLotteryViewController
         
         // open view
-        replyVC.modalPresentationStyle = .overFullScreen;
-        replyVC.view.backgroundColor = UIColor.clear
-        self.present(replyVC, animated: true, completion: nil)
+        editVC.modalPresentationStyle = .overFullScreen;
+        editVC.view.backgroundColor = UIColor.clear
+        self.present(editVC, animated: true, completion: nil)
     }
 
     @IBAction func takePhoto(_ sender: UIButton) {

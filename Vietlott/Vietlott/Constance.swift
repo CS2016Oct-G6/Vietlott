@@ -15,4 +15,8 @@ class Constance {
     static let borderWidth = CGFloat(1)
     
     static var lotteryArrayHistory = [Lottery]()
+    static var userInfo = User(name: "Christopher Haminton", email: "christopher@email.com", avatar: nil)
+    
+    static var lotteryWin = "22 46 77 98 44 08"
+    
 }

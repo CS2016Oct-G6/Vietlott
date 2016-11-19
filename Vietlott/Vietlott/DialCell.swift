@@ -1,5 +1,5 @@
 //
-//  HistoryCell.swift
+//  DialCell.swift
 //  Vietlott
 //
 //  Created by CongTruong on 11/17/16.
@@ -8,8 +8,8 @@
 
 import UIKit
 
-class HistoryCell: UITableViewCell {
-    
+class DialCell: UITableViewCell {
+
     @IBOutlet weak var hourLabel: UILabel!
     @IBOutlet weak var lotteryNumberLabel: UILabel!
     @IBOutlet weak var dateLabel: UILabel!
@@ -22,7 +22,7 @@ class HistoryCell: UITableViewCell {
             hourLabel.text = myStringArr[0]
         }
     }
-
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
