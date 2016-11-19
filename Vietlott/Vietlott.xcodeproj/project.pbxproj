@@ -27,7 +27,55 @@
 		F49EDAC91DD8AF3400767F72 /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F49EDAC71DD8AF3400767F72 /* StringExtension.swift */; };
 		F49EDACB1DD8AF4000767F72 /* EditLotteryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F49EDACA1DD8AF4000767F72 /* EditLotteryCell.swift */; };
 		F49EDACD1DD8AF5800767F72 /* Constance.swift in Sources */ = {isa = PBXBuildFile; fileRef = F49EDACC1DD8AF5800767F72 /* Constance.swift */; };
+		F4E2FF311DE0A19700F403C3 /* Charts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F4E2FF2C1DE0A17600F403C3 /* Charts.framework */; };
+		F4E2FF321DE0A19700F403C3 /* Charts.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F4E2FF2C1DE0A17600F403C3 /* Charts.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		F4E2FF371DE0A1F100F403C3 /* ChartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4E2FF361DE0A1F100F403C3 /* ChartViewController.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F4E2FF2B1DE0A17600F403C3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F4E2FF251DE0A17600F403C3 /* Charts.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 06165F241D8110E600722320;
+			remoteInfo = Charts;
+		};
+		F4E2FF2D1DE0A17600F403C3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F4E2FF251DE0A17600F403C3 /* Charts.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 06B120D51D811E6200D14B02;
+			remoteInfo = ChartsRealm;
+		};
+		F4E2FF2F1DE0A17600F403C3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F4E2FF251DE0A17600F403C3 /* Charts.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 06165F2E1D8110E600722320;
+			remoteInfo = ChartsTests;
+		};
+		F4E2FF331DE0A19700F403C3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F4E2FF251DE0A17600F403C3 /* Charts.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 06165F231D8110E600722320;
+			remoteInfo = Charts;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		F4E2FF351DE0A19700F403C3 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				F4E2FF321DE0A19700F403C3 /* Charts.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		0865DEDC8AD5B52D584B3324 /* Pods_Vietlott.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Vietlott.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -54,6 +102,8 @@
 		F49EDAC71DD8AF3400767F72 /* StringExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
 		F49EDACA1DD8AF4000767F72 /* EditLotteryCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditLotteryCell.swift; sourceTree = "<group>"; };
 		F49EDACC1DD8AF5800767F72 /* Constance.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constance.swift; sourceTree = "<group>"; };
+		F4E2FF251DE0A17600F403C3 /* Charts.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Charts.xcodeproj; path = "Charts-master/Charts.xcodeproj"; sourceTree = SOURCE_ROOT; };
+		F4E2FF361DE0A1F100F403C3 /* ChartViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChartViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +112,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CF008EF17926B510E8255CF7 /* Pods_Vietlott.framework in Frameworks */,
+				F4E2FF311DE0A19700F403C3 /* Charts.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -116,6 +167,7 @@
 				F43D85681DD568A6005648DA /* Main.storyboard */,
 				F43D856E1DD568A6005648DA /* Assets.xcassets */,
 				F43D856B1DD568A6005648DA /* Vietlott.xcdatamodeld */,
+				F4E2FF251DE0A17600F403C3 /* Charts.xcodeproj */,
 			);
 			path = Vietlott;
 			sourceTree = "<group>";
@@ -137,6 +189,7 @@
 				F44365FD1DDCC6B400D854B9 /* ProfileViewController.swift */,
 				F475CB601DDE0AC50048AD30 /* DialViewController.swift */,
 				F475CB641DDE0E560048AD30 /* HomeViewController.swift */,
+				F4E2FF361DE0A1F100F403C3 /* ChartViewController.swift */,
 			);
 			name = ViewController;
 			sourceTree = "<group>";
@@ -178,6 +231,16 @@
 			name = Support;
 			sourceTree = "<group>";
 		};
+		F4E2FF261DE0A17600F403C3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F4E2FF2C1DE0A17600F403C3 /* Charts.framework */,
+				F4E2FF2E1DE0A17600F403C3 /* ChartsRealm.framework */,
+				F4E2FF301DE0A17600F403C3 /* ChartsTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -191,10 +254,12 @@
 				F43D855F1DD568A6005648DA /* Resources */,
 				54F27936879C90B8453CF699 /* [CP] Embed Pods Frameworks */,
 				98B42FF090D9AF115ED77BC7 /* [CP] Copy Pods Resources */,
+				F4E2FF351DE0A19700F403C3 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				F4E2FF341DE0A19700F403C3 /* PBXTargetDependency */,
 			);
 			name = Vietlott;
 			productName = Vietlott;
@@ -229,12 +294,42 @@
 			mainGroup = F43D85581DD568A6005648DA;
 			productRefGroup = F43D85621DD568A6005648DA /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = F4E2FF261DE0A17600F403C3 /* Products */;
+					ProjectRef = F4E2FF251DE0A17600F403C3 /* Charts.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				F43D85601DD568A6005648DA /* Vietlott */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		F4E2FF2C1DE0A17600F403C3 /* Charts.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Charts.framework;
+			remoteRef = F4E2FF2B1DE0A17600F403C3 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		F4E2FF2E1DE0A17600F403C3 /* ChartsRealm.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = ChartsRealm.framework;
+			remoteRef = F4E2FF2D1DE0A17600F403C3 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		F4E2FF301DE0A17600F403C3 /* ChartsTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = ChartsTests.xctest;
+			remoteRef = F4E2FF2F1DE0A17600F403C3 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		F43D855F1DD568A6005648DA /* Resources */ = {
@@ -310,6 +405,7 @@
 				F49EDAC81DD8AF3400767F72 /* DateExtension.swift in Sources */,
 				F475CB651DDE0E560048AD30 /* HomeViewController.swift in Sources */,
 				F475CB611DDE0AC50048AD30 /* DialViewController.swift in Sources */,
+				F4E2FF371DE0A1F100F403C3 /* ChartViewController.swift in Sources */,
 				F43D856D1DD568A6005648DA /* Vietlott.xcdatamodeld in Sources */,
 				F49EDACD1DD8AF5800767F72 /* Constance.swift in Sources */,
 				F44366021DDCC9F000D854B9 /* Lottery.swift in Sources */,
@@ -322,6 +418,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F4E2FF341DE0A19700F403C3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Charts;
+			targetProxy = F4E2FF331DE0A19700F403C3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		F43D85681DD568A6005648DA /* Main.storyboard */ = {
