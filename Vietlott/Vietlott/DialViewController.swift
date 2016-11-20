@@ -40,7 +40,8 @@ class DialViewController: UIViewController {
         tableView.delegate = self
         tableView.dataSource = self
         
-        lotteryWinArray = Constance.lotteryWin.characters.split{$0 == " "}.map(String.init)
+        let loteryWin = Constance.lotteryWin.toLotteryString()
+        lotteryWinArray = loteryWin.characters.split{$0 == " "}.map(String.init)
         lotteryOfUserArray = Constance.lotteryArrayHistory
     }
 

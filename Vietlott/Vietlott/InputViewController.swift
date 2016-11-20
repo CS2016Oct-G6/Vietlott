@@ -54,13 +54,6 @@ class ViewController: UIViewController, AVCapturePhotoCaptureDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
-        var lotteryArray = [Lottery]()
-        for _ in 1...10 {
-            lotteryArray.append(Lottery(lottery: "123456789019", time: "11:20 20/11/2016"))
-        }
-        
-        Constance.lotteryArrayHistory = lotteryArray
         
         cameraView.addSubview(self.progressIndicatorView)
         progressIndicatorView.frame = cameraView.bounds

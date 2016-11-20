@@ -12,13 +12,22 @@ class HomeViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
+        getData()
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    
+    func getData() {
+        // 22 46 77 98 44 08
+        let lottery = ["224677984409", "054677912489", "224677984423", "224677986511", "224677774443",
+                       "224677234409", "221277984489", "224676584423", "224674584411", "224677932443",
+                       "224644984409", "224677984489", "224677984423", "224675674411", "224677674443",
+                       "224677984408"]
+        var lotteryArray = [Lottery]()
+        for i in 0..<16 {
+            lotteryArray.append(Lottery(lottery: lottery[i], time: "11:20 20/11/2016"))
+        }
+        
+        Constance.lotteryArrayHistory = lotteryArray
     }
     
     @IBAction func showDialView(_ sender: UIButton) {

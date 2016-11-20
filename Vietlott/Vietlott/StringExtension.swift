@@ -31,7 +31,7 @@ extension String {
     }
     
     func subString(from: Int, to: Int) -> String {
-        if from > 0 && to < self.characters.count {
+        if from >= 0 && to <= self.characters.count {
             let index1 = self.index(self.startIndex, offsetBy: from)
             let index2 = self.index(self.startIndex, offsetBy: to)
             

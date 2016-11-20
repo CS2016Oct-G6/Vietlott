@@ -11,12 +11,10 @@ import UIKit
 class Constance {
     static let moveEditCellValue = CGFloat(8)
     
-    static let blueColor = UIColor(colorLiteralRed: 19.0, green: 119.0, blue: 223.0, alpha: 1)
-    static let borderWidth = CGFloat(1)
-    
     static var lotteryArrayHistory = [Lottery]()
-    static var userInfo = User(name: "Christopher Haminton", email: "christopher@email.com", avatar: nil)
+    static var userInfo = User(name: "Christopher Haminton", email: "christopher@email.com", avatar: "https://scontent.fsgn2-1.fna.fbcdn.net/t31.0-8/13925588_945837242205476_4678938366094169673_o.jpg")
     
-    static var lotteryWin = "22 46 77 98 44 08"
+    static var lotteryWin = "224677984408"
     
+    static var unitsSold = [15.0, 4.0, 6.0, 3.0, 12.0, 16.0, 4.0, 18.0, 2.0, 4.0, 5.0, 4.0]
 }
