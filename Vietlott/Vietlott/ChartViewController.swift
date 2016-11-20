@@ -15,14 +15,14 @@ class ChartViewController: UIViewController {
     @IBOutlet weak var lineChartView: LineChartView!
     @IBOutlet weak var pieChartView: PieChartView!
     @IBOutlet weak var scrollView: UIScrollView!
-
+    
+    let unitsSold = [15.0, 4.0, 6.0, 3.0, 12.0, 16.0, 4.0, 18.0, 2.0, 4.0, 5.0, 4.0]
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        let unitsSold = [15.0, 4.0, 6.0, 3.0, 12.0, 16.0, 4.0, 18.0, 2.0, 4.0, 5.0, 4.0]
         
         setChart(values: unitsSold)
-        setChart2(values: unitsSold)
     }
 
     func setChart(values: [Double]) {
@@ -106,6 +106,8 @@ class ChartViewController: UIViewController {
         if sender.selectedSegmentIndex == 1 {
             scrollView.isHidden = false
             barChartView.isHidden = true
+            
+            setChart2(values: unitsSold)
         } else {
             scrollView.isHidden = true
             barChartView.isHidden = false

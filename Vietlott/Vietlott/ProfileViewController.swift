@@ -14,8 +14,8 @@ class ProfileViewController: UIViewController {
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var containerChartView: UIView!
     
-    @IBOutlet weak var coverImageView: UIImageView!
-    @IBOutlet weak var avatarImageView: UIImageView!
+    @IBOutlet weak var coverImageView: CustomImageView!
+    @IBOutlet weak var avatarImageView: CustomImageView!
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var emailLabel: UILabel!
     
@@ -29,33 +29,21 @@ class ProfileViewController: UIViewController {
         if let email = Constance.userInfo.email {
             emailLabel.text = email
         }
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        let urlCoverImage = URL(string: "http://www.tipinasia.info/wp-content/uploads/2015/03/s%C3%A9jour-au-Vietnam.jpg")
+        coverImageView.setImageWith(urlCoverImage!)
+        
+        
         if let avatar = Constance.userInfo.avatar {
-            let imageRequest = URLRequest(
-                url: URL(string: avatar)!,
-                cachePolicy: NSURLRequest.CachePolicy.reloadIgnoringLocalCacheData,
-                timeoutInterval: 10)
-            avatarImageView.setImageWith(
-                imageRequest,
-                placeholderImage: nil,
-                success: { (imageRequest, imageResponse, image) -> Void in
-                    
-                    // imageResponse will be nil if the image is cached
-                    if imageResponse != nil {
-                        //print("Image was NOT cached, fade in image")
-                        self.avatarImageView.alpha = 0.0
-                        self.avatarImageView.image = image
-                        UIView.animate(withDuration: 0.3, animations: { () -> Void in
-                            self.avatarImageView.alpha = 1.0
-                        })
-                    } else {
-                        //print("Image was cached so just update the image")
-                        self.avatarImageView.image = image
-                    }
-            },
-                failure: { (imageRequest, imageResponse, error) -> Void in
-                    // do something for the failure condition
-            })
+            let url = URL(string: avatar)
+            avatarImageView.setImageWith(url!)
+        } else {
+            let url = URL(string: "http://img3.tamtay.vn/files/photo2/2015/5/10/21/16218227/554f6d6d_125d8919__mg_1450.jpg")
+            avatarImageView.setImageWith(url!)
         }
+        
     }
 
     override func viewDidLoad() {
@@ -98,7 +86,6 @@ class ProfileViewController: UIViewController {
                 
             })
             
-            
             // change state
             isTableView = false
         } else {
@@ -116,7 +103,6 @@ class ProfileViewController: UIViewController {
             }, completion: { (animation) in
                 self.containerChartView.isHidden = true
             })
-            
             
             // change state
             isTableView = true

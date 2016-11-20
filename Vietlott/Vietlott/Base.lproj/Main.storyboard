@@ -552,7 +552,7 @@
                                             <constraint firstAttribute="height" constant="1" id="q4A-2b-vhJ"/>
                                         </constraints>
                                     </view>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg" translatesAutoresizingMaskIntoConstraints="NO" id="w3W-LH-tqR">
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg" translatesAutoresizingMaskIntoConstraints="NO" id="w3W-LH-tqR" customClass="CustomImageView" customModule="Vietlott" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="200"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="200" id="tWO-iV-iq6"/>
@@ -569,7 +569,7 @@
                                             <action selector="changeViewHistoryLottery:" destination="dAf-GI-zhG" eventType="touchUpInside" id="Sik-bK-YC0"/>
                                         </connections>
                                     </button>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="color" translatesAutoresizingMaskIntoConstraints="NO" id="1Gb-Hb-DFO">
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="color" translatesAutoresizingMaskIntoConstraints="NO" id="1Gb-Hb-DFO" customClass="CustomImageView" customModule="Vietlott" customModuleProvider="target">
                                         <rect key="frame" x="137" y="150" width="100" height="100"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="1Gb-Hb-DFO" secondAttribute="height" multiplier="1:1" id="OPp-Xh-0U3"/>
@@ -729,9 +729,9 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Profile" id="NsO-7X-ZAI"/>
                     <connections>
-                        <outlet property="avatarImageView" destination="1Gb-Hb-DFO" id="zuc-T8-BiB"/>
+                        <outlet property="avatarImageView" destination="1Gb-Hb-DFO" id="h7l-Hz-ycb"/>
                         <outlet property="containerChartView" destination="hiL-mR-zPR" id="V25-6Q-v2e"/>
-                        <outlet property="coverImageView" destination="w3W-LH-tqR" id="G1P-KG-Z9x"/>
+                        <outlet property="coverImageView" destination="w3W-LH-tqR" id="TuN-Xm-EH9"/>
                         <outlet property="emailLabel" destination="3Aa-dj-3ep" id="Gyk-ue-A6s"/>
                         <outlet property="nameLabel" destination="A65-qV-Et7" id="2g7-Hc-mG4"/>
                         <outlet property="tableView" destination="mvD-fT-ZfW" id="JIz-Ug-k66"/>

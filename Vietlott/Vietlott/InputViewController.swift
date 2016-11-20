@@ -15,6 +15,7 @@ class ViewController: UIViewController, AVCapturePhotoCaptureDelegate {
     var captureSession = AVCaptureSession()
     var sessingOutput = AVCapturePhotoOutput()
     var previewLayer = AVCaptureVideoPreviewLayer()
+    let progressIndicatorView = CircularLoaderView(frame: CGRect.zero)
 
     @IBOutlet weak var cameraView: UIView!
     
@@ -58,6 +59,19 @@ class ViewController: UIViewController, AVCapturePhotoCaptureDelegate {
         }
         
         Constance.lotteryArrayHistory = lotteryArray
+        
+        cameraView.addSubview(self.progressIndicatorView)
+        progressIndicatorView.frame = cameraView.bounds
+        progressIndicatorView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
+        
+        progressIndicatorView.progress = 0.0
+        UIView.animate(withDuration: 1, animations: {() -> Void in
+            // Update progress here
+            self.progressIndicatorView.progress = 1.0
+        }, completion: {(Bool) -> Void in
+            // Reveal image here
+            self.progressIndicatorView.reveal()
+        })
     }
 
     @IBAction func manualInput(_ sender: UIButton) {
