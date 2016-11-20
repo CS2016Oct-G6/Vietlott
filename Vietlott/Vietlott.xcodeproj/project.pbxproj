@@ -20,6 +20,7 @@
 		F475CB611DDE0AC50048AD30 /* DialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F475CB601DDE0AC50048AD30 /* DialViewController.swift */; };
 		F475CB631DDE0C420048AD30 /* DialCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F475CB621DDE0C420048AD30 /* DialCell.swift */; };
 		F475CB651DDE0E560048AD30 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F475CB641DDE0E560048AD30 /* HomeViewController.swift */; };
+		F48CC8761DE1F9100066FF3D /* CircleAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F48CC8751DE1F9100066FF3D /* CircleAnimator.swift */; };
 		F49EDAC11DD8AF1C00767F72 /* GoogleVision.swift in Sources */ = {isa = PBXBuildFile; fileRef = F49EDAC01DD8AF1C00767F72 /* GoogleVision.swift */; };
 		F49EDAC41DD8AF2900767F72 /* EditLotteryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F49EDAC21DD8AF2900767F72 /* EditLotteryViewController.swift */; };
 		F49EDAC51DD8AF2900767F72 /* InputViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F49EDAC31DD8AF2900767F72 /* InputViewController.swift */; };
@@ -111,6 +112,7 @@
 		F475CB601DDE0AC50048AD30 /* DialViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DialViewController.swift; sourceTree = "<group>"; };
 		F475CB621DDE0C420048AD30 /* DialCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DialCell.swift; sourceTree = "<group>"; };
 		F475CB641DDE0E560048AD30 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		F48CC8751DE1F9100066FF3D /* CircleAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircleAnimator.swift; sourceTree = "<group>"; };
 		F49EDAC01DD8AF1C00767F72 /* GoogleVision.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GoogleVision.swift; sourceTree = "<group>"; };
 		F49EDAC21DD8AF2900767F72 /* EditLotteryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditLotteryViewController.swift; sourceTree = "<group>"; };
 		F49EDAC31DD8AF2900767F72 /* InputViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InputViewController.swift; sourceTree = "<group>"; };
@@ -267,6 +269,7 @@
 			children = (
 				F44366011DDCC9F000D854B9 /* Lottery.swift */,
 				F41581321DDF3A1300757F07 /* User.swift */,
+				F48CC8751DE1F9100066FF3D /* CircleAnimator.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -498,6 +501,7 @@
 				F4C1BC6D1DE1649200F7069A /* SDWebImageCompat.m in Sources */,
 				F43D856D1DD568A6005648DA /* Vietlott.xcdatamodeld in Sources */,
 				F49EDACD1DD8AF5800767F72 /* Constance.swift in Sources */,
+				F48CC8761DE1F9100066FF3D /* CircleAnimator.swift in Sources */,
 				F4C1BC6C1DE1649200F7069A /* SDImageCache.m in Sources */,
 				F4C1BC6F1DE1649200F7069A /* SDWebImageDownloader.m in Sources */,
 				F4C1BC491DE1635700F7069A /* CustomImageView.swift in Sources */,

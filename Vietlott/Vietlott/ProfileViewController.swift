@@ -11,6 +11,8 @@ import AFNetworking
 
 class ProfileViewController: UIViewController {
     
+    var animator = CircleAnimator()
+    
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var containerChartView: UIView!
     
@@ -56,14 +58,13 @@ class ProfileViewController: UIViewController {
         lotteryArray = Constance.lotteryArrayHistory
     }
     
-    @IBAction func showInputView(_ sender: Any) {
-        let storyboart = UIStoryboard(name: "Main", bundle: nil)
-        let editVC = storyboart.instantiateViewController(withIdentifier: "editlotteryViewController") as! EditLotteryViewController
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let desVC = segue.destination
         
-        // open view
-        editVC.modalPresentationStyle = .overFullScreen;
-        editVC.view.backgroundColor = UIColor.clear
-        self.present(editVC, animated: true, completion: nil)
+        // 1. set delegate and custom presentationModelStyle
+        desVC.transitioningDelegate = animator
+        desVC.modalPresentationStyle = .custom
+        desVC.view.backgroundColor = UIColor.clear
     }
     
     @IBAction func changeViewHistoryLottery(_ sender: UIButton) {

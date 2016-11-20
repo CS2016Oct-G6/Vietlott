@@ -12,6 +12,8 @@ import ARSLineProgress
 
 class ViewController: UIViewController, AVCapturePhotoCaptureDelegate {
     
+    var animator = CircleAnimator()
+    
     var captureSession = AVCaptureSession()
     var sessingOutput = AVCapturePhotoOutput()
     var previewLayer = AVCaptureVideoPreviewLayer()
@@ -73,15 +75,14 @@ class ViewController: UIViewController, AVCapturePhotoCaptureDelegate {
             self.progressIndicatorView.reveal()
         })
     }
-
-    @IBAction func manualInput(_ sender: UIButton) {
-        let storyboart = UIStoryboard(name: "Main", bundle: nil)
-        let editVC = storyboart.instantiateViewController(withIdentifier: "editlotteryViewController") as! EditLotteryViewController
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let desVC = segue.destination
         
-        // open view
-        editVC.modalPresentationStyle = .overFullScreen;
-        editVC.view.backgroundColor = UIColor.clear
-        self.present(editVC, animated: true, completion: nil)
+        // 1. set delegate and custom presentationModelStyle
+        desVC.transitioningDelegate = animator
+        desVC.modalPresentationStyle = .custom
+        desVC.view.backgroundColor = UIColor.clear
     }
 
     @IBAction func takePhoto(_ sender: UIButton) {
@@ -130,8 +131,8 @@ class ViewController: UIViewController, AVCapturePhotoCaptureDelegate {
                 editVC.lotteryArray = lotteryArray
 
                 // open view
-                editVC.modalPresentationStyle = .overFullScreen;
-                editVC.view.backgroundColor = UIColor.clear
+                editVC.transitioningDelegate = self.animator
+                editVC.modalPresentationStyle = .custom
                 self.present(editVC, animated: true, completion: nil)
             })
         } else {
