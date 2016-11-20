@@ -222,6 +222,42 @@
 			path = Vietlott;
 			sourceTree = "<group>";
 		};
+		F48CC8791DE1FDCB0066FF3D /* File */ = {
+			isa = PBXGroup;
+			children = (
+				F4C1BC4E1DE1649200F7069A /* NSData+ImageContentType.h */,
+				F4C1BC4F1DE1649200F7069A /* NSData+ImageContentType.m */,
+				F4C1BC501DE1649200F7069A /* SDImageCache.h */,
+				F4C1BC511DE1649200F7069A /* SDImageCache.m */,
+				F4C1BC521DE1649200F7069A /* SDWebImageCompat.h */,
+				F4C1BC531DE1649200F7069A /* SDWebImageCompat.m */,
+				F4C1BC541DE1649200F7069A /* SDWebImageDecoder.h */,
+				F4C1BC551DE1649200F7069A /* SDWebImageDecoder.m */,
+				F4C1BC561DE1649200F7069A /* SDWebImageDownloader.h */,
+				F4C1BC571DE1649200F7069A /* SDWebImageDownloader.m */,
+				F4C1BC581DE1649200F7069A /* SDWebImageDownloaderOperation.h */,
+				F4C1BC591DE1649200F7069A /* SDWebImageDownloaderOperation.m */,
+				F4C1BC5A1DE1649200F7069A /* SDWebImageManager.h */,
+				F4C1BC5B1DE1649200F7069A /* SDWebImageManager.m */,
+				F4C1BC5C1DE1649200F7069A /* SDWebImageOperation.h */,
+				F4C1BC5D1DE1649200F7069A /* SDWebImagePrefetcher.h */,
+				F4C1BC5E1DE1649200F7069A /* SDWebImagePrefetcher.m */,
+				F4C1BC5F1DE1649200F7069A /* UIButton+WebCache.h */,
+				F4C1BC601DE1649200F7069A /* UIButton+WebCache.m */,
+				F4C1BC611DE1649200F7069A /* UIImage+GIF.h */,
+				F4C1BC621DE1649200F7069A /* UIImage+GIF.m */,
+				F4C1BC631DE1649200F7069A /* UIImage+MultiFormat.h */,
+				F4C1BC641DE1649200F7069A /* UIImage+MultiFormat.m */,
+				F4C1BC651DE1649200F7069A /* UIImageView+HighlightedWebCache.h */,
+				F4C1BC661DE1649200F7069A /* UIImageView+HighlightedWebCache.m */,
+				F4C1BC671DE1649200F7069A /* UIImageView+WebCache.h */,
+				F4C1BC681DE1649200F7069A /* UIImageView+WebCache.m */,
+				F4C1BC691DE1649200F7069A /* UIView+WebCacheOperation.h */,
+				F4C1BC6A1DE1649200F7069A /* UIView+WebCacheOperation.m */,
+			);
+			name = File;
+			sourceTree = "<group>";
+		};
 		F49EDABA1DD8AB7000767F72 /* Extension */ = {
 			isa = PBXGroup;
 			children = (
@@ -277,35 +313,7 @@
 		F49EDABF1DD8ABDD00767F72 /* Support */ = {
 			isa = PBXGroup;
 			children = (
-				F4C1BC4E1DE1649200F7069A /* NSData+ImageContentType.h */,
-				F4C1BC4F1DE1649200F7069A /* NSData+ImageContentType.m */,
-				F4C1BC501DE1649200F7069A /* SDImageCache.h */,
-				F4C1BC511DE1649200F7069A /* SDImageCache.m */,
-				F4C1BC521DE1649200F7069A /* SDWebImageCompat.h */,
-				F4C1BC531DE1649200F7069A /* SDWebImageCompat.m */,
-				F4C1BC541DE1649200F7069A /* SDWebImageDecoder.h */,
-				F4C1BC551DE1649200F7069A /* SDWebImageDecoder.m */,
-				F4C1BC561DE1649200F7069A /* SDWebImageDownloader.h */,
-				F4C1BC571DE1649200F7069A /* SDWebImageDownloader.m */,
-				F4C1BC581DE1649200F7069A /* SDWebImageDownloaderOperation.h */,
-				F4C1BC591DE1649200F7069A /* SDWebImageDownloaderOperation.m */,
-				F4C1BC5A1DE1649200F7069A /* SDWebImageManager.h */,
-				F4C1BC5B1DE1649200F7069A /* SDWebImageManager.m */,
-				F4C1BC5C1DE1649200F7069A /* SDWebImageOperation.h */,
-				F4C1BC5D1DE1649200F7069A /* SDWebImagePrefetcher.h */,
-				F4C1BC5E1DE1649200F7069A /* SDWebImagePrefetcher.m */,
-				F4C1BC5F1DE1649200F7069A /* UIButton+WebCache.h */,
-				F4C1BC601DE1649200F7069A /* UIButton+WebCache.m */,
-				F4C1BC611DE1649200F7069A /* UIImage+GIF.h */,
-				F4C1BC621DE1649200F7069A /* UIImage+GIF.m */,
-				F4C1BC631DE1649200F7069A /* UIImage+MultiFormat.h */,
-				F4C1BC641DE1649200F7069A /* UIImage+MultiFormat.m */,
-				F4C1BC651DE1649200F7069A /* UIImageView+HighlightedWebCache.h */,
-				F4C1BC661DE1649200F7069A /* UIImageView+HighlightedWebCache.m */,
-				F4C1BC671DE1649200F7069A /* UIImageView+WebCache.h */,
-				F4C1BC681DE1649200F7069A /* UIImageView+WebCache.m */,
-				F4C1BC691DE1649200F7069A /* UIView+WebCacheOperation.h */,
-				F4C1BC6A1DE1649200F7069A /* UIView+WebCacheOperation.m */,
+				F48CC8791DE1FDCB0066FF3D /* File */,
 				F49EDACC1DD8AF5800767F72 /* Constance.swift */,
 				F43D85731DD568A6005648DA /* Info.plist */,
 				F43D85701DD568A6005648DA /* LaunchScreen.storyboard */,
