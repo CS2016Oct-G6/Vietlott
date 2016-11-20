@@ -13,6 +13,8 @@ class ProfileViewController: UIViewController {
     
     var animator = CircleAnimator()
     
+    let duration = 0.3
+    
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var containerChartView: UIView!
     
@@ -75,13 +77,13 @@ class ProfileViewController: UIViewController {
             containerChartView.alpha = 0.0
             containerChartView.isHidden = false
             
-            UIView.animate(withDuration: 1, animations: { 
+            UIView.animate(withDuration: duration, animations: {
                 self.tableView.center.x += 50
             }, completion: { (animation) in
                 self.tableView.center.x -= 50
             })
             
-            UIView.animate(withDuration: 1, animations: { 
+            UIView.animate(withDuration: duration, animations: {
                 self.containerChartView.alpha = 1
             }, completion: { (animation) in
                 
@@ -93,13 +95,13 @@ class ProfileViewController: UIViewController {
             // change image button to chart
             sender.setImage(UIImage(named: "Combo Chart"), for: .normal)
             
-            UIView.animate(withDuration: 1, animations: {
+            UIView.animate(withDuration: duration, animations: {
                 self.containerChartView.center.x += 50
             }, completion: { (animation) in
                 self.containerChartView.center.x -= 50
             })
             
-            UIView.animate(withDuration: 1, animations: {
+            UIView.animate(withDuration: duration, animations: {
                 self.containerChartView.alpha = 0
             }, completion: { (animation) in
                 self.containerChartView.isHidden = true

@@ -133,7 +133,7 @@
                                         <rect key="frame" x="0.0" y="90" width="375" height="247"/>
                                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                     </view>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="rule" translatesAutoresizingMaskIntoConstraints="NO" id="e0K-Lg-Czd" userLabel="Ruler Image View">
+                                    <imageView userInteractionEnabled="NO" contentMode="redraw" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="rule" translatesAutoresizingMaskIntoConstraints="NO" id="e0K-Lg-Czd" userLabel="Ruler Image View">
                                         <rect key="frame" x="60" y="297" width="255" height="30"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="30" id="ISC-nL-tja"/>
@@ -266,6 +266,17 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7wy-kX-60c" userLabel="Main View">
                                 <rect key="frame" x="0.0" y="158" width="375" height="350"/>
                                 <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="merry_chistmas" translatesAutoresizingMaskIntoConstraints="NO" id="KzV-Cf-sp0">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="57"/>
+                                    </imageView>
+                                    <visualEffectView opaque="NO" alpha="0.80000000000000004" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7Qd-tg-Ruk">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="57"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="AzA-nS-lqC">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="57"/>
+                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                        </view>
+                                        <blurEffect style="light"/>
+                                    </visualEffectView>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RlX-nz-2Uc" userLabel="Lottery Server View">
                                         <rect key="frame" x="39" y="0.0" width="296" height="56"/>
                                         <subviews>
@@ -368,7 +379,7 @@
                                                 </constraints>
                                             </view>
                                         </subviews>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         <constraints>
                                             <constraint firstItem="xoR-YY-iXb" firstAttribute="width" secondItem="07e-m1-cWA" secondAttribute="width" id="0TQ-q5-Umv"/>
                                             <constraint firstItem="xoR-YY-iXb" firstAttribute="bottom" secondItem="07e-m1-cWA" secondAttribute="bottom" id="42G-5S-yHR"/>
@@ -487,19 +498,27 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstItem="Kba-1X-xoe" firstAttribute="top" secondItem="RlX-nz-2Uc" secondAttribute="bottom" id="0Wq-pn-QIv"/>
+                                    <constraint firstItem="7Qd-tg-Ruk" firstAttribute="leading" secondItem="KzV-Cf-sp0" secondAttribute="leading" id="3ln-89-Onq"/>
+                                    <constraint firstItem="7Qd-tg-Ruk" firstAttribute="trailing" secondItem="KzV-Cf-sp0" secondAttribute="trailing" id="APy-aZ-oXQ"/>
                                     <constraint firstItem="Zbv-0q-vQS" firstAttribute="top" secondItem="WV0-ot-c5T" secondAttribute="bottom" id="DfR-eb-1EY"/>
                                     <constraint firstAttribute="height" constant="350" id="DwE-BY-laS"/>
+                                    <constraint firstItem="WV0-ot-c5T" firstAttribute="top" secondItem="KzV-Cf-sp0" secondAttribute="bottom" id="F9l-n3-V2m"/>
+                                    <constraint firstItem="KzV-Cf-sp0" firstAttribute="leading" secondItem="7wy-kX-60c" secondAttribute="leading" id="GRN-cx-vhL"/>
                                     <constraint firstItem="WV0-ot-c5T" firstAttribute="leading" secondItem="7wy-kX-60c" secondAttribute="leading" id="Irn-Yu-SWa"/>
                                     <constraint firstItem="jqp-iB-UMr" firstAttribute="top" secondItem="WV0-ot-c5T" secondAttribute="bottom" constant="8" id="MaV-Ps-ZFd"/>
                                     <constraint firstItem="RlX-nz-2Uc" firstAttribute="top" secondItem="7wy-kX-60c" secondAttribute="top" id="Qvz-Rj-xuE"/>
+                                    <constraint firstItem="7Qd-tg-Ruk" firstAttribute="bottom" secondItem="KzV-Cf-sp0" secondAttribute="bottom" id="R2O-it-J2F"/>
                                     <constraint firstItem="jqp-iB-UMr" firstAttribute="centerX" secondItem="7wy-kX-60c" secondAttribute="centerX" id="SBg-WT-Xea"/>
                                     <constraint firstItem="Kba-1X-xoe" firstAttribute="leading" secondItem="7wy-kX-60c" secondAttribute="leading" id="So5-w5-Nni"/>
                                     <constraint firstItem="RlX-nz-2Uc" firstAttribute="centerX" secondItem="7wy-kX-60c" secondAttribute="centerX" id="V2y-Px-Jkl"/>
                                     <constraint firstItem="WV0-ot-c5T" firstAttribute="top" secondItem="Kba-1X-xoe" secondAttribute="bottom" id="Vzg-HU-Ggf"/>
+                                    <constraint firstAttribute="trailing" secondItem="KzV-Cf-sp0" secondAttribute="trailing" id="aLa-wF-9Wb"/>
                                     <constraint firstItem="Zbv-0q-vQS" firstAttribute="leading" secondItem="7wy-kX-60c" secondAttribute="leading" id="dF5-E3-ez2"/>
                                     <constraint firstAttribute="trailing" secondItem="Kba-1X-xoe" secondAttribute="trailing" id="h3N-yn-wve"/>
                                     <constraint firstAttribute="bottom" secondItem="jqp-iB-UMr" secondAttribute="bottom" constant="8" id="kwB-hZ-Hgw"/>
                                     <constraint firstAttribute="trailing" secondItem="WV0-ot-c5T" secondAttribute="trailing" id="mEu-Jd-yYt"/>
+                                    <constraint firstItem="7Qd-tg-Ruk" firstAttribute="top" secondItem="KzV-Cf-sp0" secondAttribute="top" id="nqV-oe-vQu"/>
+                                    <constraint firstItem="KzV-Cf-sp0" firstAttribute="top" secondItem="7wy-kX-60c" secondAttribute="top" id="qZs-cM-NUP"/>
                                     <constraint firstAttribute="trailing" secondItem="Zbv-0q-vQS" secondAttribute="trailing" id="x9I-zI-Qfp"/>
                                 </constraints>
                             </view>
@@ -529,7 +548,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="d6V-TM-YvN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="118" y="887"/>
+            <point key="canvasLocation" x="117.59999999999999" y="886.50674662668678"/>
         </scene>
         <!--Profile-->
         <scene sceneID="Zqz-db-tfS">
@@ -1195,11 +1214,12 @@
         <image name="circle_gray" width="190" height="190"/>
         <image name="close" width="415" height="415"/>
         <image name="color" width="488" height="488"/>
+        <image name="merry_chistmas" width="2560" height="604"/>
         <image name="pen" width="256" height="256"/>
         <image name="plus" width="128" height="128"/>
         <image name="rule" width="1225" height="236"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="Byb-w2-6IK"/>
+        <segue reference="v2W-T4-OiC"/>
     </inferredMetricsTieBreakers>
 </document>
