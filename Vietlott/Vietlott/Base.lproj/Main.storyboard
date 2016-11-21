@@ -207,7 +207,9 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Input" id="8KZ-nx-8jQ"/>
                     <connections>
+                        <outlet property="cameraButton" destination="0zb-04-LWP" id="TFG-aa-oX0"/>
                         <outlet property="cameraView" destination="RLu-i6-FCe" id="8P4-iy-Rng"/>
+                        <outlet property="manualButton" destination="ZfU-Ts-8CE" id="c1U-rb-mrQ"/>
                         <segue destination="kcU-52-vCH" kind="presentation" identifier="inputSegue" id="v2W-T4-OiC"/>
                     </connections>
                 </viewController>
@@ -245,7 +247,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8pK-cX-zxQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-594" y="884"/>
+            <point key="canvasLocation" x="-430" y="888"/>
         </scene>
         <!--Dial-->
         <scene sceneID="ktl-Jv-Rwj">
@@ -548,7 +550,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="d6V-TM-YvN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="117.59999999999999" y="886.50674662668678"/>
+            <point key="canvasLocation" x="282" y="891"/>
         </scene>
         <!--Profile-->
         <scene sceneID="Zqz-db-tfS">
@@ -753,6 +755,7 @@
                         <outlet property="containerChartView" destination="hiL-mR-zPR" id="V25-6Q-v2e"/>
                         <outlet property="coverImageView" destination="w3W-LH-tqR" id="TuN-Xm-EH9"/>
                         <outlet property="emailLabel" destination="3Aa-dj-3ep" id="Gyk-ue-A6s"/>
+                        <outlet property="manualButton" destination="5RD-uN-zKz" id="7df-ul-oRJ"/>
                         <outlet property="nameLabel" destination="A65-qV-Et7" id="2g7-Hc-mG4"/>
                         <outlet property="tableView" destination="mvD-fT-ZfW" id="JIz-Ug-k66"/>
                     </connections>
@@ -1220,6 +1223,6 @@
         <image name="rule" width="1225" height="236"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="v2W-T4-OiC"/>
+        <segue reference="Byb-w2-6IK"/>
     </inferredMetricsTieBreakers>
 </document>

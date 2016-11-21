@@ -48,10 +48,10 @@ extension CircleAnimator: UIViewControllerTransitioningDelegate, UIViewControlle
             
             UIView.animate(withDuration: duration, animations: {() -> Void in
                 
-                let frame = CGRect(x: 0, y: 0, width: 50, height: 50)
+                let frame = CGRect(x: Constance.pointToDraw.0, y: Constance.pointToDraw.1, width: 50, height: 50)
                 //4
                 let circleMaskPathInitial = UIBezierPath(ovalIn: frame)
-                let extremePoint = CGPoint(x: (toViewController?.view.frame.width)!, y: (toViewController?.view.frame.height)!)
+                let extremePoint = CGPoint(x: Constance.pointToDraw.0 - 0, y: Double((toViewController?.view.bounds.height)!))
                 let radius = sqrt((extremePoint.x*extremePoint.x) + (extremePoint.y*extremePoint.y))
                 let circleMaskPathFinal = UIBezierPath(ovalIn: frame.insetBy(dx: -radius, dy: -radius))
                 

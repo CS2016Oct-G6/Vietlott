@@ -20,6 +20,8 @@ class ViewController: UIViewController, AVCapturePhotoCaptureDelegate {
     let progressIndicatorView = CircularLoaderView(frame: CGRect.zero)
 
     @IBOutlet weak var cameraView: UIView!
+    @IBOutlet weak var manualButton: UIButton!
+    @IBOutlet weak var cameraButton: UIButton!
     
     override func viewWillAppear(_ animated: Bool) {
         let devices = AVCaptureDevice.defaultDevice(withMediaType: AVMediaTypeVideo)
@@ -72,6 +74,9 @@ class ViewController: UIViewController, AVCapturePhotoCaptureDelegate {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let desVC = segue.destination
         
+        // set point to draw
+        Constance.pointToDraw = (Double(manualButton.center.x), Double(manualButton.center.y))
+        
         // 1. set delegate and custom presentationModelStyle
         desVC.transitioningDelegate = animator
         desVC.modalPresentationStyle = .custom
@@ -108,6 +113,9 @@ class ViewController: UIViewController, AVCapturePhotoCaptureDelegate {
             googleVision.createRequest(with: binaryImageData, handleSuccess: { (lotteryStringArray: [String]) in
                 // hide progress
                 ARSLineProgress.hide()
+                
+                // set point to draw
+                Constance.pointToDraw = (Double(self.cameraButton.center.x), Double(self.cameraButton.center.y))
                 
                 // present edit view
                 let storyboart = UIStoryboard(name: "Main", bundle: nil)

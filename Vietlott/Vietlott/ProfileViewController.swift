@@ -22,6 +22,7 @@ class ProfileViewController: UIViewController {
     @IBOutlet weak var avatarImageView: CustomImageView!
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var emailLabel: UILabel!
+    @IBOutlet weak var manualButton: UIButton!
     
     var lotteryArray = [Lottery]()
     var isTableView = true
@@ -62,6 +63,9 @@ class ProfileViewController: UIViewController {
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let desVC = segue.destination
+        
+        // set point to draw
+        Constance.pointToDraw = (Double(manualButton.center.x), Double(manualButton.center.y))
         
         // 1. set delegate and custom presentationModelStyle
         desVC.transitioningDelegate = animator
