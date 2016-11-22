@@ -72,7 +72,11 @@ class FirebaseClient {
     }
     
     func getUserHistory(completion: @escaping ([Lottery]?, Error?) -> ()){
-        ref.child("users/history").observeSingleEvent(of: .value, with: { (response) in
+        guard let userID = FIRAuth.auth()?.currentUser?.uid else {
+            return
+        }
+
+        ref.child("users/\(userID)/history").observeSingleEvent(of: .value, with: { (response) in
             // Get user value
             
             guard let result = response.value as? NSDictionary else {
