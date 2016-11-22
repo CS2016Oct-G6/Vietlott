@@ -8,15 +8,20 @@
 
 import UIKit
 import CoreData
+import GoogleSignIn
+import Firebase
 
 @UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate {
+class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate {
 
     var window: UIWindow?
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        FIRApp.configure()
+        
+        GIDSignIn.sharedInstance().clientID = FIRApp.defaultApp()?.options.clientID
+        GIDSignIn.sharedInstance().delegate = self
         return true
     }
 
@@ -88,6 +93,40 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             }
         }
     }
+    
+    func application(_ app: UIApplication, open url: URL, options: [UIApplicationOpenURLOptionsKey : Any] = [:]) -> Bool {
+        return GIDSignIn.sharedInstance().handle(url, sourceApplication: options[UIApplicationOpenURLOptionsKey.sourceApplication] as? String, annotation: options[UIApplicationOpenURLOptionsKey.annotation])
+    }
+    
+    func sign(_ signIn: GIDSignIn!, didSignInFor user: GIDGoogleUser!, withError error: Error!) {
+        if let error = error {
+            print(error)
+        }
+        
+        guard
+            let authentication = user.authentication
+        else {
+            return
+        }
+        let credential = FIRGoogleAuthProvider.credential(withIDToken: (authentication.idToken)!,
+                                                          accessToken: (authentication.accessToken)!)
+        FIRAuth.auth()?.signIn(with: credential) { (user, error) in
+            if let error = error {
+                print(error)
+            }
+            guard let user = user else {
+                return
+            }
+            Constance.userInfo = User(name: user.displayName, email: user.email, avatar: user.photoURL?.absoluteString )
+            let storyboard = UIStoryboard(name: "Main", bundle: nil)
+            let presentingController = storyboard.instantiateViewController(withIdentifier: "TabBarController")
+            self.window?.rootViewController? = presentingController
+            
+        }
+        
+        
+    }
+    
 
 }
 
