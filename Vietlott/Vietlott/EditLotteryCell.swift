@@ -27,8 +27,8 @@ class EditLotteryCell: UITableViewCell {
         didSet {
             lotteryNumberLabel.text = lottery.lotteryNumber!.toLotteryString()
             var myStringArr = lottery.timeCreate!.components(separatedBy: " ")
-            dateLabel.text = myStringArr[1]
-            timeLabel.text = myStringArr[0]
+            dateLabel.text = myStringArr[0]
+            timeLabel.text = myStringArr[1]
         }
     }
     

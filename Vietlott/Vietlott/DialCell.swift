@@ -18,8 +18,8 @@ class DialCell: UITableViewCell {
         didSet {
             lotteryNumberLabel.text = lottery.lotteryNumber!.toLotteryString()
             var myStringArr = lottery.timeCreate!.components(separatedBy: " ")
-            dateLabel.text = myStringArr[1]
-            hourLabel.text = myStringArr[0]
+            dateLabel.text = myStringArr[0]
+            hourLabel.text = myStringArr[1]
         }
     }
     

@@ -11,7 +11,7 @@ import Foundation
 extension Date {
     func toString() -> String {
         let dateFormat = DateFormatter()
-        dateFormat.dateFormat = "HH:mm dd/MM/yyyy"
+        dateFormat.dateFormat = "yyyy-MM-dd HH:mm"
         return dateFormat.string(from: self)
     }
 }
