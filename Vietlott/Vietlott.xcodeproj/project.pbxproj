@@ -674,11 +674,7 @@
 				DEVELOPMENT_TEAM = C4K2QZSFW6;
 				INFOPLIST_FILE = Vietlott/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-<<<<<<< HEAD
-				PRODUCT_BUNDLE_IDENTIFIER = com.congtruong.Vietlott;
-=======
 				PRODUCT_BUNDLE_IDENTIFIER = vn.coderschool.Vietlott;
->>>>>>> fd6e8110c462d33d0281f2c90e5093a3d5b1d8d2
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "Vietlott/Vietlott-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -697,11 +693,7 @@
 				DEVELOPMENT_TEAM = C4K2QZSFW6;
 				INFOPLIST_FILE = Vietlott/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-<<<<<<< HEAD
-				PRODUCT_BUNDLE_IDENTIFIER = com.congtruong.Vietlott;
-=======
 				PRODUCT_BUNDLE_IDENTIFIER = vn.coderschool.Vietlott;
->>>>>>> fd6e8110c462d33d0281f2c90e5093a3d5b1d8d2
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "Vietlott/Vietlott-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
