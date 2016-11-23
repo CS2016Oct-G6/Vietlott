@@ -1,0 +1,740 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		99C9BB961DE323DC00E19C81 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 99C9BB951DE323DC00E19C81 /* GoogleService-Info.plist */; };
+		99C9BB9A1DE326D600E19C81 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99C9BB991DE326D600E19C81 /* LoginViewController.swift */; };
+		99C9BB9F1DE32E6D00E19C81 /* FirebaseClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99C9BB9E1DE32E6D00E19C81 /* FirebaseClient.swift */; };
+		CF008EF17926B510E8255CF7 /* Pods_Vietlott.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0865DEDC8AD5B52D584B3324 /* Pods_Vietlott.framework */; };
+		F41581331DDF3A1300757F07 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = F41581321DDF3A1300757F07 /* User.swift */; };
+		F43D85651DD568A6005648DA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F43D85641DD568A6005648DA /* AppDelegate.swift */; };
+		F43D856A1DD568A6005648DA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F43D85681DD568A6005648DA /* Main.storyboard */; };
+		F43D856D1DD568A6005648DA /* Vietlott.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F43D856B1DD568A6005648DA /* Vietlott.xcdatamodeld */; };
+		F43D856F1DD568A6005648DA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F43D856E1DD568A6005648DA /* Assets.xcassets */; };
+		F43D85721DD568A6005648DA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F43D85701DD568A6005648DA /* LaunchScreen.storyboard */; };
+		F44365FE1DDCC6B400D854B9 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F44365FD1DDCC6B400D854B9 /* ProfileViewController.swift */; };
+		F44366001DDCC90D00D854B9 /* HistoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F44365FF1DDCC90D00D854B9 /* HistoryCell.swift */; };
+		F44366021DDCC9F000D854B9 /* Lottery.swift in Sources */ = {isa = PBXBuildFile; fileRef = F44366011DDCC9F000D854B9 /* Lottery.swift */; };
+		F475CB611DDE0AC50048AD30 /* DialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F475CB601DDE0AC50048AD30 /* DialViewController.swift */; };
+		F475CB631DDE0C420048AD30 /* DialCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F475CB621DDE0C420048AD30 /* DialCell.swift */; };
+		F475CB651DDE0E560048AD30 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F475CB641DDE0E560048AD30 /* HomeViewController.swift */; };
+		F48CC8761DE1F9100066FF3D /* CircleAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F48CC8751DE1F9100066FF3D /* CircleAnimator.swift */; };
+		F49EDAC11DD8AF1C00767F72 /* GoogleVision.swift in Sources */ = {isa = PBXBuildFile; fileRef = F49EDAC01DD8AF1C00767F72 /* GoogleVision.swift */; };
+		F49EDAC41DD8AF2900767F72 /* EditLotteryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F49EDAC21DD8AF2900767F72 /* EditLotteryViewController.swift */; };
+		F49EDAC51DD8AF2900767F72 /* InputViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F49EDAC31DD8AF2900767F72 /* InputViewController.swift */; };
+		F49EDAC81DD8AF3400767F72 /* DateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F49EDAC61DD8AF3400767F72 /* DateExtension.swift */; };
+		F49EDAC91DD8AF3400767F72 /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F49EDAC71DD8AF3400767F72 /* StringExtension.swift */; };
+		F49EDACB1DD8AF4000767F72 /* EditLotteryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F49EDACA1DD8AF4000767F72 /* EditLotteryCell.swift */; };
+		F49EDACD1DD8AF5800767F72 /* Constance.swift in Sources */ = {isa = PBXBuildFile; fileRef = F49EDACC1DD8AF5800767F72 /* Constance.swift */; };
+		F4C1BC451DE160DA00F7069A /* CircularLoaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C1BC441DE160DA00F7069A /* CircularLoaderView.swift */; };
+		F4C1BC491DE1635700F7069A /* CustomImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C1BC481DE1635700F7069A /* CustomImageView.swift */; };
+		F4C1BC6B1DE1649200F7069A /* NSData+ImageContentType.m in Sources */ = {isa = PBXBuildFile; fileRef = F4C1BC4F1DE1649200F7069A /* NSData+ImageContentType.m */; };
+		F4C1BC6C1DE1649200F7069A /* SDImageCache.m in Sources */ = {isa = PBXBuildFile; fileRef = F4C1BC511DE1649200F7069A /* SDImageCache.m */; };
+		F4C1BC6D1DE1649200F7069A /* SDWebImageCompat.m in Sources */ = {isa = PBXBuildFile; fileRef = F4C1BC531DE1649200F7069A /* SDWebImageCompat.m */; };
+		F4C1BC6E1DE1649200F7069A /* SDWebImageDecoder.m in Sources */ = {isa = PBXBuildFile; fileRef = F4C1BC551DE1649200F7069A /* SDWebImageDecoder.m */; };
+		F4C1BC6F1DE1649200F7069A /* SDWebImageDownloader.m in Sources */ = {isa = PBXBuildFile; fileRef = F4C1BC571DE1649200F7069A /* SDWebImageDownloader.m */; };
+		F4C1BC701DE1649200F7069A /* SDWebImageDownloaderOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = F4C1BC591DE1649200F7069A /* SDWebImageDownloaderOperation.m */; };
+		F4C1BC711DE1649200F7069A /* SDWebImageManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F4C1BC5B1DE1649200F7069A /* SDWebImageManager.m */; };
+		F4C1BC721DE1649200F7069A /* SDWebImagePrefetcher.m in Sources */ = {isa = PBXBuildFile; fileRef = F4C1BC5E1DE1649200F7069A /* SDWebImagePrefetcher.m */; };
+		F4C1BC731DE1649200F7069A /* UIButton+WebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = F4C1BC601DE1649200F7069A /* UIButton+WebCache.m */; };
+		F4C1BC741DE1649200F7069A /* UIImage+GIF.m in Sources */ = {isa = PBXBuildFile; fileRef = F4C1BC621DE1649200F7069A /* UIImage+GIF.m */; };
+		F4C1BC751DE1649200F7069A /* UIImage+MultiFormat.m in Sources */ = {isa = PBXBuildFile; fileRef = F4C1BC641DE1649200F7069A /* UIImage+MultiFormat.m */; };
+		F4C1BC761DE1649200F7069A /* UIImageView+HighlightedWebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = F4C1BC661DE1649200F7069A /* UIImageView+HighlightedWebCache.m */; };
+		F4C1BC771DE1649200F7069A /* UIImageView+WebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = F4C1BC681DE1649200F7069A /* UIImageView+WebCache.m */; };
+		F4C1BC781DE1649200F7069A /* UIView+WebCacheOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = F4C1BC6A1DE1649200F7069A /* UIView+WebCacheOperation.m */; };
+		F4E2FF311DE0A19700F403C3 /* Charts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F4E2FF2C1DE0A17600F403C3 /* Charts.framework */; };
+		F4E2FF321DE0A19700F403C3 /* Charts.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F4E2FF2C1DE0A17600F403C3 /* Charts.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		F4E2FF371DE0A1F100F403C3 /* ChartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4E2FF361DE0A1F100F403C3 /* ChartViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F4E2FF2B1DE0A17600F403C3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F4E2FF251DE0A17600F403C3 /* Charts.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 06165F241D8110E600722320;
+			remoteInfo = Charts;
+		};
+		F4E2FF2D1DE0A17600F403C3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F4E2FF251DE0A17600F403C3 /* Charts.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 06B120D51D811E6200D14B02;
+			remoteInfo = ChartsRealm;
+		};
+		F4E2FF2F1DE0A17600F403C3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F4E2FF251DE0A17600F403C3 /* Charts.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 06165F2E1D8110E600722320;
+			remoteInfo = ChartsTests;
+		};
+		F4E2FF331DE0A19700F403C3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F4E2FF251DE0A17600F403C3 /* Charts.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 06165F231D8110E600722320;
+			remoteInfo = Charts;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		F4E2FF351DE0A19700F403C3 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				F4E2FF321DE0A19700F403C3 /* Charts.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		0865DEDC8AD5B52D584B3324 /* Pods_Vietlott.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Vietlott.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		37C3EBE8ABE3BFE1B713C09C /* Pods-Vietlott.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Vietlott.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Vietlott/Pods-Vietlott.debug.xcconfig"; sourceTree = "<group>"; };
+		99C9BB951DE323DC00E19C81 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		99C9BB991DE326D600E19C81 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		99C9BB9E1DE32E6D00E19C81 /* FirebaseClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirebaseClient.swift; sourceTree = "<group>"; };
+		F41581321DDF3A1300757F07 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		F43D85611DD568A6005648DA /* Vietlott.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Vietlott.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F43D85641DD568A6005648DA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F43D85691DD568A6005648DA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F43D856C1DD568A6005648DA /* Vietlott.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Vietlott.xcdatamodel; sourceTree = "<group>"; };
+		F43D856E1DD568A6005648DA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F43D85711DD568A6005648DA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F43D85731DD568A6005648DA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F44365FD1DDCC6B400D854B9 /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		F44365FF1DDCC90D00D854B9 /* HistoryCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoryCell.swift; sourceTree = "<group>"; };
+		F44366011DDCC9F000D854B9 /* Lottery.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Lottery.swift; sourceTree = "<group>"; };
+		F4527B7D10EDAA1CAFC55300 /* Pods-Vietlott.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Vietlott.release.xcconfig"; path = "Pods/Target Support Files/Pods-Vietlott/Pods-Vietlott.release.xcconfig"; sourceTree = "<group>"; };
+		F475CB601DDE0AC50048AD30 /* DialViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DialViewController.swift; sourceTree = "<group>"; };
+		F475CB621DDE0C420048AD30 /* DialCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DialCell.swift; sourceTree = "<group>"; };
+		F475CB641DDE0E560048AD30 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		F48CC8751DE1F9100066FF3D /* CircleAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircleAnimator.swift; sourceTree = "<group>"; };
+		F49EDAC01DD8AF1C00767F72 /* GoogleVision.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GoogleVision.swift; sourceTree = "<group>"; };
+		F49EDAC21DD8AF2900767F72 /* EditLotteryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditLotteryViewController.swift; sourceTree = "<group>"; };
+		F49EDAC31DD8AF2900767F72 /* InputViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InputViewController.swift; sourceTree = "<group>"; };
+		F49EDAC61DD8AF3400767F72 /* DateExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateExtension.swift; sourceTree = "<group>"; };
+		F49EDAC71DD8AF3400767F72 /* StringExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
+		F49EDACA1DD8AF4000767F72 /* EditLotteryCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditLotteryCell.swift; sourceTree = "<group>"; };
+		F49EDACC1DD8AF5800767F72 /* Constance.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constance.swift; sourceTree = "<group>"; };
+		F4C1BC441DE160DA00F7069A /* CircularLoaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircularLoaderView.swift; sourceTree = "<group>"; };
+		F4C1BC481DE1635700F7069A /* CustomImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomImageView.swift; sourceTree = "<group>"; };
+		F4C1BC4A1DE1640000F7069A /* Vietlott-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Vietlott-Bridging-Header.h"; sourceTree = "<group>"; };
+		F4C1BC4E1DE1649200F7069A /* NSData+ImageContentType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+ImageContentType.h"; sourceTree = "<group>"; };
+		F4C1BC4F1DE1649200F7069A /* NSData+ImageContentType.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+ImageContentType.m"; sourceTree = "<group>"; };
+		F4C1BC501DE1649200F7069A /* SDImageCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDImageCache.h; sourceTree = "<group>"; };
+		F4C1BC511DE1649200F7069A /* SDImageCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDImageCache.m; sourceTree = "<group>"; };
+		F4C1BC521DE1649200F7069A /* SDWebImageCompat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDWebImageCompat.h; sourceTree = "<group>"; };
+		F4C1BC531DE1649200F7069A /* SDWebImageCompat.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDWebImageCompat.m; sourceTree = "<group>"; };
+		F4C1BC541DE1649200F7069A /* SDWebImageDecoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDWebImageDecoder.h; sourceTree = "<group>"; };
+		F4C1BC551DE1649200F7069A /* SDWebImageDecoder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDWebImageDecoder.m; sourceTree = "<group>"; };
+		F4C1BC561DE1649200F7069A /* SDWebImageDownloader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDWebImageDownloader.h; sourceTree = "<group>"; };
+		F4C1BC571DE1649200F7069A /* SDWebImageDownloader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDWebImageDownloader.m; sourceTree = "<group>"; };
+		F4C1BC581DE1649200F7069A /* SDWebImageDownloaderOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDWebImageDownloaderOperation.h; sourceTree = "<group>"; };
+		F4C1BC591DE1649200F7069A /* SDWebImageDownloaderOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDWebImageDownloaderOperation.m; sourceTree = "<group>"; };
+		F4C1BC5A1DE1649200F7069A /* SDWebImageManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDWebImageManager.h; sourceTree = "<group>"; };
+		F4C1BC5B1DE1649200F7069A /* SDWebImageManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDWebImageManager.m; sourceTree = "<group>"; };
+		F4C1BC5C1DE1649200F7069A /* SDWebImageOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDWebImageOperation.h; sourceTree = "<group>"; };
+		F4C1BC5D1DE1649200F7069A /* SDWebImagePrefetcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDWebImagePrefetcher.h; sourceTree = "<group>"; };
+		F4C1BC5E1DE1649200F7069A /* SDWebImagePrefetcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDWebImagePrefetcher.m; sourceTree = "<group>"; };
+		F4C1BC5F1DE1649200F7069A /* UIButton+WebCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+WebCache.h"; sourceTree = "<group>"; };
+		F4C1BC601DE1649200F7069A /* UIButton+WebCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+WebCache.m"; sourceTree = "<group>"; };
+		F4C1BC611DE1649200F7069A /* UIImage+GIF.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+GIF.h"; sourceTree = "<group>"; };
+		F4C1BC621DE1649200F7069A /* UIImage+GIF.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+GIF.m"; sourceTree = "<group>"; };
+		F4C1BC631DE1649200F7069A /* UIImage+MultiFormat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+MultiFormat.h"; sourceTree = "<group>"; };
+		F4C1BC641DE1649200F7069A /* UIImage+MultiFormat.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+MultiFormat.m"; sourceTree = "<group>"; };
+		F4C1BC651DE1649200F7069A /* UIImageView+HighlightedWebCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+HighlightedWebCache.h"; sourceTree = "<group>"; };
+		F4C1BC661DE1649200F7069A /* UIImageView+HighlightedWebCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+HighlightedWebCache.m"; sourceTree = "<group>"; };
+		F4C1BC671DE1649200F7069A /* UIImageView+WebCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+WebCache.h"; sourceTree = "<group>"; };
+		F4C1BC681DE1649200F7069A /* UIImageView+WebCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+WebCache.m"; sourceTree = "<group>"; };
+		F4C1BC691DE1649200F7069A /* UIView+WebCacheOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+WebCacheOperation.h"; sourceTree = "<group>"; };
+		F4C1BC6A1DE1649200F7069A /* UIView+WebCacheOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+WebCacheOperation.m"; sourceTree = "<group>"; };
+		F4E2FF251DE0A17600F403C3 /* Charts.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Charts.xcodeproj; path = "Charts-master/Charts.xcodeproj"; sourceTree = SOURCE_ROOT; };
+		F4E2FF361DE0A1F100F403C3 /* ChartViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChartViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F43D855E1DD568A6005648DA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF008EF17926B510E8255CF7 /* Pods_Vietlott.framework in Frameworks */,
+				F4E2FF311DE0A19700F403C3 /* Charts.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		313AF6BB29AFFBD8A24ED3E7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0865DEDC8AD5B52D584B3324 /* Pods_Vietlott.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		32BBCB47A3E3E9456F66C0FE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				37C3EBE8ABE3BFE1B713C09C /* Pods-Vietlott.debug.xcconfig */,
+				F4527B7D10EDAA1CAFC55300 /* Pods-Vietlott.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		F43D85581DD568A6005648DA = {
+			isa = PBXGroup;
+			children = (
+				F43D85631DD568A6005648DA /* Vietlott */,
+				F43D85621DD568A6005648DA /* Products */,
+				32BBCB47A3E3E9456F66C0FE /* Pods */,
+				313AF6BB29AFFBD8A24ED3E7 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		F43D85621DD568A6005648DA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F43D85611DD568A6005648DA /* Vietlott.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F43D85631DD568A6005648DA /* Vietlott */ = {
+			isa = PBXGroup;
+			children = (
+				99C9BB951DE323DC00E19C81 /* GoogleService-Info.plist */,
+				F49EDABF1DD8ABDD00767F72 /* Support */,
+				F49EDABE1DD8ABC600767F72 /* Model */,
+				F49EDABD1DD8AB9900767F72 /* ClientAPI */,
+				F49EDABC1DD8AB8800767F72 /* View */,
+				F49EDABB1DD8AB7A00767F72 /* ViewController */,
+				F49EDABA1DD8AB7000767F72 /* Extension */,
+				F43D85641DD568A6005648DA /* AppDelegate.swift */,
+				F43D85681DD568A6005648DA /* Main.storyboard */,
+				F43D856E1DD568A6005648DA /* Assets.xcassets */,
+				F43D856B1DD568A6005648DA /* Vietlott.xcdatamodeld */,
+				F4E2FF251DE0A17600F403C3 /* Charts.xcodeproj */,
+			);
+			path = Vietlott;
+			sourceTree = "<group>";
+		};
+		F48CC8791DE1FDCB0066FF3D /* File */ = {
+			isa = PBXGroup;
+			children = (
+				F4C1BC4E1DE1649200F7069A /* NSData+ImageContentType.h */,
+				F4C1BC4F1DE1649200F7069A /* NSData+ImageContentType.m */,
+				F4C1BC501DE1649200F7069A /* SDImageCache.h */,
+				F4C1BC511DE1649200F7069A /* SDImageCache.m */,
+				F4C1BC521DE1649200F7069A /* SDWebImageCompat.h */,
+				F4C1BC531DE1649200F7069A /* SDWebImageCompat.m */,
+				F4C1BC541DE1649200F7069A /* SDWebImageDecoder.h */,
+				F4C1BC551DE1649200F7069A /* SDWebImageDecoder.m */,
+				F4C1BC561DE1649200F7069A /* SDWebImageDownloader.h */,
+				F4C1BC571DE1649200F7069A /* SDWebImageDownloader.m */,
+				F4C1BC581DE1649200F7069A /* SDWebImageDownloaderOperation.h */,
+				F4C1BC591DE1649200F7069A /* SDWebImageDownloaderOperation.m */,
+				F4C1BC5A1DE1649200F7069A /* SDWebImageManager.h */,
+				F4C1BC5B1DE1649200F7069A /* SDWebImageManager.m */,
+				F4C1BC5C1DE1649200F7069A /* SDWebImageOperation.h */,
+				F4C1BC5D1DE1649200F7069A /* SDWebImagePrefetcher.h */,
+				F4C1BC5E1DE1649200F7069A /* SDWebImagePrefetcher.m */,
+				F4C1BC5F1DE1649200F7069A /* UIButton+WebCache.h */,
+				F4C1BC601DE1649200F7069A /* UIButton+WebCache.m */,
+				F4C1BC611DE1649200F7069A /* UIImage+GIF.h */,
+				F4C1BC621DE1649200F7069A /* UIImage+GIF.m */,
+				F4C1BC631DE1649200F7069A /* UIImage+MultiFormat.h */,
+				F4C1BC641DE1649200F7069A /* UIImage+MultiFormat.m */,
+				F4C1BC651DE1649200F7069A /* UIImageView+HighlightedWebCache.h */,
+				F4C1BC661DE1649200F7069A /* UIImageView+HighlightedWebCache.m */,
+				F4C1BC671DE1649200F7069A /* UIImageView+WebCache.h */,
+				F4C1BC681DE1649200F7069A /* UIImageView+WebCache.m */,
+				F4C1BC691DE1649200F7069A /* UIView+WebCacheOperation.h */,
+				F4C1BC6A1DE1649200F7069A /* UIView+WebCacheOperation.m */,
+			);
+			name = File;
+			sourceTree = "<group>";
+		};
+		F49EDABA1DD8AB7000767F72 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				F49EDAC61DD8AF3400767F72 /* DateExtension.swift */,
+				F49EDAC71DD8AF3400767F72 /* StringExtension.swift */,
+			);
+			name = Extension;
+			sourceTree = "<group>";
+		};
+		F49EDABB1DD8AB7A00767F72 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				F49EDAC21DD8AF2900767F72 /* EditLotteryViewController.swift */,
+				F49EDAC31DD8AF2900767F72 /* InputViewController.swift */,
+				F44365FD1DDCC6B400D854B9 /* ProfileViewController.swift */,
+				F475CB601DDE0AC50048AD30 /* DialViewController.swift */,
+				F475CB641DDE0E560048AD30 /* HomeViewController.swift */,
+				F4E2FF361DE0A1F100F403C3 /* ChartViewController.swift */,
+				99C9BB991DE326D600E19C81 /* LoginViewController.swift */,
+			);
+			name = ViewController;
+			sourceTree = "<group>";
+		};
+		F49EDABC1DD8AB8800767F72 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F4C1BC441DE160DA00F7069A /* CircularLoaderView.swift */,
+				F49EDACA1DD8AF4000767F72 /* EditLotteryCell.swift */,
+				F44365FF1DDCC90D00D854B9 /* HistoryCell.swift */,
+				F475CB621DDE0C420048AD30 /* DialCell.swift */,
+				F4C1BC481DE1635700F7069A /* CustomImageView.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		F49EDABD1DD8AB9900767F72 /* ClientAPI */ = {
+			isa = PBXGroup;
+			children = (
+				F49EDAC01DD8AF1C00767F72 /* GoogleVision.swift */,
+				99C9BB9E1DE32E6D00E19C81 /* FirebaseClient.swift */,
+			);
+			name = ClientAPI;
+			sourceTree = "<group>";
+		};
+		F49EDABE1DD8ABC600767F72 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F44366011DDCC9F000D854B9 /* Lottery.swift */,
+				F41581321DDF3A1300757F07 /* User.swift */,
+				F48CC8751DE1F9100066FF3D /* CircleAnimator.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		F49EDABF1DD8ABDD00767F72 /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				F48CC8791DE1FDCB0066FF3D /* File */,
+				F49EDACC1DD8AF5800767F72 /* Constance.swift */,
+				F43D85731DD568A6005648DA /* Info.plist */,
+				F43D85701DD568A6005648DA /* LaunchScreen.storyboard */,
+				F4C1BC4A1DE1640000F7069A /* Vietlott-Bridging-Header.h */,
+			);
+			name = Support;
+			sourceTree = "<group>";
+		};
+		F4E2FF261DE0A17600F403C3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F4E2FF2C1DE0A17600F403C3 /* Charts.framework */,
+				F4E2FF2E1DE0A17600F403C3 /* ChartsRealm.framework */,
+				F4E2FF301DE0A17600F403C3 /* ChartsTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F43D85601DD568A6005648DA /* Vietlott */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F43D85761DD568A6005648DA /* Build configuration list for PBXNativeTarget "Vietlott" */;
+			buildPhases = (
+				E31170B5DE3E09C52A23E39E /* [CP] Check Pods Manifest.lock */,
+				F43D855D1DD568A6005648DA /* Sources */,
+				F43D855E1DD568A6005648DA /* Frameworks */,
+				F43D855F1DD568A6005648DA /* Resources */,
+				54F27936879C90B8453CF699 /* [CP] Embed Pods Frameworks */,
+				98B42FF090D9AF115ED77BC7 /* [CP] Copy Pods Resources */,
+				F4E2FF351DE0A19700F403C3 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F4E2FF341DE0A19700F403C3 /* PBXTargetDependency */,
+			);
+			name = Vietlott;
+			productName = Vietlott;
+			productReference = F43D85611DD568A6005648DA /* Vietlott.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F43D85591DD568A6005648DA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0810;
+				LastUpgradeCheck = 0810;
+				ORGANIZATIONNAME = congtruong;
+				TargetAttributes = {
+					F43D85601DD568A6005648DA = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = C4K2QZSFW6;
+						LastSwiftMigration = 0810;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = F43D855C1DD568A6005648DA /* Build configuration list for PBXProject "Vietlott" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F43D85581DD568A6005648DA;
+			productRefGroup = F43D85621DD568A6005648DA /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = F4E2FF261DE0A17600F403C3 /* Products */;
+					ProjectRef = F4E2FF251DE0A17600F403C3 /* Charts.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				F43D85601DD568A6005648DA /* Vietlott */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		F4E2FF2C1DE0A17600F403C3 /* Charts.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Charts.framework;
+			remoteRef = F4E2FF2B1DE0A17600F403C3 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		F4E2FF2E1DE0A17600F403C3 /* ChartsRealm.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = ChartsRealm.framework;
+			remoteRef = F4E2FF2D1DE0A17600F403C3 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		F4E2FF301DE0A17600F403C3 /* ChartsTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = ChartsTests.xctest;
+			remoteRef = F4E2FF2F1DE0A17600F403C3 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F43D855F1DD568A6005648DA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F43D85721DD568A6005648DA /* LaunchScreen.storyboard in Resources */,
+				99C9BB961DE323DC00E19C81 /* GoogleService-Info.plist in Resources */,
+				F43D856F1DD568A6005648DA /* Assets.xcassets in Resources */,
+				F43D856A1DD568A6005648DA /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		54F27936879C90B8453CF699 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Vietlott/Pods-Vietlott-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		98B42FF090D9AF115ED77BC7 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Vietlott/Pods-Vietlott-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E31170B5DE3E09C52A23E39E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F43D855D1DD568A6005648DA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				99C9BB9A1DE326D600E19C81 /* LoginViewController.swift in Sources */,
+				F49EDAC51DD8AF2900767F72 /* InputViewController.swift in Sources */,
+				F49EDACB1DD8AF4000767F72 /* EditLotteryCell.swift in Sources */,
+				F44365FE1DDCC6B400D854B9 /* ProfileViewController.swift in Sources */,
+				F49EDAC91DD8AF3400767F72 /* StringExtension.swift in Sources */,
+				99C9BB9F1DE32E6D00E19C81 /* FirebaseClient.swift in Sources */,
+				F4C1BC781DE1649200F7069A /* UIView+WebCacheOperation.m in Sources */,
+				F41581331DDF3A1300757F07 /* User.swift in Sources */,
+				F4C1BC711DE1649200F7069A /* SDWebImageManager.m in Sources */,
+				F4C1BC6E1DE1649200F7069A /* SDWebImageDecoder.m in Sources */,
+				F49EDAC81DD8AF3400767F72 /* DateExtension.swift in Sources */,
+				F475CB651DDE0E560048AD30 /* HomeViewController.swift in Sources */,
+				F4C1BC721DE1649200F7069A /* SDWebImagePrefetcher.m in Sources */,
+				F4C1BC771DE1649200F7069A /* UIImageView+WebCache.m in Sources */,
+				F475CB611DDE0AC50048AD30 /* DialViewController.swift in Sources */,
+				F4C1BC451DE160DA00F7069A /* CircularLoaderView.swift in Sources */,
+				F4E2FF371DE0A1F100F403C3 /* ChartViewController.swift in Sources */,
+				F4C1BC741DE1649200F7069A /* UIImage+GIF.m in Sources */,
+				F4C1BC6B1DE1649200F7069A /* NSData+ImageContentType.m in Sources */,
+				F4C1BC6D1DE1649200F7069A /* SDWebImageCompat.m in Sources */,
+				F43D856D1DD568A6005648DA /* Vietlott.xcdatamodeld in Sources */,
+				F49EDACD1DD8AF5800767F72 /* Constance.swift in Sources */,
+				F48CC8761DE1F9100066FF3D /* CircleAnimator.swift in Sources */,
+				F4C1BC6C1DE1649200F7069A /* SDImageCache.m in Sources */,
+				F4C1BC6F1DE1649200F7069A /* SDWebImageDownloader.m in Sources */,
+				F4C1BC491DE1635700F7069A /* CustomImageView.swift in Sources */,
+				F44366021DDCC9F000D854B9 /* Lottery.swift in Sources */,
+				F4C1BC751DE1649200F7069A /* UIImage+MultiFormat.m in Sources */,
+				F4C1BC731DE1649200F7069A /* UIButton+WebCache.m in Sources */,
+				F43D85651DD568A6005648DA /* AppDelegate.swift in Sources */,
+				F49EDAC41DD8AF2900767F72 /* EditLotteryViewController.swift in Sources */,
+				F4C1BC701DE1649200F7069A /* SDWebImageDownloaderOperation.m in Sources */,
+				F49EDAC11DD8AF1C00767F72 /* GoogleVision.swift in Sources */,
+				F4C1BC761DE1649200F7069A /* UIImageView+HighlightedWebCache.m in Sources */,
+				F44366001DDCC90D00D854B9 /* HistoryCell.swift in Sources */,
+				F475CB631DDE0C420048AD30 /* DialCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F4E2FF341DE0A19700F403C3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Charts;
+			targetProxy = F4E2FF331DE0A19700F403C3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F43D85681DD568A6005648DA /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F43D85691DD568A6005648DA /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F43D85701DD568A6005648DA /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F43D85711DD568A6005648DA /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F43D85741DD568A6005648DA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F43D85751DD568A6005648DA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F43D85771DD568A6005648DA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 37C3EBE8ABE3BFE1B713C09C /* Pods-Vietlott.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = C4K2QZSFW6;
+				INFOPLIST_FILE = Vietlott/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = vn.coderschool.Vietlott;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Vietlott/Vietlott-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		F43D85781DD568A6005648DA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F4527B7D10EDAA1CAFC55300 /* Pods-Vietlott.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = C4K2QZSFW6;
+				INFOPLIST_FILE = Vietlott/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = vn.coderschool.Vietlott;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Vietlott/Vietlott-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F43D855C1DD568A6005648DA /* Build configuration list for PBXProject "Vietlott" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F43D85741DD568A6005648DA /* Debug */,
+				F43D85751DD568A6005648DA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F43D85761DD568A6005648DA /* Build configuration list for PBXNativeTarget "Vietlott" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F43D85771DD568A6005648DA /* Debug */,
+				F43D85781DD568A6005648DA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		F43D856B1DD568A6005648DA /* Vietlott.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				F43D856C1DD568A6005648DA /* Vietlott.xcdatamodel */,
+			);
+			currentVersion = F43D856C1DD568A6005648DA /* Vietlott.xcdatamodel */;
+			path = Vietlott.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = F43D85591DD568A6005648DA /* Project object */;
+}

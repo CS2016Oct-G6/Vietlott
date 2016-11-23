@@ -60,7 +60,10 @@ class EditLotteryViewController: UIViewController {
                 
                 return
             }
-            
+            FirebaseClient.sharedInstance.postUserEntry(
+                entries: [
+                    Lottery(lottery: text, time: Date().toString())
+                ])
             lotteryArray.insert(Lottery(lottery: text, time: Date().toString()), at: 0)
             tableView.reloadData()
             

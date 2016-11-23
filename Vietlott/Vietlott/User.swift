@@ -13,7 +13,7 @@ class User {
     var email: String?
     var avatar: String?
     
-    init(name: String, email: String, avatar: String?) {
+    init(name: String?, email: String?, avatar: String?) {
         self.name = name
         self.email = email
         self.avatar = avatar

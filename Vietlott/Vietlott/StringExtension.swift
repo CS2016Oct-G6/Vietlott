@@ -9,7 +9,7 @@
 import Foundation
 
 extension String {
-    mutating func toLotteryString() -> String {
+    func toLotteryString() -> String {
         var newString = self
         let indexArray = [2, 5, 8, 11, 14]
         

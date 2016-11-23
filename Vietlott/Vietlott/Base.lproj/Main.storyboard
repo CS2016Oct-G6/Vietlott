@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="FcJ-NH-XQv">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="dtx-Zp-Xd5">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -800,7 +800,7 @@
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="n5H-oH-XOK">
                                                 <rect key="frame" x="5" y="5" width="345" height="50"/>
                                                 <subviews>
-                                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Add new lottery" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9Dw-tW-VKe">
+                                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Add new lottery (without space)" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9Dw-tW-VKe">
                                                         <rect key="frame" x="5" y="15" width="295" height="20"/>
                                                         <nil key="textColor"/>
                                                         <fontDescription key="fontDescription" type="system" weight="thin" pointSize="16"/>
@@ -1088,10 +1088,42 @@
             </objects>
             <point key="canvasLocation" x="1942" y="-170"/>
         </scene>
+        <!--Login View Controller-->
+        <scene sceneID="hGy-Nj-I0a">
+            <objects>
+                <viewController id="dtx-Zp-Xd5" customClass="LoginViewController" customModule="Vietlott" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="XYA-hN-2e4"/>
+                        <viewControllerLayoutGuide type="bottom" id="aau-O2-wcv"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="spM-gI-MXn">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qd6-9j-M7Q" customClass="GIDSignInButton">
+                                <rect key="frame" x="67.5" y="269.5" width="240" height="128"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="5S8-7T-tGh"/>
+                                    <constraint firstAttribute="width" constant="240" id="69f-2V-Vzd"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="qd6-9j-M7Q" firstAttribute="centerY" secondItem="spM-gI-MXn" secondAttribute="centerY" id="7ie-0W-4Bt"/>
+                            <constraint firstItem="qd6-9j-M7Q" firstAttribute="centerX" secondItem="spM-gI-MXn" secondAttribute="centerX" id="MRu-VU-RWO"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VOy-5a-3dz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-780" y="124"/>
+        </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="XgV-UP-AtQ">
             <objects>
-                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="FcJ-NH-XQv" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="TabBarController" automaticallyAdjustsScrollViewInsets="NO" useStoryboardIdentifierAsRestorationIdentifier="YES" id="FcJ-NH-XQv" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" id="2Wc-5q-ys0">
                         <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
@@ -1223,6 +1255,6 @@
         <image name="rule" width="1225" height="236"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="Byb-w2-6IK"/>
+        <segue reference="v2W-T4-OiC"/>
     </inferredMetricsTieBreakers>
 </document>
