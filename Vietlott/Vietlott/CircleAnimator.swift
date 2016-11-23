@@ -9,7 +9,7 @@
 import UIKit
 
 class CircleAnimator: NSObject {
-    let duration: TimeInterval = 0.2
+    let duration: TimeInterval = 0.5
     var isPresenting = false
 }
 
