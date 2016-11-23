@@ -266,21 +266,21 @@
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7wy-kX-60c" userLabel="Main View">
-                                <rect key="frame" x="0.0" y="158" width="375" height="350"/>
+                                <rect key="frame" x="20" y="158" width="335" height="350"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="merry_chistmas" translatesAutoresizingMaskIntoConstraints="NO" id="KzV-Cf-sp0">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="57"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="335" height="57"/>
                                     </imageView>
                                     <visualEffectView opaque="NO" alpha="0.80000000000000004" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7Qd-tg-Ruk">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="57"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="335" height="57"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="AzA-nS-lqC">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="57"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="335" height="57"/>
                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                         </view>
                                         <blurEffect style="light"/>
                                     </visualEffectView>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RlX-nz-2Uc" userLabel="Lottery Server View">
-                                        <rect key="frame" x="39" y="0.0" width="296" height="56"/>
+                                        <rect key="frame" x="19.5" y="0.0" width="296" height="56"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lfM-up-6gn" userLabel="2 View">
                                                 <rect key="frame" x="56" y="8" width="40" height="40"/>
@@ -297,6 +297,12 @@
                                                     <constraint firstItem="eUo-sc-lEi" firstAttribute="centerY" secondItem="lfM-up-6gn" secondAttribute="centerY" id="TcI-Zv-RsD"/>
                                                     <constraint firstItem="eUo-sc-lEi" firstAttribute="centerX" secondItem="lfM-up-6gn" secondAttribute="centerX" id="n9J-BI-DWV"/>
                                                 </constraints>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                        <integer key="value" value="20"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="clipsToBounds" value="YES"/>
+                                                </userDefinedRuntimeAttributes>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Kfw-ZR-cIc" userLabel="3 View">
                                                 <rect key="frame" x="104" y="8" width="40" height="40"/>
@@ -313,6 +319,12 @@
                                                     <constraint firstItem="zYJ-OA-t9x" firstAttribute="centerY" secondItem="Kfw-ZR-cIc" secondAttribute="centerY" id="BpY-x6-R7e"/>
                                                     <constraint firstItem="zYJ-OA-t9x" firstAttribute="centerX" secondItem="Kfw-ZR-cIc" secondAttribute="centerX" id="Tw3-zi-mzu"/>
                                                 </constraints>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                        <integer key="value" value="20"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="clipsToBounds" value="YES"/>
+                                                </userDefinedRuntimeAttributes>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HuW-J9-fYN" userLabel="4 View">
                                                 <rect key="frame" x="152" y="8" width="40" height="40"/>
@@ -329,6 +341,12 @@
                                                     <constraint firstItem="ld3-1j-eMx" firstAttribute="centerX" secondItem="HuW-J9-fYN" secondAttribute="centerX" id="Ue7-HM-cAR"/>
                                                     <constraint firstItem="ld3-1j-eMx" firstAttribute="centerY" secondItem="HuW-J9-fYN" secondAttribute="centerY" id="c76-rx-2mR"/>
                                                 </constraints>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                        <integer key="value" value="20"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="clipsToBounds" value="YES"/>
+                                                </userDefinedRuntimeAttributes>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gHA-bg-aUh" userLabel="5 View">
                                                 <rect key="frame" x="200" y="8" width="40" height="40"/>
@@ -345,6 +363,12 @@
                                                     <constraint firstItem="qXo-bo-doG" firstAttribute="centerY" secondItem="gHA-bg-aUh" secondAttribute="centerY" id="8DG-5n-Hd0"/>
                                                     <constraint firstItem="qXo-bo-doG" firstAttribute="centerX" secondItem="gHA-bg-aUh" secondAttribute="centerX" id="MXn-Hd-F58"/>
                                                 </constraints>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                        <integer key="value" value="20"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="clipsToBounds" value="YES"/>
+                                                </userDefinedRuntimeAttributes>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xoR-YY-iXb" userLabel="6 View">
                                                 <rect key="frame" x="248" y="8" width="40" height="40"/>
@@ -361,6 +385,12 @@
                                                     <constraint firstItem="tgj-cS-yKh" firstAttribute="centerX" secondItem="xoR-YY-iXb" secondAttribute="centerX" id="Br8-ds-c1H"/>
                                                     <constraint firstItem="tgj-cS-yKh" firstAttribute="centerY" secondItem="xoR-YY-iXb" secondAttribute="centerY" id="wod-vF-uNg"/>
                                                 </constraints>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                        <integer key="value" value="20"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="clipsToBounds" value="YES"/>
+                                                </userDefinedRuntimeAttributes>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="07e-m1-cWA" userLabel="1 View">
                                                 <rect key="frame" x="8" y="8" width="40" height="40"/>
@@ -379,6 +409,12 @@
                                                     <constraint firstItem="hSw-CH-Y59" firstAttribute="centerY" secondItem="07e-m1-cWA" secondAttribute="centerY" id="rJJ-9R-yZh"/>
                                                     <constraint firstAttribute="width" secondItem="07e-m1-cWA" secondAttribute="height" multiplier="1:1" id="zSb-MQ-HOO"/>
                                                 </constraints>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                        <integer key="value" value="20"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="clipsToBounds" value="YES"/>
+                                                </userDefinedRuntimeAttributes>
                                             </view>
                                         </subviews>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -410,28 +446,28 @@
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Kba-1X-xoe">
-                                        <rect key="frame" x="0.0" y="56" width="375" height="1"/>
+                                        <rect key="frame" x="0.0" y="56" width="335" height="1"/>
                                         <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="1" id="dq6-4g-gS8"/>
                                         </constraints>
                                     </view>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jqp-iB-UMr">
-                                        <rect key="frame" x="153" y="312" width="69" height="30"/>
+                                        <rect key="frame" x="133" y="312" width="69" height="30"/>
                                         <state key="normal" title="Start Dual"/>
                                         <connections>
                                             <action selector="startDual:" destination="NHU-LR-Wh7" eventType="touchUpInside" id="Zjd-Ry-ngz"/>
                                         </connections>
                                     </button>
                                     <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="54" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="WV0-ot-c5T">
-                                        <rect key="frame" x="0.0" y="57" width="375" height="247"/>
+                                        <rect key="frame" x="0.0" y="57" width="335" height="247"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <prototypes>
                                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="dialCell" rowHeight="54" id="cLs-cD-fdd" customClass="DialCell" customModule="Vietlott" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="28" width="375" height="54"/>
+                                                <rect key="frame" x="0.0" y="28" width="335" height="54"/>
                                                 <autoresizingMask key="autoresizingMask"/>
                                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="cLs-cD-fdd" id="xhV-8O-Sv5">
-                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="54"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="335" height="54"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hour" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mpf-RH-Nn5">
@@ -490,7 +526,7 @@
                                         </prototypes>
                                     </tableView>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Zbv-0q-vQS">
-                                        <rect key="frame" x="0.0" y="304" width="375" height="1"/>
+                                        <rect key="frame" x="0.0" y="304" width="335" height="1"/>
                                         <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="1" id="dzd-ex-wYQ"/>
@@ -523,14 +559,20 @@
                                     <constraint firstItem="KzV-Cf-sp0" firstAttribute="top" secondItem="7wy-kX-60c" secondAttribute="top" id="qZs-cM-NUP"/>
                                     <constraint firstAttribute="trailing" secondItem="Zbv-0q-vQS" secondAttribute="trailing" id="x9I-zI-Qfp"/>
                                 </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="clipsToBounds" value="YES"/>
+                                </userDefinedRuntimeAttributes>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="9Hm-39-f5x" secondAttribute="trailing" id="9NP-jx-DIx"/>
                             <constraint firstItem="9Hm-39-f5x" firstAttribute="leading" secondItem="IsI-9X-mup" secondAttribute="leading" id="9gz-FZ-0hM"/>
-                            <constraint firstAttribute="trailing" secondItem="7wy-kX-60c" secondAttribute="trailing" id="L2z-Jj-WZ6"/>
-                            <constraint firstItem="7wy-kX-60c" firstAttribute="leading" secondItem="IsI-9X-mup" secondAttribute="leading" id="S3Q-Pb-q14"/>
+                            <constraint firstAttribute="trailing" secondItem="7wy-kX-60c" secondAttribute="trailing" constant="20" id="L2z-Jj-WZ6"/>
+                            <constraint firstItem="7wy-kX-60c" firstAttribute="leading" secondItem="IsI-9X-mup" secondAttribute="leading" constant="20" id="S3Q-Pb-q14"/>
                             <constraint firstItem="7wy-kX-60c" firstAttribute="centerY" secondItem="9Hm-39-f5x" secondAttribute="centerY" id="Wp6-CM-wPH"/>
                             <constraint firstItem="63e-C6-cUD" firstAttribute="top" secondItem="9Hm-39-f5x" secondAttribute="bottom" id="loD-Tm-jFe"/>
                             <constraint firstItem="9Hm-39-f5x" firstAttribute="top" secondItem="IsI-9X-mup" secondAttribute="top" id="uV8-M8-iDJ"/>
@@ -550,7 +592,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="d6V-TM-YvN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="282" y="891"/>
+            <point key="canvasLocation" x="280.80000000000001" y="890.10494752623697"/>
         </scene>
         <!--Profile View Controller-->
         <scene sceneID="Zqz-db-tfS">
