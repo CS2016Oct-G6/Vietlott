@@ -12,7 +12,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Input-->
+        <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Vietlott" customModuleProvider="target" sceneMemberID="viewController">
@@ -65,14 +65,14 @@
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="90"/>
                                         <subviews>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="auto_mode" translatesAutoresizingMaskIntoConstraints="NO" id="yu8-Le-8Rd">
-                                                <rect key="frame" x="39.5" y="62" width="20" height="20"/>
+                                                <rect key="frame" x="40" y="62" width="20" height="20"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="20" id="MOX-jz-gQr"/>
                                                     <constraint firstAttribute="width" secondItem="yu8-Le-8Rd" secondAttribute="height" multiplier="1:1" id="bAK-ET-aD6"/>
                                                 </constraints>
                                             </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Auto" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uKZ-Up-gLP">
-                                                <rect key="frame" x="8" y="64" width="31.5" height="18"/>
+                                                <rect key="frame" x="8" y="64" width="32" height="18"/>
                                                 <fontDescription key="fontDescription" type="system" weight="thin" pointSize="15"/>
                                                 <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
@@ -205,7 +205,7 @@
                             <constraint firstItem="IDr-n3-ohs" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="qRz-dg-wak"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Input" id="8KZ-nx-8jQ"/>
+                    <tabBarItem key="tabBarItem" title="" image="camera" id="8KZ-nx-8jQ"/>
                     <connections>
                         <outlet property="cameraButton" destination="0zb-04-LWP" id="TFG-aa-oX0"/>
                         <outlet property="cameraView" destination="RLu-i6-FCe" id="8P4-iy-Rng"/>
@@ -217,7 +217,7 @@
             </objects>
             <point key="canvasLocation" x="994" y="-170"/>
         </scene>
-        <!--Home-->
+        <!--Home View Controller-->
         <scene sceneID="wlZ-Mw-rfF">
             <objects>
                 <viewController id="57N-0n-sIV" customClass="HomeViewController" customModule="Vietlott" customModuleProvider="target" sceneMemberID="viewController">
@@ -243,7 +243,7 @@
                             <constraint firstItem="d6W-rV-RiE" firstAttribute="centerY" secondItem="gIe-Zb-ry1" secondAttribute="centerY" id="Sbh-rr-7R2"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Home" id="SK0-EE-fCE"/>
+                    <tabBarItem key="tabBarItem" title="" image="home" id="SK0-EE-fCE"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8pK-cX-zxQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -552,7 +552,7 @@
             </objects>
             <point key="canvasLocation" x="282" y="891"/>
         </scene>
-        <!--Profile-->
+        <!--Profile View Controller-->
         <scene sceneID="Zqz-db-tfS">
             <objects>
                 <viewController id="dAf-GI-zhG" customClass="ProfileViewController" customModule="Vietlott" customModuleProvider="target" sceneMemberID="viewController">
@@ -568,7 +568,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Dz1-sP-Nkp">
-                                        <rect key="frame" x="0.0" y="321.5" width="375" height="1"/>
+                                        <rect key="frame" x="0.0" y="322" width="375" height="1"/>
                                         <color key="backgroundColor" red="0.88397862979999997" green="0.88397862979999997" blue="0.88397862979999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="1" id="q4A-2b-vhJ"/>
@@ -611,7 +611,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="53" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="mvD-fT-ZfW">
-                                        <rect key="frame" x="0.0" y="352" width="375" height="266"/>
+                                        <rect key="frame" x="0.0" y="353" width="375" height="265"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <prototypes>
                                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="historyCell" rowHeight="53" id="WSx-Vd-4ft" customClass="HistoryCell" customModule="Vietlott" customModuleProvider="target">
@@ -679,13 +679,13 @@
                                         </prototypes>
                                     </tableView>
                                     <containerView hidden="YES" opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hiL-mR-zPR">
-                                        <rect key="frame" x="0.0" y="352.5" width="375" height="265.5"/>
+                                        <rect key="frame" x="0.0" y="353" width="375" height="265"/>
                                         <connections>
                                             <segue destination="4PU-4W-fNr" kind="embed" id="Jgs-RX-sop"/>
                                         </connections>
                                     </containerView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5RD-uN-zKz">
-                                        <rect key="frame" x="305" y="296.5" width="50" height="50"/>
+                                        <rect key="frame" x="305" y="297" width="50" height="50"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="5RD-uN-zKz" secondAttribute="height" multiplier="1:1" id="f2n-g6-5fj"/>
                                             <constraint firstAttribute="width" constant="50" id="v8B-Cm-uEw"/>
@@ -696,14 +696,14 @@
                                         </connections>
                                     </button>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XdJ-qw-jK6">
-                                        <rect key="frame" x="25" y="322.5" width="2" height="30"/>
+                                        <rect key="frame" x="25" y="323" width="2" height="30"/>
                                         <color key="backgroundColor" red="0.88397862979999997" green="0.88397862979999997" blue="0.88397862979999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="2" id="QLe-IL-lgU"/>
                                         </constraints>
                                     </view>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="christopher@email.com" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Aa-dj-3ep">
-                                        <rect key="frame" x="121" y="287" width="133.5" height="14.5"/>
+                                        <rect key="frame" x="121" y="287" width="134" height="15"/>
                                         <fontDescription key="fontDescription" type="italicSystem" pointSize="12"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -749,7 +749,7 @@
                             <constraint firstItem="NUs-T2-6WL" firstAttribute="leading" secondItem="3wK-dU-hfu" secondAttribute="leading" id="zM4-aD-UIH"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Profile" id="NsO-7X-ZAI"/>
+                    <tabBarItem key="tabBarItem" title="" image="profile" id="NsO-7X-ZAI"/>
                     <connections>
                         <outlet property="avatarImageView" destination="1Gb-Hb-DFO" id="h7l-Hz-ycb"/>
                         <outlet property="containerChartView" destination="hiL-mR-zPR" id="V25-6Q-v2e"/>
@@ -1149,7 +1149,7 @@
                         <viewControllerLayoutGuide type="bottom" id="0U4-cd-5l2"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="rl4-sJ-Niv">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="265.5"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="265"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="96b-td-vFU" userLabel="Main View">
@@ -1243,15 +1243,18 @@
         <image name="Plus Filled" width="100" height="100"/>
         <image name="auto_mode" width="50" height="50"/>
         <image name="bg" width="566" height="385"/>
+        <image name="camera" width="50" height="50"/>
         <image name="camera_len" width="64" height="64"/>
         <image name="circle_blue" width="190" height="190"/>
         <image name="circle_blue_bold" width="256" height="256"/>
         <image name="circle_gray" width="190" height="190"/>
         <image name="close" width="415" height="415"/>
         <image name="color" width="488" height="488"/>
+        <image name="home" width="29" height="29"/>
         <image name="merry_chistmas" width="2560" height="604"/>
         <image name="pen" width="256" height="256"/>
         <image name="plus" width="128" height="128"/>
+        <image name="profile" width="50" height="50"/>
         <image name="rule" width="1225" height="236"/>
     </resources>
     <inferredMetricsTieBreakers>
