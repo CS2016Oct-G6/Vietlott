@@ -10,6 +10,10 @@
 		99C9BB961DE323DC00E19C81 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 99C9BB951DE323DC00E19C81 /* GoogleService-Info.plist */; };
 		99C9BB9A1DE326D600E19C81 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99C9BB991DE326D600E19C81 /* LoginViewController.swift */; };
 		99C9BB9F1DE32E6D00E19C81 /* FirebaseClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99C9BB9E1DE32E6D00E19C81 /* FirebaseClient.swift */; };
+		99EDC1201DE73C1600C15505 /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99EDC11F1DE73C1600C15505 /* NotificationCenter.framework */; };
+		99EDC1231DE73C1600C15505 /* TodayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99EDC1221DE73C1600C15505 /* TodayViewController.swift */; };
+		99EDC1261DE73C1600C15505 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 99EDC1241DE73C1600C15505 /* MainInterface.storyboard */; };
+		99EDC12A1DE73C1600C15505 /* VietlottWidget.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 99EDC11E1DE73C1600C15505 /* VietlottWidget.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		CF008EF17926B510E8255CF7 /* Pods_Vietlott.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0865DEDC8AD5B52D584B3324 /* Pods_Vietlott.framework */; };
 		F41581331DDF3A1300757F07 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = F41581321DDF3A1300757F07 /* User.swift */; };
 		F43D85651DD568A6005648DA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F43D85641DD568A6005648DA /* AppDelegate.swift */; };
@@ -53,6 +57,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		99EDC1281DE73C1600C15505 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F43D85591DD568A6005648DA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 99EDC11D1DE73C1600C15505;
+			remoteInfo = VietlottWidget;
+		};
 		F4E2FF2B1DE0A17600F403C3 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = F4E2FF251DE0A17600F403C3 /* Charts.xcodeproj */;
@@ -84,6 +95,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
+		99EDC1301DE73C1600C15505 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				99EDC12A1DE73C1600C15505 /* VietlottWidget.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		F4E2FF351DE0A19700F403C3 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -103,6 +125,11 @@
 		99C9BB951DE323DC00E19C81 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		99C9BB991DE326D600E19C81 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		99C9BB9E1DE32E6D00E19C81 /* FirebaseClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirebaseClient.swift; sourceTree = "<group>"; };
+		99EDC11E1DE73C1600C15505 /* VietlottWidget.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = VietlottWidget.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		99EDC11F1DE73C1600C15505 /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
+		99EDC1221DE73C1600C15505 /* TodayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayViewController.swift; sourceTree = "<group>"; };
+		99EDC1251DE73C1600C15505 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		99EDC1271DE73C1600C15505 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F41581321DDF3A1300757F07 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		F43D85611DD568A6005648DA /* Vietlott.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Vietlott.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F43D85641DD568A6005648DA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -163,6 +190,14 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		99EDC11B1DE73C1600C15505 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				99EDC1201DE73C1600C15505 /* NotificationCenter.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		F43D855E1DD568A6005648DA /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -179,6 +214,7 @@
 			isa = PBXGroup;
 			children = (
 				0865DEDC8AD5B52D584B3324 /* Pods_Vietlott.framework */,
+				99EDC11F1DE73C1600C15505 /* NotificationCenter.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -192,10 +228,21 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		99EDC1211DE73C1600C15505 /* VietlottWidget */ = {
+			isa = PBXGroup;
+			children = (
+				99EDC1221DE73C1600C15505 /* TodayViewController.swift */,
+				99EDC1241DE73C1600C15505 /* MainInterface.storyboard */,
+				99EDC1271DE73C1600C15505 /* Info.plist */,
+			);
+			path = VietlottWidget;
+			sourceTree = "<group>";
+		};
 		F43D85581DD568A6005648DA = {
 			isa = PBXGroup;
 			children = (
 				F43D85631DD568A6005648DA /* Vietlott */,
+				99EDC1211DE73C1600C15505 /* VietlottWidget */,
 				F43D85621DD568A6005648DA /* Products */,
 				32BBCB47A3E3E9456F66C0FE /* Pods */,
 				313AF6BB29AFFBD8A24ED3E7 /* Frameworks */,
@@ -206,6 +253,7 @@
 			isa = PBXGroup;
 			children = (
 				F43D85611DD568A6005648DA /* Vietlott.app */,
+				99EDC11E1DE73C1600C15505 /* VietlottWidget.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -344,6 +392,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		99EDC11D1DE73C1600C15505 /* VietlottWidget */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 99EDC12F1DE73C1600C15505 /* Build configuration list for PBXNativeTarget "VietlottWidget" */;
+			buildPhases = (
+				99EDC11A1DE73C1600C15505 /* Sources */,
+				99EDC11B1DE73C1600C15505 /* Frameworks */,
+				99EDC11C1DE73C1600C15505 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = VietlottWidget;
+			productName = VietlottWidget;
+			productReference = 99EDC11E1DE73C1600C15505 /* VietlottWidget.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 		F43D85601DD568A6005648DA /* Vietlott */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = F43D85761DD568A6005648DA /* Build configuration list for PBXNativeTarget "Vietlott" */;
@@ -355,11 +420,13 @@
 				54F27936879C90B8453CF699 /* [CP] Embed Pods Frameworks */,
 				98B42FF090D9AF115ED77BC7 /* [CP] Copy Pods Resources */,
 				F4E2FF351DE0A19700F403C3 /* Embed Frameworks */,
+				99EDC1301DE73C1600C15505 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 				F4E2FF341DE0A19700F403C3 /* PBXTargetDependency */,
+				99EDC1291DE73C1600C15505 /* PBXTargetDependency */,
 			);
 			name = Vietlott;
 			productName = Vietlott;
@@ -376,6 +443,11 @@
 				LastUpgradeCheck = 0810;
 				ORGANIZATIONNAME = congtruong;
 				TargetAttributes = {
+					99EDC11D1DE73C1600C15505 = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = C4K2QZSFW6;
+						ProvisioningStyle = Automatic;
+					};
 					F43D85601DD568A6005648DA = {
 						CreatedOnToolsVersion = 8.1;
 						DevelopmentTeam = C4K2QZSFW6;
@@ -404,6 +476,7 @@
 			projectRoot = "";
 			targets = (
 				F43D85601DD568A6005648DA /* Vietlott */,
+				99EDC11D1DE73C1600C15505 /* VietlottWidget */,
 			);
 		};
 /* End PBXProject section */
@@ -433,6 +506,14 @@
 /* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
+		99EDC11C1DE73C1600C15505 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				99EDC1261DE73C1600C15505 /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		F43D855F1DD568A6005648DA /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -495,6 +576,14 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		99EDC11A1DE73C1600C15505 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				99EDC1231DE73C1600C15505 /* TodayViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		F43D855D1DD568A6005648DA /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -541,6 +630,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		99EDC1291DE73C1600C15505 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 99EDC11D1DE73C1600C15505 /* VietlottWidget */;
+			targetProxy = 99EDC1281DE73C1600C15505 /* PBXContainerItemProxy */;
+		};
 		F4E2FF341DE0A19700F403C3 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = Charts;
@@ -549,6 +643,14 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		99EDC1241DE73C1600C15505 /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				99EDC1251DE73C1600C15505 /* Base */,
+			);
+			name = MainInterface.storyboard;
+			sourceTree = "<group>";
+		};
 		F43D85681DD568A6005648DA /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -568,6 +670,34 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		99EDC12B1DE73C1600C15505 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = C4K2QZSFW6;
+				INFOPLIST_FILE = VietlottWidget/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = vn.coderschool.Vietlott.VietlottWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		99EDC12C1DE73C1600C15505 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = C4K2QZSFW6;
+				INFOPLIST_FILE = VietlottWidget/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = vn.coderschool.Vietlott.VietlottWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
 		F43D85741DD568A6005648DA /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -703,6 +833,14 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		99EDC12F1DE73C1600C15505 /* Build configuration list for PBXNativeTarget "VietlottWidget" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				99EDC12B1DE73C1600C15505 /* Debug */,
+				99EDC12C1DE73C1600C15505 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		F43D855C1DD568A6005648DA /* Build configuration list for PBXProject "Vietlott" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

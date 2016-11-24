@@ -17,13 +17,39 @@ class HomeViewController: UIViewController {
     }
     
     func getData() {
-        FirebaseClient.sharedInstance.getUserHistory(completion: { (lotteryList, error) in
-            guard let lotteryList = lotteryList else {
+        FirebaseClient.sharedInstance.getUserHistory(completion: { (lotteryHistory, error) in
+            guard
+                let lotteryHistory = lotteryHistory
+            else {
                 return
             }
+            var lotteryList:[Lottery] = []
+            for (key, val) in lotteryHistory {
+                guard
+                    let yearMonthString = key as? String,
+                    let month = Int(yearMonthString.subString(from: 5, to: 7)),
+                    let monthlySold = val as? NSDictionary
+                else {
+                    return
+                }
+                
+                
+                Constance.unitsSold[month-1] = Double(monthlySold.allKeys.count)
+                for (subKey, subVal) in monthlySold {
+                    guard
+                        let subVal = subVal as? NSDictionary,
+                        let numbers = subVal["numbers"] as? String,
+                        let date = subVal["date"] as? String
+                    else {
+                        return
+                    }
+                    let lottery = Lottery(lottery: numbers, time: date)
+                    lotteryList.append(lottery)
+                }
+            }
             Constance.lotteryArrayHistory = lotteryList
+            
         })
-        
         
     }
     

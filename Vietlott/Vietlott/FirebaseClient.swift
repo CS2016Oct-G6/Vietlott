@@ -28,11 +28,13 @@ class FirebaseClient {
             guard
                 let numbers = entry.lotteryNumber,
                 let date = entry.timeCreate,
-                let userID = FIRAuth.auth()?.currentUser?.uid
+                let userID = FIRAuth.auth()?.currentUser?.uid,
+                let yearMonth = entry.timeCreate?.subString(from: 0, to: 7)
+
             else {
                 break
             }
-            self.ref.child("users/\(userID)/history").childByAutoId().setValue([
+            self.ref.child("users/\(userID)/history/\(yearMonth)").childByAutoId().setValue([
                 "numbers": numbers,
                 "date": date
             ])
@@ -71,7 +73,7 @@ class FirebaseClient {
         }
     }
     
-    func getUserHistory(completion: @escaping ([Lottery]?, Error?) -> ()){
+    func getUserHistory(completion: @escaping (NSDictionary?, Error?) -> ()){
         guard let userID = FIRAuth.auth()?.currentUser?.uid else {
             return
         }
@@ -83,22 +85,7 @@ class FirebaseClient {
                 return
             }
             
-            
-            var entries:[Lottery] = []
-            for (key, val) in result {
-                guard
-                    let val = val as? NSDictionary,
-                    let numbers = val["numbers"] as? String,
-                    let date = val["date"] as? String
-                    else {
-                        return
-                }
-                let entry = Lottery(lottery: numbers, time: date)
-                entries.append(entry)
-            }
-            
-            
-            completion(entries, nil)
+            completion(result, nil)
             
             // ...
         }) { (error) in
