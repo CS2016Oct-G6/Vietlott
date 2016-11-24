@@ -12,7 +12,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Input-->
+        <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Vietlott" customModuleProvider="target" sceneMemberID="viewController">
@@ -65,14 +65,14 @@
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="90"/>
                                         <subviews>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="auto_mode" translatesAutoresizingMaskIntoConstraints="NO" id="yu8-Le-8Rd">
-                                                <rect key="frame" x="39.5" y="62" width="20" height="20"/>
+                                                <rect key="frame" x="40" y="62" width="20" height="20"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="20" id="MOX-jz-gQr"/>
                                                     <constraint firstAttribute="width" secondItem="yu8-Le-8Rd" secondAttribute="height" multiplier="1:1" id="bAK-ET-aD6"/>
                                                 </constraints>
                                             </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Auto" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uKZ-Up-gLP">
-                                                <rect key="frame" x="8" y="64" width="31.5" height="18"/>
+                                                <rect key="frame" x="8" y="64" width="32" height="18"/>
                                                 <fontDescription key="fontDescription" type="system" weight="thin" pointSize="15"/>
                                                 <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
@@ -205,7 +205,7 @@
                             <constraint firstItem="IDr-n3-ohs" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="qRz-dg-wak"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Input" id="8KZ-nx-8jQ"/>
+                    <tabBarItem key="tabBarItem" title="" image="camera" id="8KZ-nx-8jQ"/>
                     <connections>
                         <outlet property="cameraButton" destination="0zb-04-LWP" id="TFG-aa-oX0"/>
                         <outlet property="cameraView" destination="RLu-i6-FCe" id="8P4-iy-Rng"/>
@@ -217,7 +217,7 @@
             </objects>
             <point key="canvasLocation" x="994" y="-170"/>
         </scene>
-        <!--Home-->
+        <!--Home View Controller-->
         <scene sceneID="wlZ-Mw-rfF">
             <objects>
                 <viewController id="57N-0n-sIV" customClass="HomeViewController" customModule="Vietlott" customModuleProvider="target" sceneMemberID="viewController">
@@ -243,7 +243,7 @@
                             <constraint firstItem="d6W-rV-RiE" firstAttribute="centerY" secondItem="gIe-Zb-ry1" secondAttribute="centerY" id="Sbh-rr-7R2"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Home" id="SK0-EE-fCE"/>
+                    <tabBarItem key="tabBarItem" title="" image="home" id="SK0-EE-fCE"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8pK-cX-zxQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -266,21 +266,21 @@
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7wy-kX-60c" userLabel="Main View">
-                                <rect key="frame" x="0.0" y="158" width="375" height="350"/>
+                                <rect key="frame" x="20" y="158" width="335" height="350"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="merry_chistmas" translatesAutoresizingMaskIntoConstraints="NO" id="KzV-Cf-sp0">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="57"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="335" height="57"/>
                                     </imageView>
                                     <visualEffectView opaque="NO" alpha="0.80000000000000004" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7Qd-tg-Ruk">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="57"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="335" height="57"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="AzA-nS-lqC">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="57"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="335" height="57"/>
                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                         </view>
                                         <blurEffect style="light"/>
                                     </visualEffectView>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RlX-nz-2Uc" userLabel="Lottery Server View">
-                                        <rect key="frame" x="39" y="0.0" width="296" height="56"/>
+                                        <rect key="frame" x="19.5" y="0.0" width="296" height="56"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lfM-up-6gn" userLabel="2 View">
                                                 <rect key="frame" x="56" y="8" width="40" height="40"/>
@@ -297,6 +297,12 @@
                                                     <constraint firstItem="eUo-sc-lEi" firstAttribute="centerY" secondItem="lfM-up-6gn" secondAttribute="centerY" id="TcI-Zv-RsD"/>
                                                     <constraint firstItem="eUo-sc-lEi" firstAttribute="centerX" secondItem="lfM-up-6gn" secondAttribute="centerX" id="n9J-BI-DWV"/>
                                                 </constraints>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                        <integer key="value" value="20"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="clipsToBounds" value="YES"/>
+                                                </userDefinedRuntimeAttributes>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Kfw-ZR-cIc" userLabel="3 View">
                                                 <rect key="frame" x="104" y="8" width="40" height="40"/>
@@ -313,6 +319,12 @@
                                                     <constraint firstItem="zYJ-OA-t9x" firstAttribute="centerY" secondItem="Kfw-ZR-cIc" secondAttribute="centerY" id="BpY-x6-R7e"/>
                                                     <constraint firstItem="zYJ-OA-t9x" firstAttribute="centerX" secondItem="Kfw-ZR-cIc" secondAttribute="centerX" id="Tw3-zi-mzu"/>
                                                 </constraints>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                        <integer key="value" value="20"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="clipsToBounds" value="YES"/>
+                                                </userDefinedRuntimeAttributes>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HuW-J9-fYN" userLabel="4 View">
                                                 <rect key="frame" x="152" y="8" width="40" height="40"/>
@@ -329,6 +341,12 @@
                                                     <constraint firstItem="ld3-1j-eMx" firstAttribute="centerX" secondItem="HuW-J9-fYN" secondAttribute="centerX" id="Ue7-HM-cAR"/>
                                                     <constraint firstItem="ld3-1j-eMx" firstAttribute="centerY" secondItem="HuW-J9-fYN" secondAttribute="centerY" id="c76-rx-2mR"/>
                                                 </constraints>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                        <integer key="value" value="20"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="clipsToBounds" value="YES"/>
+                                                </userDefinedRuntimeAttributes>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gHA-bg-aUh" userLabel="5 View">
                                                 <rect key="frame" x="200" y="8" width="40" height="40"/>
@@ -345,6 +363,12 @@
                                                     <constraint firstItem="qXo-bo-doG" firstAttribute="centerY" secondItem="gHA-bg-aUh" secondAttribute="centerY" id="8DG-5n-Hd0"/>
                                                     <constraint firstItem="qXo-bo-doG" firstAttribute="centerX" secondItem="gHA-bg-aUh" secondAttribute="centerX" id="MXn-Hd-F58"/>
                                                 </constraints>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                        <integer key="value" value="20"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="clipsToBounds" value="YES"/>
+                                                </userDefinedRuntimeAttributes>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xoR-YY-iXb" userLabel="6 View">
                                                 <rect key="frame" x="248" y="8" width="40" height="40"/>
@@ -361,6 +385,12 @@
                                                     <constraint firstItem="tgj-cS-yKh" firstAttribute="centerX" secondItem="xoR-YY-iXb" secondAttribute="centerX" id="Br8-ds-c1H"/>
                                                     <constraint firstItem="tgj-cS-yKh" firstAttribute="centerY" secondItem="xoR-YY-iXb" secondAttribute="centerY" id="wod-vF-uNg"/>
                                                 </constraints>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                        <integer key="value" value="20"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="clipsToBounds" value="YES"/>
+                                                </userDefinedRuntimeAttributes>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="07e-m1-cWA" userLabel="1 View">
                                                 <rect key="frame" x="8" y="8" width="40" height="40"/>
@@ -379,6 +409,12 @@
                                                     <constraint firstItem="hSw-CH-Y59" firstAttribute="centerY" secondItem="07e-m1-cWA" secondAttribute="centerY" id="rJJ-9R-yZh"/>
                                                     <constraint firstAttribute="width" secondItem="07e-m1-cWA" secondAttribute="height" multiplier="1:1" id="zSb-MQ-HOO"/>
                                                 </constraints>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                        <integer key="value" value="20"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="clipsToBounds" value="YES"/>
+                                                </userDefinedRuntimeAttributes>
                                             </view>
                                         </subviews>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -410,28 +446,28 @@
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Kba-1X-xoe">
-                                        <rect key="frame" x="0.0" y="56" width="375" height="1"/>
+                                        <rect key="frame" x="0.0" y="56" width="335" height="1"/>
                                         <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="1" id="dq6-4g-gS8"/>
                                         </constraints>
                                     </view>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jqp-iB-UMr">
-                                        <rect key="frame" x="153" y="312" width="69" height="30"/>
+                                        <rect key="frame" x="133" y="312" width="69" height="30"/>
                                         <state key="normal" title="Start Dual"/>
                                         <connections>
                                             <action selector="startDual:" destination="NHU-LR-Wh7" eventType="touchUpInside" id="Zjd-Ry-ngz"/>
                                         </connections>
                                     </button>
                                     <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="54" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="WV0-ot-c5T">
-                                        <rect key="frame" x="0.0" y="57" width="375" height="247"/>
+                                        <rect key="frame" x="0.0" y="57" width="335" height="247"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <prototypes>
                                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="dialCell" rowHeight="54" id="cLs-cD-fdd" customClass="DialCell" customModule="Vietlott" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="28" width="375" height="54"/>
+                                                <rect key="frame" x="0.0" y="28" width="335" height="54"/>
                                                 <autoresizingMask key="autoresizingMask"/>
                                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="cLs-cD-fdd" id="xhV-8O-Sv5">
-                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="54"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="335" height="54"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hour" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mpf-RH-Nn5">
@@ -490,7 +526,7 @@
                                         </prototypes>
                                     </tableView>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Zbv-0q-vQS">
-                                        <rect key="frame" x="0.0" y="304" width="375" height="1"/>
+                                        <rect key="frame" x="0.0" y="304" width="335" height="1"/>
                                         <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="1" id="dzd-ex-wYQ"/>
@@ -523,14 +559,20 @@
                                     <constraint firstItem="KzV-Cf-sp0" firstAttribute="top" secondItem="7wy-kX-60c" secondAttribute="top" id="qZs-cM-NUP"/>
                                     <constraint firstAttribute="trailing" secondItem="Zbv-0q-vQS" secondAttribute="trailing" id="x9I-zI-Qfp"/>
                                 </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="clipsToBounds" value="YES"/>
+                                </userDefinedRuntimeAttributes>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="9Hm-39-f5x" secondAttribute="trailing" id="9NP-jx-DIx"/>
                             <constraint firstItem="9Hm-39-f5x" firstAttribute="leading" secondItem="IsI-9X-mup" secondAttribute="leading" id="9gz-FZ-0hM"/>
-                            <constraint firstAttribute="trailing" secondItem="7wy-kX-60c" secondAttribute="trailing" id="L2z-Jj-WZ6"/>
-                            <constraint firstItem="7wy-kX-60c" firstAttribute="leading" secondItem="IsI-9X-mup" secondAttribute="leading" id="S3Q-Pb-q14"/>
+                            <constraint firstAttribute="trailing" secondItem="7wy-kX-60c" secondAttribute="trailing" constant="20" id="L2z-Jj-WZ6"/>
+                            <constraint firstItem="7wy-kX-60c" firstAttribute="leading" secondItem="IsI-9X-mup" secondAttribute="leading" constant="20" id="S3Q-Pb-q14"/>
                             <constraint firstItem="7wy-kX-60c" firstAttribute="centerY" secondItem="9Hm-39-f5x" secondAttribute="centerY" id="Wp6-CM-wPH"/>
                             <constraint firstItem="63e-C6-cUD" firstAttribute="top" secondItem="9Hm-39-f5x" secondAttribute="bottom" id="loD-Tm-jFe"/>
                             <constraint firstItem="9Hm-39-f5x" firstAttribute="top" secondItem="IsI-9X-mup" secondAttribute="top" id="uV8-M8-iDJ"/>
@@ -550,9 +592,9 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="d6V-TM-YvN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="282" y="891"/>
+            <point key="canvasLocation" x="280.80000000000001" y="890.10494752623697"/>
         </scene>
-        <!--Profile-->
+        <!--Profile View Controller-->
         <scene sceneID="Zqz-db-tfS">
             <objects>
                 <viewController id="dAf-GI-zhG" customClass="ProfileViewController" customModule="Vietlott" customModuleProvider="target" sceneMemberID="viewController">
@@ -568,7 +610,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Dz1-sP-Nkp">
-                                        <rect key="frame" x="0.0" y="321.5" width="375" height="1"/>
+                                        <rect key="frame" x="0.0" y="322" width="375" height="1"/>
                                         <color key="backgroundColor" red="0.88397862979999997" green="0.88397862979999997" blue="0.88397862979999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="1" id="q4A-2b-vhJ"/>
@@ -611,7 +653,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="53" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="mvD-fT-ZfW">
-                                        <rect key="frame" x="0.0" y="352" width="375" height="266"/>
+                                        <rect key="frame" x="0.0" y="353" width="375" height="265"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <prototypes>
                                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="historyCell" rowHeight="53" id="WSx-Vd-4ft" customClass="HistoryCell" customModule="Vietlott" customModuleProvider="target">
@@ -679,13 +721,13 @@
                                         </prototypes>
                                     </tableView>
                                     <containerView hidden="YES" opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hiL-mR-zPR">
-                                        <rect key="frame" x="0.0" y="352.5" width="375" height="265.5"/>
+                                        <rect key="frame" x="0.0" y="353" width="375" height="265"/>
                                         <connections>
                                             <segue destination="4PU-4W-fNr" kind="embed" id="Jgs-RX-sop"/>
                                         </connections>
                                     </containerView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5RD-uN-zKz">
-                                        <rect key="frame" x="305" y="296.5" width="50" height="50"/>
+                                        <rect key="frame" x="305" y="297" width="50" height="50"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="5RD-uN-zKz" secondAttribute="height" multiplier="1:1" id="f2n-g6-5fj"/>
                                             <constraint firstAttribute="width" constant="50" id="v8B-Cm-uEw"/>
@@ -696,14 +738,14 @@
                                         </connections>
                                     </button>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XdJ-qw-jK6">
-                                        <rect key="frame" x="25" y="322.5" width="2" height="30"/>
+                                        <rect key="frame" x="25" y="323" width="2" height="30"/>
                                         <color key="backgroundColor" red="0.88397862979999997" green="0.88397862979999997" blue="0.88397862979999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="2" id="QLe-IL-lgU"/>
                                         </constraints>
                                     </view>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="christopher@email.com" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Aa-dj-3ep">
-                                        <rect key="frame" x="121" y="287" width="133.5" height="14.5"/>
+                                        <rect key="frame" x="121" y="287" width="134" height="15"/>
                                         <fontDescription key="fontDescription" type="italicSystem" pointSize="12"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -749,7 +791,7 @@
                             <constraint firstItem="NUs-T2-6WL" firstAttribute="leading" secondItem="3wK-dU-hfu" secondAttribute="leading" id="zM4-aD-UIH"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Profile" id="NsO-7X-ZAI"/>
+                    <tabBarItem key="tabBarItem" title="" image="profile" id="NsO-7X-ZAI"/>
                     <connections>
                         <outlet property="avatarImageView" destination="1Gb-Hb-DFO" id="h7l-Hz-ycb"/>
                         <outlet property="containerChartView" destination="hiL-mR-zPR" id="V25-6Q-v2e"/>
@@ -1149,7 +1191,7 @@
                         <viewControllerLayoutGuide type="bottom" id="0U4-cd-5l2"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="rl4-sJ-Niv">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="265.5"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="265"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="96b-td-vFU" userLabel="Main View">
@@ -1243,15 +1285,18 @@
         <image name="Plus Filled" width="100" height="100"/>
         <image name="auto_mode" width="50" height="50"/>
         <image name="bg" width="566" height="385"/>
+        <image name="camera" width="50" height="50"/>
         <image name="camera_len" width="64" height="64"/>
         <image name="circle_blue" width="190" height="190"/>
         <image name="circle_blue_bold" width="256" height="256"/>
         <image name="circle_gray" width="190" height="190"/>
         <image name="close" width="415" height="415"/>
         <image name="color" width="488" height="488"/>
+        <image name="home" width="29" height="29"/>
         <image name="merry_chistmas" width="2560" height="604"/>
         <image name="pen" width="256" height="256"/>
         <image name="plus" width="128" height="128"/>
+        <image name="profile" width="50" height="50"/>
         <image name="rule" width="1225" height="236"/>
     </resources>
     <inferredMetricsTieBreakers>
