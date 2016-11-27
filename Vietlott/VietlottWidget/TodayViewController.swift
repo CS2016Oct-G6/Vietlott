@@ -10,6 +10,12 @@ import UIKit
 import NotificationCenter
 
 class TodayViewController: UIViewController, NCWidgetProviding {
+    @IBOutlet weak var dayLabel: UILabel!
+    @IBOutlet weak var hourLabel: UILabel!
+    @IBOutlet weak var minuteLabel: UILabel!
+    @IBOutlet weak var secondLabel: UILabel!
+
+    
         
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -35,9 +41,10 @@ class TodayViewController: UIViewController, NCWidgetProviding {
     
     func update(){
         let timeTuple = getTimeIntervalTuple(interval: hourSinceThen())
-//        hourLabel.text = "\(timeTuple.hour)"
-//        minuteLabel.text = "\(timeTuple.minute)"
-//        secondLabel.text = "\(timeTuple.second)"
+        dayLabel.text = "\(timeTuple.day)"
+        hourLabel.text = "\(timeTuple.hour)"
+        minuteLabel.text = "\(timeTuple.minute)"
+        secondLabel.text = "\(timeTuple.second)"
     }
     
     func updatePrize(){
@@ -84,12 +91,13 @@ class TodayViewController: UIViewController, NCWidgetProviding {
         return tempDateComponent
     }
     
-    func getTimeIntervalTuple(interval: TimeInterval) -> (hour: Int, minute: Int, second: Int) {
+    func getTimeIntervalTuple(interval: TimeInterval) -> (day: Int, hour: Int, minute: Int, second: Int) {
         let total = Int(interval)
         let tempSecond = total % 60
         let tempMinute = (total / 60) % 60
-        let tempHour = total / 60 / 60
-        return (tempHour, tempMinute, tempSecond)
+        let tempHour = (total / 60 / 60) % 24
+        let tempDay = total / 60 / 60 / 24
+        return (tempDay, tempHour, tempMinute, tempSecond)
     }
     
 }

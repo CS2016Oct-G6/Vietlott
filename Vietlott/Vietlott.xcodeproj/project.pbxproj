@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		997CEB9A1DEADA0B00978F36 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F43D856E1DD568A6005648DA /* Assets.xcassets */; };
 		99C9BB961DE323DC00E19C81 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 99C9BB951DE323DC00E19C81 /* GoogleService-Info.plist */; };
 		99C9BB9A1DE326D600E19C81 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99C9BB991DE326D600E19C81 /* LoginViewController.swift */; };
 		99C9BB9F1DE32E6D00E19C81 /* FirebaseClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99C9BB9E1DE32E6D00E19C81 /* FirebaseClient.swift */; };
@@ -14,6 +15,7 @@
 		99EDC1231DE73C1600C15505 /* TodayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99EDC1221DE73C1600C15505 /* TodayViewController.swift */; };
 		99EDC1261DE73C1600C15505 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 99EDC1241DE73C1600C15505 /* MainInterface.storyboard */; };
 		99EDC12A1DE73C1600C15505 /* VietlottWidget.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 99EDC11E1DE73C1600C15505 /* VietlottWidget.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		99F68CD61DE73DA40003B56E /* TodayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99EDC1221DE73C1600C15505 /* TodayViewController.swift */; };
 		CF008EF17926B510E8255CF7 /* Pods_Vietlott.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0865DEDC8AD5B52D584B3324 /* Pods_Vietlott.framework */; };
 		F41581331DDF3A1300757F07 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = F41581321DDF3A1300757F07 /* User.swift */; };
 		F43D85651DD568A6005648DA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F43D85641DD568A6005648DA /* AppDelegate.swift */; };
@@ -510,6 +512,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				997CEB9A1DEADA0B00978F36 /* Assets.xcassets in Resources */,
 				99EDC1261DE73C1600C15505 /* MainInterface.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -615,6 +618,7 @@
 				F4C1BC6F1DE1649200F7069A /* SDWebImageDownloader.m in Sources */,
 				F4C1BC491DE1635700F7069A /* CustomImageView.swift in Sources */,
 				F44366021DDCC9F000D854B9 /* Lottery.swift in Sources */,
+				99F68CD61DE73DA40003B56E /* TodayViewController.swift in Sources */,
 				F4C1BC751DE1649200F7069A /* UIImage+MultiFormat.m in Sources */,
 				F4C1BC731DE1649200F7069A /* UIButton+WebCache.m in Sources */,
 				F43D85651DD568A6005648DA /* AppDelegate.swift in Sources */,
@@ -804,7 +808,7 @@
 				DEVELOPMENT_TEAM = 5TJXL29536;
 				INFOPLIST_FILE = Vietlott/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.coderschool.Vietlott;
+				PRODUCT_BUNDLE_IDENTIFIER = vn.coderschool.Vietlott;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "Vietlott/Vietlott-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -823,7 +827,7 @@
 				DEVELOPMENT_TEAM = 5TJXL29536;
 				INFOPLIST_FILE = Vietlott/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.coderschool.Vietlott;
+				PRODUCT_BUNDLE_IDENTIFIER = vn.coderschool.Vietlott;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "Vietlott/Vietlott-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
@@ -840,6 +844,7 @@
 				99EDC12C1DE73C1600C15505 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F43D855C1DD568A6005648DA /* Build configuration list for PBXProject "Vietlott" */ = {
 			isa = XCConfigurationList;
