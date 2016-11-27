@@ -69,6 +69,7 @@ PODS:
   - GTMSessionFetcher/Core (1.1.7)
   - GTMSessionFetcher/Full (1.1.7):
     - GTMSessionFetcher/Core (= 1.1.7)
+  - Kanna (2.0.0)
   - SwiftyJSON (3.1.1)
 
 DEPENDENCIES:
@@ -78,6 +79,7 @@ DEPENDENCIES:
   - Firebase/Auth
   - Firebase/Database
   - GoogleSignIn
+  - Kanna (~> 2.0.0)
   - SwiftyJSON (~> 3.1)
 
 SPEC CHECKSUMS:
@@ -96,8 +98,9 @@ SPEC CHECKSUMS:
   GoogleToolboxForMac: 2b2596cbb7186865e98cadf2b1e262d851c2b168
   GTMOAuth2: 7fc9c10f5c745f4d9850419ea88889fe3baa6b7d
   GTMSessionFetcher: a1f8ed39e4fe21c68957daed472c7afbcdf29166
+  Kanna: 9a6637f72f5c77fe9c045b1efb2a5bb074754af8
   SwiftyJSON: f0be2e604f83e8405a624e9f891898bf6ed4e019
 
-PODFILE CHECKSUM: b36b9d210a09ca26969d20e231a4cacb1d64ea73
+PODFILE CHECKSUM: 9b79c911bcb14cb94136d9ded05d2a9b00afd571
 
 COCOAPODS: 1.1.1

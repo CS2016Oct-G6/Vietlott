@@ -13,5 +13,6 @@ target 'Vietlott' do
   pod 'Firebase/Auth'
   pod 'GoogleSignIn'
   pod 'Firebase/Database'
+  pod 'Kanna', '~> 2.0.0'
 
 end

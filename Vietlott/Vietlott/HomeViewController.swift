@@ -7,13 +7,17 @@
 //
 
 import UIKit
+import Kanna
 
 class HomeViewController: UIViewController {
+    @IBOutlet weak var webView: UIWebView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
         getData()
+        webView.loadRequest(NSURLRequest(url: NSURL(fileURLWithPath: Bundle.main.path(forResource: "htmlCode", ofType: "html")!) as URL) as URLRequest)
+        displayURL()
     }
     
     func getData() {
@@ -52,6 +56,47 @@ class HomeViewController: UIViewController {
         })
         
     }
+    
+    func displayURL() {
+        var result:String
+        
+        if let doc = Kanna.HTML(url: (NSURL(string: "http://vietlott.vn")!) as URL, encoding: String.Encoding.utf8) {
+            print("body.... \(doc.title!)");
+            
+            for show in doc.css("ul[class^='result-number']") {
+                result = show.text!
+                
+                let formattedString = result.replacingOccurrences(of: "\r\n", with: "")
+                
+                let trimmedString = formattedString.trimmingCharacters(in: .whitespaces)
+                
+                let str = trimmedString.removeExcessiveSpaces
+                
+                
+                let first = str[0] // First
+                let second = str[1] // First
+                
+                print(first)
+                print(second)
+                print(str)
+                
+            }
+            
+            for h2 in doc.css("h2") {
+                
+                let result = h2.text!
+                
+                let formattedString = result.replacingOccurrences(of: "\r\n", with: "")
+                
+                let trimmedString = formattedString.trimmingCharacters(in: .whitespaces)
+                
+                if(trimmedString != ""){
+                    print("wingng money.... \(trimmedString)")
+                }
+            }
+        }
+    }
+    
     
     @IBAction func showDialView(_ sender: UIButton) {
         let storyboart = UIStoryboard(name: "Main", bundle: nil)

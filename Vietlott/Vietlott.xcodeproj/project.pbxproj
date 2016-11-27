@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		997CEB9A1DEADA0B00978F36 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F43D856E1DD568A6005648DA /* Assets.xcassets */; };
+		997CEB9C1DEB2C1900978F36 /* htmlCode.html in Resources */ = {isa = PBXBuildFile; fileRef = 997CEB9B1DEB2C1900978F36 /* htmlCode.html */; };
 		99C9BB961DE323DC00E19C81 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 99C9BB951DE323DC00E19C81 /* GoogleService-Info.plist */; };
 		99C9BB9A1DE326D600E19C81 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99C9BB991DE326D600E19C81 /* LoginViewController.swift */; };
 		99C9BB9F1DE32E6D00E19C81 /* FirebaseClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99C9BB9E1DE32E6D00E19C81 /* FirebaseClient.swift */; };
@@ -124,6 +125,7 @@
 /* Begin PBXFileReference section */
 		0865DEDC8AD5B52D584B3324 /* Pods_Vietlott.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Vietlott.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		37C3EBE8ABE3BFE1B713C09C /* Pods-Vietlott.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Vietlott.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Vietlott/Pods-Vietlott.debug.xcconfig"; sourceTree = "<group>"; };
+		997CEB9B1DEB2C1900978F36 /* htmlCode.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = htmlCode.html; sourceTree = "<group>"; };
 		99C9BB951DE323DC00E19C81 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		99C9BB991DE326D600E19C81 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		99C9BB9E1DE32E6D00E19C81 /* FirebaseClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirebaseClient.swift; sourceTree = "<group>"; };
@@ -263,6 +265,7 @@
 		F43D85631DD568A6005648DA /* Vietlott */ = {
 			isa = PBXGroup;
 			children = (
+				997CEB9B1DEB2C1900978F36 /* htmlCode.html */,
 				99C9BB951DE323DC00E19C81 /* GoogleService-Info.plist */,
 				F49EDABF1DD8ABDD00767F72 /* Support */,
 				F49EDABE1DD8ABC600767F72 /* Model */,
@@ -525,6 +528,7 @@
 				99C9BB961DE323DC00E19C81 /* GoogleService-Info.plist in Resources */,
 				F43D856F1DD568A6005648DA /* Assets.xcassets in Resources */,
 				F43D856A1DD568A6005648DA /* Main.storyboard in Resources */,
+				997CEB9C1DEB2C1900978F36 /* htmlCode.html in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

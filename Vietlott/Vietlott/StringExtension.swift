@@ -43,4 +43,10 @@ extension String {
         
         return ""
     }
+    
+    var removeExcessiveSpaces: [String] {
+        let components = self.components(separatedBy: NSCharacterSet.whitespaces)
+        let filtered = components.filter({!$0.isEmpty})
+        return filtered
+    }
 }

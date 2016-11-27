@@ -230,20 +230,31 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d6W-rV-RiE">
-                                <rect key="frame" x="156" y="318" width="63" height="30"/>
+                                <rect key="frame" x="156" y="30" width="63" height="30"/>
                                 <state key="normal" title="Dial View"/>
                                 <connections>
                                     <action selector="showDialView:" destination="57N-0n-sIV" eventType="touchUpInside" id="I3z-iu-0A0"/>
                                 </connections>
                             </button>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ebV-RO-bdC">
+                                <rect key="frame" x="0.0" y="60" width="375" height="607"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </webView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="ebV-RO-bdC" firstAttribute="leading" secondItem="gIe-Zb-ry1" secondAttribute="leading" id="2cD-F3-Kxb"/>
+                            <constraint firstAttribute="bottom" secondItem="ebV-RO-bdC" secondAttribute="bottom" id="3JV-09-Rig"/>
                             <constraint firstItem="d6W-rV-RiE" firstAttribute="centerX" secondItem="gIe-Zb-ry1" secondAttribute="centerX" id="5wd-d6-KuR"/>
-                            <constraint firstItem="d6W-rV-RiE" firstAttribute="centerY" secondItem="gIe-Zb-ry1" secondAttribute="centerY" id="Sbh-rr-7R2"/>
+                            <constraint firstAttribute="trailing" secondItem="ebV-RO-bdC" secondAttribute="trailing" id="6GR-MO-HaZ"/>
+                            <constraint firstItem="d6W-rV-RiE" firstAttribute="top" secondItem="Zgg-0F-Za5" secondAttribute="bottom" constant="10" id="7oT-0Z-fxb"/>
+                            <constraint firstItem="ebV-RO-bdC" firstAttribute="top" secondItem="d6W-rV-RiE" secondAttribute="bottom" id="NzC-mk-nuR"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="" image="home" id="SK0-EE-fCE"/>
+                    <connections>
+                        <outlet property="webView" destination="ebV-RO-bdC" id="tbh-Uo-M0F"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8pK-cX-zxQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
