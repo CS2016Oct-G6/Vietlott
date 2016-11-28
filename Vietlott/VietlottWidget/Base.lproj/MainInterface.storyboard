@@ -188,6 +188,7 @@
                         <outlet property="dayLabel" destination="1x0-NL-hoR" id="0Wj-ql-QNo"/>
                         <outlet property="hourLabel" destination="2Ko-5B-xeY" id="pAY-AZ-dQY"/>
                         <outlet property="minuteLabel" destination="R0X-fx-ABG" id="nlx-lW-Wc0"/>
+                        <outlet property="prizeLabel" destination="7aZ-u8-ohv" id="KeB-VQ-PMG"/>
                         <outlet property="secondLabel" destination="4GQ-W5-yag" id="Y1J-7W-o2W"/>
                     </connections>
                 </viewController>

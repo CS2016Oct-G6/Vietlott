@@ -49,4 +49,10 @@ extension String {
         let filtered = components.filter({!$0.isEmpty})
         return filtered
     }
+    
+    func toDate() -> Date {
+        let dateFormat = DateFormatter()
+        dateFormat.dateFormat = "yyyy-MM-dd HH:mm"
+        return dateFormat.date(from: self)!
+    }
 }

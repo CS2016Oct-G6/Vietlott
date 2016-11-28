@@ -14,15 +14,20 @@ class TodayViewController: UIViewController, NCWidgetProviding {
     @IBOutlet weak var hourLabel: UILabel!
     @IBOutlet weak var minuteLabel: UILabel!
     @IBOutlet weak var secondLabel: UILabel!
+    @IBOutlet weak var prizeLabel: UILabel!
 
     
         
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view from its nib.
-        var timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(self.update), userInfo: nil, repeats: true)
-//        var updateTimer = Timer.scheduledTimer(withTimeInterval: 2, target: self, selector: #selector(self.updatePrize), repeats: true)
         
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(true)
+        var timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(self.update), userInfo: nil, repeats: true)
+
     }
     
     override func didReceiveMemoryWarning() {
@@ -45,10 +50,17 @@ class TodayViewController: UIViewController, NCWidgetProviding {
         hourLabel.text = "\(timeTuple.hour)"
         minuteLabel.text = "\(timeTuple.minute)"
         secondLabel.text = "\(timeTuple.second)"
+        
+
+        updatePrize()
     }
     
     func updatePrize(){
-//        prizeLabel.text = ""
+        print("here \n")
+//        print(UserDefaults(suiteName: "group.vietlott")?.string(forKey: "currentWinning"))
+        print(UserDefaults(suiteName: "group.vietlott")!.string(forKey: "currentWinning")!)
+
+        prizeLabel.text = UserDefaults(suiteName: "group.vietlott")!.string(forKey: "currentWinning")!
     }
     
     func hourSinceThen() -> TimeInterval{

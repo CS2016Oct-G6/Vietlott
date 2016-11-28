@@ -43,11 +43,12 @@ class HomeViewController: UIViewController {
                     guard
                         let subVal = subVal as? NSDictionary,
                         let numbers = subVal["numbers"] as? String,
-                        let date = subVal["date"] as? String
+                        let dateString = subVal["date"] as? String
                     else {
                         return
                     }
-                    let lottery = Lottery(lottery: numbers, time: date)
+                    let lottery = Lottery(lottery: numbers, time: dateString)
+//                    if dateString.toDate().timeIntervalSince(<#T##date: Date##Date#>)
                     lotteryList.append(lottery)
                 }
             }
@@ -82,6 +83,8 @@ class HomeViewController: UIViewController {
                 
             }
             
+            var winningMoney = "";
+            
             for h2 in doc.css("h2") {
                 
                 let result = h2.text!
@@ -93,7 +96,13 @@ class HomeViewController: UIViewController {
                 if(trimmedString != ""){
                     print("wingng money.... \(trimmedString)")
                 }
+                
+                winningMoney = trimmedString
+                
             }
+            UserDefaults(suiteName: "group.vietlott")!.set(winningMoney, forKey: "currentWinning")
+            print(UserDefaults(suiteName: "group.vietlott")!.string(forKey: "currentWinning")!)
+
         }
     }
     
@@ -108,5 +117,45 @@ class HomeViewController: UIViewController {
         self.present(dialVC, animated: true, completion: nil)
     }
 
+    func hourSinceThen() -> TimeInterval{
+        let now = Date()
+        let calendar = NSCalendar(calendarIdentifier: .gregorian)!
+        let components = calendar.components(([.year, .month, .day, .weekday, .hour, .minute, .second, .calendar]), from: now )
+        var expected = flattenTheDate(dateComponent: components)
+        switch components.weekday! {
+        case 1:
+            if (components.hour! >= 18){
+                expected.day! += 3
+            }
+        case 2:
+            expected.day! += 2
+        case 3:
+            expected.day! += 1
+        case 4:
+            if (components.hour! >= 18){
+                expected.day! += 2
+            }
+        case 5:
+            if (components.hour! >= 18){
+                expected.day! += 1
+            }
+        case 6:
+            expected.day! += 2
+        case 7:
+            expected.day! += 1
+        default:
+            print("add later")
+        }
+        return (expected.date?.timeIntervalSince(components.date!))!
+    }
+    
+    func flattenTheDate(dateComponent: DateComponents) -> DateComponents {
+        var tempDateComponent = dateComponent
+        tempDateComponent.hour = 18;
+        tempDateComponent.minute = 0
+        tempDateComponent.second = 0
+        return tempDateComponent
+    }
+    
     
 }
