@@ -22,6 +22,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate {
         
         GIDSignIn.sharedInstance().clientID = FIRApp.defaultApp()?.options.clientID
         GIDSignIn.sharedInstance().delegate = self
+        
+        if let user = FIRAuth.auth()?.currentUser {
+            self.goToHomeScreen(user: user)
+        }
         return true
     }
 
@@ -117,14 +121,19 @@ class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate {
             guard let user = user else {
                 return
             }
-            Constance.userInfo = User(name: user.displayName, email: user.email, avatar: user.photoURL?.absoluteString )
-            let storyboard = UIStoryboard(name: "Main", bundle: nil)
-            let presentingController = storyboard.instantiateViewController(withIdentifier: "TabBarController")
-            self.window?.rootViewController? = presentingController
+            self.goToHomeScreen(user: user)
             
         }
         
         
+        
+    }
+    
+    func goToHomeScreen(user: FIRUser){
+        Constance.userInfo = User(name: user.displayName, email: user.email, avatar: user.photoURL?.absoluteString )
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let presentingController = storyboard.instantiateViewController(withIdentifier: "TabBarController")
+        self.window?.rootViewController? = presentingController
     }
     
 
