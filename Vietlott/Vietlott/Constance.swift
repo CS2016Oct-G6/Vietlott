@@ -18,5 +18,5 @@ class Constance {
     
     static var lotteryWin = "224677984408"
     
-    static var unitsSold = [15, 4, 6, 3.0, 12.0, 16.0, 4.0, 18.0, 2.0, 4.0, 5.0, 4.0]
+    static var unitsSold = [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
 }
