@@ -25,6 +25,8 @@ class DialViewController: UIViewController {
     @IBOutlet weak var fiveLabel: UILabel!
     @IBOutlet weak var sixLabel: UILabel!
     
+    @IBOutlet weak var winLabel: UILabel!
+    
     @IBOutlet weak var startDualButton: UIButton!
     
     let numberLotteryArray = ["00", "01", "02", "03", "04", "05", "06", "07", "08", "09",
@@ -134,6 +136,14 @@ class DialViewController: UIViewController {
                 // if have lottery win
                 if self.lotteryOfUserArray.count > 0 {
                     Timer.scheduledTimer(timeInterval: 0.01, target: self, selector: #selector(DialViewController.createRandomSnow), userInfo: nil, repeats: true)
+                    
+                    UIView.animate(withDuration: 2, animations: { 
+                        self.winLabel.alpha = 1
+                    }, completion: { (success) in
+                        UIView.animate(withDuration: 1, delay: 0, options: .repeat, animations: { 
+                            self.winLabel.alpha = 0.5
+                        }, completion: nil)
+                    })
                 }
             })
         default:
@@ -200,7 +210,6 @@ extension DialViewController: UICollisionBehaviorDelegate{
         let color = colors[Int(arc4random_uniform(UInt32(colors.count)))]
         newSnow.backgroundColor = color
         self.view.addSubview(newSnow)
-        
         
         gravityBehavior.addItem(newSnow)
         collisionBehavior.addItem(newSnow)

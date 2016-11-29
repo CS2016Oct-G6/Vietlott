@@ -494,7 +494,7 @@
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ak6-Yp-9wO">
-                                                            <rect key="frame" x="138" y="26" width="26.5" height="15"/>
+                                                            <rect key="frame" x="138" y="26" width="27" height="15"/>
                                                             <fontDescription key="fontDescription" type="italicSystem" pointSize="12"/>
                                                             <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                                             <nil key="highlightedColor"/>
@@ -577,16 +577,24 @@
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="clipsToBounds" value="YES"/>
                                 </userDefinedRuntimeAttributes>
                             </view>
+                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.0" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You Win" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YNv-HU-Dkk">
+                                <rect key="frame" x="86" y="60" width="202" height="60"/>
+                                <fontDescription key="fontDescription" type="system" weight="black" pointSize="50"/>
+                                <color key="textColor" red="1" green="0.076429551809999996" blue="0.047899857259999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="9Hm-39-f5x" secondAttribute="trailing" id="9NP-jx-DIx"/>
                             <constraint firstItem="9Hm-39-f5x" firstAttribute="leading" secondItem="IsI-9X-mup" secondAttribute="leading" id="9gz-FZ-0hM"/>
+                            <constraint firstItem="YNv-HU-Dkk" firstAttribute="centerX" secondItem="IsI-9X-mup" secondAttribute="centerX" id="Fw9-iO-Xnl"/>
                             <constraint firstAttribute="trailing" secondItem="7wy-kX-60c" secondAttribute="trailing" constant="20" id="L2z-Jj-WZ6"/>
                             <constraint firstItem="7wy-kX-60c" firstAttribute="leading" secondItem="IsI-9X-mup" secondAttribute="leading" constant="20" id="S3Q-Pb-q14"/>
                             <constraint firstItem="7wy-kX-60c" firstAttribute="centerY" secondItem="9Hm-39-f5x" secondAttribute="centerY" id="Wp6-CM-wPH"/>
                             <constraint firstItem="63e-C6-cUD" firstAttribute="top" secondItem="9Hm-39-f5x" secondAttribute="bottom" id="loD-Tm-jFe"/>
                             <constraint firstItem="9Hm-39-f5x" firstAttribute="top" secondItem="IsI-9X-mup" secondAttribute="top" id="uV8-M8-iDJ"/>
+                            <constraint firstItem="YNv-HU-Dkk" firstAttribute="top" secondItem="Oh0-Lg-UYR" secondAttribute="bottom" constant="40" id="vmc-u2-lR9"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Dial" id="Uw2-Wu-A3i"/>
@@ -599,6 +607,7 @@
                         <outlet property="tableView" destination="WV0-ot-c5T" id="RBY-S8-3xn"/>
                         <outlet property="threeLabel" destination="zYJ-OA-t9x" id="itZ-yQ-I1n"/>
                         <outlet property="twoLabel" destination="eUo-sc-lEi" id="W9A-Ru-eaa"/>
+                        <outlet property="winLabel" destination="YNv-HU-Dkk" id="sz4-5K-qvx"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="d6V-TM-YvN" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -1007,7 +1016,7 @@
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qka-Gs-z6T">
-                                                                    <rect key="frame" x="98" y="27" width="31" height="14.5"/>
+                                                                    <rect key="frame" x="98" y="27" width="31" height="15"/>
                                                                     <fontDescription key="fontDescription" type="italicSystem" pointSize="12"/>
                                                                     <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                                                     <nil key="highlightedColor"/>
@@ -1216,15 +1225,15 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="96b-td-vFU" userLabel="Main View">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="265.5"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="265"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MLg-qE-f2h" userLabel="Bar Chart View" customClass="BarChartView" customModule="Charts">
-                                        <rect key="frame" x="0.0" y="28" width="375" height="237.5"/>
+                                        <rect key="frame" x="0.0" y="28" width="375" height="237"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <gestureRecognizers/>
                                     </view>
                                     <scrollView hidden="YES" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Yzg-eX-SC9">
-                                        <rect key="frame" x="0.0" y="28" width="375" height="237.5"/>
+                                        <rect key="frame" x="0.0" y="28" width="375" height="237"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Oj6-1Z-IwA" userLabel="Line Chart View" customClass="LineChartView" customModule="Charts">
                                                 <rect key="frame" x="0.0" y="0.0" width="375" height="250"/>
