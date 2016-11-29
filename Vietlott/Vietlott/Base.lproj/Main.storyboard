@@ -866,6 +866,12 @@
                                                             <action selector="addLottery:" destination="kcU-52-vCH" eventType="touchUpInside" id="3qQ-rk-kM0"/>
                                                         </connections>
                                                     </button>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="12" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aaf-au-SzW">
+                                                        <rect key="frame" x="287.5" y="14" width="17.5" height="21"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
                                                 </subviews>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <constraints>
@@ -873,7 +879,9 @@
                                                     <constraint firstItem="9Dw-tW-VKe" firstAttribute="centerY" secondItem="n5H-oH-XOK" secondAttribute="centerY" id="GFO-OL-g0f"/>
                                                     <constraint firstItem="GKh-n3-BOe" firstAttribute="leading" secondItem="9Dw-tW-VKe" secondAttribute="trailing" constant="10" id="KUJ-G6-VVk"/>
                                                     <constraint firstItem="GKh-n3-BOe" firstAttribute="centerY" secondItem="9Dw-tW-VKe" secondAttribute="centerY" id="Q95-nx-ztH"/>
+                                                    <constraint firstItem="aaf-au-SzW" firstAttribute="centerY" secondItem="GKh-n3-BOe" secondAttribute="centerY" id="YSP-NI-6hp"/>
                                                     <constraint firstAttribute="trailing" secondItem="GKh-n3-BOe" secondAttribute="trailing" constant="5" id="atb-ZR-ZU3"/>
+                                                    <constraint firstItem="aaf-au-SzW" firstAttribute="trailing" secondItem="GKh-n3-BOe" secondAttribute="leading" constant="-5" id="owB-Xr-Dfh"/>
                                                 </constraints>
                                             </view>
                                         </subviews>
@@ -1109,7 +1117,7 @@
                                     <constraint firstAttribute="trailing" secondItem="yD6-Yt-E9c" secondAttribute="trailing" constant="20" id="vkU-l0-kvk"/>
                                 </constraints>
                                 <connections>
-                                    <outletCollection property="gestureRecognizers" destination="w6H-wf-xNQ" appends="YES" id="6HQ-P3-yT5"/>
+                                    <outletCollection property="gestureRecognizers" destination="w6H-wf-xNQ" appends="YES" id="PxF-s7-Zx2"/>
                                 </connections>
                             </view>
                         </subviews>
@@ -1126,10 +1134,12 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="addButton" destination="GKh-n3-BOe" id="UiI-Y4-5Yn"/>
                         <outlet property="addView" destination="x9a-Mh-Kxh" id="cJ4-jr-5C7"/>
                         <outlet property="bottomMainView" destination="TTR-zF-ZtA" id="Eh7-Ab-BDo"/>
                         <outlet property="lotteryTextField" destination="9Dw-tW-VKe" id="wFA-jK-WA4"/>
                         <outlet property="tableView" destination="65c-rW-jNW" id="pz6-yW-z9g"/>
+                        <outlet property="textCountLabel" destination="aaf-au-SzW" id="e1k-DT-A0B"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1jM-yx-a5S" userLabel="First Responder" sceneMemberID="firstResponder"/>

@@ -27,6 +27,7 @@
 		F44365FE1DDCC6B400D854B9 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F44365FD1DDCC6B400D854B9 /* ProfileViewController.swift */; };
 		F44366001DDCC90D00D854B9 /* HistoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F44365FF1DDCC90D00D854B9 /* HistoryCell.swift */; };
 		F44366021DDCC9F000D854B9 /* Lottery.swift in Sources */ = {isa = PBXBuildFile; fileRef = F44366011DDCC9F000D854B9 /* Lottery.swift */; };
+		F44C84611DEDC82D002CE509 /* ColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F44C84601DEDC82D002CE509 /* ColorExtension.swift */; };
 		F475CB611DDE0AC50048AD30 /* DialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F475CB601DDE0AC50048AD30 /* DialViewController.swift */; };
 		F475CB631DDE0C420048AD30 /* DialCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F475CB621DDE0C420048AD30 /* DialCell.swift */; };
 		F475CB651DDE0E560048AD30 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F475CB641DDE0E560048AD30 /* HomeViewController.swift */; };
@@ -147,6 +148,7 @@
 		F44365FD1DDCC6B400D854B9 /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		F44365FF1DDCC90D00D854B9 /* HistoryCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoryCell.swift; sourceTree = "<group>"; };
 		F44366011DDCC9F000D854B9 /* Lottery.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Lottery.swift; sourceTree = "<group>"; };
+		F44C84601DEDC82D002CE509 /* ColorExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorExtension.swift; sourceTree = "<group>"; };
 		F4527B7D10EDAA1CAFC55300 /* Pods-Vietlott.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Vietlott.release.xcconfig"; path = "Pods/Target Support Files/Pods-Vietlott/Pods-Vietlott.release.xcconfig"; sourceTree = "<group>"; };
 		F475CB601DDE0AC50048AD30 /* DialViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DialViewController.swift; sourceTree = "<group>"; };
 		F475CB621DDE0C420048AD30 /* DialCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DialCell.swift; sourceTree = "<group>"; };
@@ -327,6 +329,7 @@
 			children = (
 				F49EDAC61DD8AF3400767F72 /* DateExtension.swift */,
 				F49EDAC71DD8AF3400767F72 /* StringExtension.swift */,
+				F44C84601DEDC82D002CE509 /* ColorExtension.swift */,
 			);
 			name = Extension;
 			sourceTree = "<group>";
@@ -646,6 +649,7 @@
 				F4C1BC761DE1649200F7069A /* UIImageView+HighlightedWebCache.m in Sources */,
 				F44366001DDCC90D00D854B9 /* HistoryCell.swift in Sources */,
 				F475CB631DDE0C420048AD30 /* DialCell.swift in Sources */,
+				F44C84611DEDC82D002CE509 /* ColorExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

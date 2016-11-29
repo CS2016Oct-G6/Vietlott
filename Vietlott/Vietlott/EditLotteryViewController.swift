@@ -13,10 +13,14 @@ class EditLotteryViewController: UIViewController {
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var addView: UIView!
     @IBOutlet weak var lotteryTextField: UITextField!
+    @IBOutlet weak var addButton: UIButton!
+    @IBOutlet weak var textCountLabel: UILabel!
     
     @IBOutlet weak var bottomMainView: NSLayoutConstraint!
     
     var isEdit = false
+    var textCount = 12
+    let colorBlue = UIColor(displayP3Red: 33, green: 130, blue: 247, alpha: 1)
     
     var lotteryArray = [Lottery]()
     
@@ -25,6 +29,9 @@ class EditLotteryViewController: UIViewController {
 
         tableView.delegate = self
         tableView.dataSource = self
+        
+        lotteryTextField.delegate = self
+        lotteryTextField.addTarget(self, action: #selector(EditLotteryViewController.textFieldDidChange(textField:)), for: UIControlEvents.editingChanged)
         
         // dark keyboard
         lotteryTextField.keyboardAppearance = .dark;
@@ -73,6 +80,12 @@ class EditLotteryViewController: UIViewController {
     
     @IBAction func showAddLotteryView(_ sender: Any) {
         showInput()
+        
+        lotteryTextField.text = ""
+        textCountLabel.text = "12"
+        addButton.isEnabled = false
+        addButton.setTitleColor(UIColor.gray, for: .normal)
+        
     }
     
     @IBAction func hideKeyboardOnTap(_ sender: UITapGestureRecognizer) {
@@ -168,5 +181,22 @@ extension EditLotteryViewController: EditLotteryCellDelegate {
         
         lotteryArray.remove(at: (tableView.indexPath(for: cell)?.section)!)
         tableView.reloadData()
+    }
+}
+
+extension EditLotteryViewController: UITextFieldDelegate {
+    
+    func textFieldDidChange(textField: UITextField) {
+        // calcula character
+        textCount = 12 - (lotteryTextField.text?.characters.count)!
+        textCountLabel.text = "\(textCount)"
+        
+        if textCount != 0 {
+            addButton.isEnabled = false
+            addButton.setTitleColor(UIColor.gray, for: .normal)
+        } else {
+            addButton.isEnabled = true
+            addButton.setTitleColor(UIColor.blue, for: .normal)
+        }
     }
 }
