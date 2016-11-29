@@ -65,7 +65,7 @@ class DialViewController: UIViewController {
         
         let loteryWin = Constance.lotteryWin.toLotteryString()
         lotteryWinArray = loteryWin.characters.split{$0 == " "}.map(String.init)
-        lotteryOfUserArray = Constance.lotteryArrayHistory
+        lotteryOfUserArray = Constance.filteredArrayHistory
     }
 
     override func didReceiveMemoryWarning() {
