@@ -28,6 +28,7 @@ class HomeViewController: UIViewController {
                 return
             }
             var lotteryList:[Lottery] = []
+            var filteredLotteryList:[Lottery] = []
             for (key, val) in lotteryHistory {
                 guard
                     let yearMonthString = key as? String,
@@ -48,10 +49,15 @@ class HomeViewController: UIViewController {
                         return
                     }
                     let lottery = Lottery(lottery: numbers, time: dateString)
+                    if (dateString.toDate().timeIntervalSince(self.previousDate()) > 0
+                        && dateString.toDate().timeIntervalSince(self.nextDate()) < 0){
+                        filteredLotteryList.append(lottery)
+                    }
 //                    if dateString.toDate().timeIntervalSince(<#T##date: Date##Date#>)
                     lotteryList.append(lottery)
                 }
             }
+            Constance.filteredArrayHistory = filteredLotteryList
             Constance.lotteryArrayHistory = lotteryList
             
         })
@@ -117,7 +123,7 @@ class HomeViewController: UIViewController {
         self.present(dialVC, animated: true, completion: nil)
     }
 
-    func hourSinceThen() -> TimeInterval{
+    func nextDate() -> Date {
         let now = Date()
         let calendar = NSCalendar(calendarIdentifier: .gregorian)!
         let components = calendar.components(([.year, .month, .day, .weekday, .hour, .minute, .second, .calendar]), from: now )
@@ -136,17 +142,50 @@ class HomeViewController: UIViewController {
                 expected.day! += 2
             }
         case 5:
-            if (components.hour! >= 18){
-                expected.day! += 1
-            }
+            expected.day! += 1
+            
         case 6:
-            expected.day! += 2
+            if (components.hour! >= 18){
+                expected.day! += 2
+            }
         case 7:
             expected.day! += 1
         default:
             print("add later")
         }
-        return (expected.date?.timeIntervalSince(components.date!))!
+        return expected.date!
+    }
+    
+    func previousDate() -> Date {
+        let now = Date()
+        let calendar = NSCalendar(calendarIdentifier: .gregorian)!
+        let components = calendar.components(([.year, .month, .day, .weekday, .hour, .minute, .second, .calendar]), from: now )
+        var expected = flattenTheDate(dateComponent: components)
+        switch components.weekday! {
+        case 1:
+            if (components.hour! < 18){
+                expected.day! += 2
+            }
+        case 2:
+            expected.day! -= 1
+        case 3:
+            expected.day! -= 2
+        case 4:
+            if (components.hour! < 18){
+                expected.day! -= 3
+            }
+        case 5:
+            expected.day! -= 1
+        case 6:
+            if (components.hour! < 18){
+                expected.day! -= 2
+            }
+        case 7:
+            expected.day! -= 1
+        default:
+            print("add later")
+        }
+        return expected.date!
     }
     
     func flattenTheDate(dateComponent: DateComponents) -> DateComponents {

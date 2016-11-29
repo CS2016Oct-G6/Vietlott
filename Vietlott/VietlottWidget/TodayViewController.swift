@@ -82,11 +82,11 @@ class TodayViewController: UIViewController, NCWidgetProviding {
                 expected.day! += 2
             }
         case 5:
-            if (components.hour! >= 18){
-                expected.day! += 1
-            }
+            expected.day! += 1
         case 6:
-            expected.day! += 2
+            if (components.hour! >= 18){
+                expected.day! += 2
+            }
         case 7:
             expected.day! += 1
         default:
