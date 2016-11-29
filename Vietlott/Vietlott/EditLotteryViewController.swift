@@ -100,6 +100,7 @@ class EditLotteryViewController: UIViewController {
     
     @IBAction func saveLottery(_ sender: Any) {
         Constance.lotteryArrayHistory = lotteryArray + Constance.lotteryArrayHistory
+        Constance.filteredArrayHistory = lotteryArray + Constance.filteredArrayHistory
         
         self.dismiss(animated: true, completion: nil)
     }
