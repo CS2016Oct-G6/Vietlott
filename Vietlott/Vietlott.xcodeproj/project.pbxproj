@@ -19,6 +19,7 @@
 		99F68CD61DE73DA40003B56E /* TodayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99EDC1221DE73C1600C15505 /* TodayViewController.swift */; };
 		CF008EF17926B510E8255CF7 /* Pods_Vietlott.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0865DEDC8AD5B52D584B3324 /* Pods_Vietlott.framework */; };
 		F41581331DDF3A1300757F07 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = F41581321DDF3A1300757F07 /* User.swift */; };
+		F42DD51B1DEE664400186D3C /* RecommendViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F42DD51A1DEE664400186D3C /* RecommendViewController.swift */; };
 		F43D85651DD568A6005648DA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F43D85641DD568A6005648DA /* AppDelegate.swift */; };
 		F43D856A1DD568A6005648DA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F43D85681DD568A6005648DA /* Main.storyboard */; };
 		F43D856D1DD568A6005648DA /* Vietlott.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F43D856B1DD568A6005648DA /* Vietlott.xcdatamodeld */; };
@@ -138,6 +139,7 @@
 		99EDC1251DE73C1600C15505 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
 		99EDC1271DE73C1600C15505 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F41581321DDF3A1300757F07 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		F42DD51A1DEE664400186D3C /* RecommendViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecommendViewController.swift; sourceTree = "<group>"; };
 		F43D85611DD568A6005648DA /* Vietlott.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Vietlott.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F43D85641DD568A6005648DA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F43D85691DD568A6005648DA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -337,6 +339,7 @@
 		F49EDABB1DD8AB7A00767F72 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				F42DD51A1DEE664400186D3C /* RecommendViewController.swift */,
 				F49EDAC21DD8AF2900767F72 /* EditLotteryViewController.swift */,
 				F49EDAC31DD8AF2900767F72 /* InputViewController.swift */,
 				F44365FD1DDCC6B400D854B9 /* ProfileViewController.swift */,
@@ -629,6 +632,7 @@
 				F475CB611DDE0AC50048AD30 /* DialViewController.swift in Sources */,
 				F4C1BC451DE160DA00F7069A /* CircularLoaderView.swift in Sources */,
 				F4E2FF371DE0A1F100F403C3 /* ChartViewController.swift in Sources */,
+				F42DD51B1DEE664400186D3C /* RecommendViewController.swift in Sources */,
 				F4C1BC741DE1649200F7069A /* UIImage+GIF.m in Sources */,
 				F4C1BC6B1DE1649200F7069A /* NSData+ImageContentType.m in Sources */,
 				F4C1BC6D1DE1649200F7069A /* SDWebImageCompat.m in Sources */,

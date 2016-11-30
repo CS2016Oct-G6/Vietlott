@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import ARSLineProgress
 
 class EditLotteryViewController: UIViewController {
     
@@ -16,6 +17,7 @@ class EditLotteryViewController: UIViewController {
     @IBOutlet weak var addButton: UIButton!
     @IBOutlet weak var textCountLabel: UILabel!
     
+    @IBOutlet weak var successImageView: UIImageView!
     @IBOutlet weak var bottomMainView: NSLayoutConstraint!
     
     var isEdit = false
@@ -99,10 +101,16 @@ class EditLotteryViewController: UIViewController {
     }
     
     @IBAction func saveLottery(_ sender: Any) {
+        
         Constance.lotteryArrayHistory = lotteryArray + Constance.lotteryArrayHistory
         Constance.filteredArrayHistory = lotteryArray + Constance.filteredArrayHistory
         
-        self.dismiss(animated: true, completion: nil)
+        UIView.animate(withDuration: 1, animations: {() -> Void in
+            self.successImageView.alpha = 1
+        }, completion: {(Bool) -> Void in
+            self.successImageView.alpha = 0
+            self.dismiss(animated: true, completion: nil)
+        })
     }
     
     // MARK: animation show/hide input

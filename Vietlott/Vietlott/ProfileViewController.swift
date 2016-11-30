@@ -61,6 +61,17 @@ class ProfileViewController: UIViewController {
         lotteryArray = Constance.lotteryArrayHistory
     }
     
+    @IBAction func showRecommendView(_ sender: Any) {
+        // present recommend view
+        let storyboart = UIStoryboard(name: "Main", bundle: nil)
+        let recommendVC = storyboart.instantiateViewController(withIdentifier: "RecommendViewController") as! RecommendViewController
+        
+        // open view
+        recommendVC.transitioningDelegate = self.animator
+        recommendVC.modalPresentationStyle = .custom
+        self.present(recommendVC, animated: true, completion: nil)
+    }
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let desVC = segue.destination
         
